@@ -2,7 +2,7 @@
 
 ### [Live Site](#)
 
-### [GitHub](#)
+### [GitHub](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design)
 
 ![Various Devices](#)
 
@@ -94,7 +94,7 @@ Colours are kept to a bare minimum, using only the colors for bootstrap bg-light
 
 I used Balsamiq and figma to create the wireframes.
 
-- [Balsamiq Wireframe](#)
+- [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design/blob/master/wireframes/digital-design-wire.pdf)
 
 - [Figma Wireframe](#)
 
