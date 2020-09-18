@@ -98,7 +98,9 @@ I used Balsamiq and figma to create the wireframes.
 
 - [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design/blob/master/wireframes/digital-design-wire.pdf)
 
-- [Figma Wireframe](#)
+- [Figma Wireframe-Light](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-figma-light.jpg)
+
+- [Figma Wireframe-Dark](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-figma-dark.jpg)
 
 ##### back to [top](#table-of-contents)
 
