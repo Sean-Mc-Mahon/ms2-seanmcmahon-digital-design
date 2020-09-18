@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+html {
+  --light-bg: #fcfcfc;
+  --light-panel: #ebebeb;
+  --light-headings: #0077ff;
+  --light-text: #333333;
+}
+
+html[data-theme="dark"] {
+  --dark-bg: #333333;
+  --dark-panel: #434343;
+  --dark-headings: #3694ff;
+  --dark-text: #fcfcfc;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -16,7 +30,7 @@ h6 {
 }
 
 nav {
-  background-color: red;
+  background-color: var(--light-bg);
   min-height: 10vh;
 }
 
@@ -39,28 +53,11 @@ nav {
 h1 {
   font-family: "Lily Script One", cursive;
   font-size: 3rem;
-  text-decoration: none;
+  color: var(--light-text);
 }
 
 main {
-  background-color: green;
+  background-color: var(--light-bg);
   min-height: 90vh;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-h1 {
-  font-family: "Lily Script One", cursive;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
