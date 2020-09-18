@@ -46,21 +46,4 @@ main {
   background-color: green;
   min-height: 90vh;
 }
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-h1 {
-  font-family: "Lily Script One", cursive;
-  text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=global.css.map */

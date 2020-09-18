@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  background-color: red;
+  min-height: 10vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-family: "Lily Script One", cursive;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+main {
+  background-color: green;
+  min-height: 90vh;
+}
