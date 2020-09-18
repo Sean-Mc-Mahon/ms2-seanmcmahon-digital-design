@@ -19,6 +19,26 @@ html[data-theme="dark"] {
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--light-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Lily Script One", cursive;
+  font-size: 3rem;
+  color: var(--light-text);
 }
 
 h2,
@@ -29,35 +49,110 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+/*navigation*/
+
 nav {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--light-bg);
   min-height: 10vh;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.nav-links {
+  align-self: center;
+}
+
+.nav-links ul {
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.logo a {
-  text-decoration: none;
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-h1 {
-  font-family: "Lily Script One", cursive;
-  font-size: 3rem;
-  color: var(--light-text);
-}
-
+/*main*/
 main {
   background-color: var(--light-bg);
   min-height: 90vh;
 }
-/*# sourceMappingURL=style.css.map */
+
+/*logo animation*/
+#cog1 {
+  animation: cog1 3s linear;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#cog2 {
+  animation: cog2 3s linear;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes cog1 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes cog2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.logo svg {
+  text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
+    0 0 5px #aaaf, 0 0 5px #aaaf;
+  animation: flicker 1s linear;
+  animation-iteration-count: 1;
+}
+
+.logo svg:hover {
+  text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
+    0 0 5px #aaaf, 0 0 5px #aaaf;
+  animation: Multicolor 3s linear infinite;
+}
+
+@keyframes flicker {
+  10%,
+  30%,
+  60%,
+  75% {
+    opacity: 1;
+  }
+  20%,
+  40%,
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes Multicolor {
+  0% {
+    text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
+      0 0 5px #aaaf, 0 0 5px #aaaf;
+  }
+  33% {
+    text-shadow: 0 0 25px rgb(255, 0, 221), 0 0 25px rgb(255, 0, 221),
+      0 0 15px rgb(255, 0, 221), 0 0 15px rgb(255, 0, 221),
+      0 0 5px rgb(255, 0, 221), 0 0 5px rgb(255, 0, 221);
+  }
+  67% {
+    text-shadow: 0 0 25px rgb(0, 162, 255), 0 0 25px rgb(0, 162, 255),
+      0 0 15px rgb(0, 162, 255), 0 0 15px rgb(0, 162, 255),
+      0 0 5px rgb(0, 162, 255), 0 0 5px rgb(0, 162, 255);
+  }
+  100% {
+    text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
+      0 0 5px #aaaf, 0 0 5px #aaaf;
+  }
+}
