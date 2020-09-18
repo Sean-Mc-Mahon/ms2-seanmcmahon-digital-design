@@ -4,26 +4,27 @@
 }
 
 html {
-  --light-bg: #fcfcfc;
-  --light-panel: #ebebeb;
-  --light-headings: #0077ff;
-  --light-text: #333333;
+  --bg1: #fcfcfc;
+  --panel: #757575;
+  --text1: #333333;
+  --text2: #0077ff;
 }
 
 html[data-theme="dark"] {
-  --dark-bg: #333333;
-  --dark-panel: #434343;
-  --dark-headings: #3694ff;
-  --dark-text: #fcfcfc;
+  --bg1: #333333;
+  --panel: #434343;
+  --text1: #fcfcfc;
+  --text2: #3694ff;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--light-text);
+  color: var(--text1);
 }
 
 a {
   text-decoration: none;
+  color: var(--text1);
 }
 
 li {
@@ -33,12 +34,13 @@ li {
 li a {
   margin-right: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 h1 {
   font-family: "Lily Script One", cursive;
   font-size: 3rem;
-  color: var(--light-text);
+  color: var(--text1);
 }
 
 h2,
@@ -54,7 +56,7 @@ h6 {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--light-bg);
+  background-color: var(--bg1);
   min-height: 10vh;
 }
 
@@ -74,8 +76,31 @@ nav {
 
 /*main*/
 main {
-  background-color: var(--light-bg);
-  min-height: 90vh;
+  background-color: var(--bg1);
+  min-height: 80vh;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--bg1);
+  background-color: var(--panel);
+  min-height: 10vh;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  margin: 0 1rem;
+}
+
+.social-links ul {
+  display: flex;
+}
+
+.social-links ul li i {
+  color: var(--bg1);
 }
 
 /*logo animation*/
@@ -155,4 +180,37 @@ main {
     text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
       0 0 5px #aaaf, 0 0 5px #aaaf;
   }
+}
+
+/*------------------------------------------------------------------------------
+media queries
+------------------------------------------------------------------------------*/
+/*xxs*/
+@media (min-width: 0px) {
+}
+
+/*xs default*/
+@media (min-width: 320px) {
+}
+
+/*sm*/
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+  .social-links ul li i {
+    font-size: 2rem;
+  }
+}
+
+/*md*/
+@media (min-width: 992px) {
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+}
+
+/*xl*/
+@media (min-width: 1500px) {
 }
