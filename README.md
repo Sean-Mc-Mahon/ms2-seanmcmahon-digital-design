@@ -1,6 +1,6 @@
 # Sean McMahon-Digital Design & Fabrication
 
-### [Live Site](#)
+### [Live Site](https://sean-mc-mahon.github.io/ms2-seanmcmahon-digital-design/)
 
 ### [GitHub](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design)
 
