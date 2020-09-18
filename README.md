@@ -86,9 +86,11 @@ Colours are kept to a bare minimum, using only the colors for bootstrap bg-light
 
 #### Typography
 
-... [Google Fonts](https://fonts.google.com/) were used across the site:
+3 [Google Fonts](https://fonts.google.com/) were used across the site:
 
-- [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) : body text
+- [Lily Script One](https://fonts.google.com/specimen/Lily+Script+One?query=lily) : Logo
+- [Quicksand](https://fonts.google.com/specimen/Quicksand?query=quicksan) : Headings
+- [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montse) : Body
 
 ### Wireframes
 
