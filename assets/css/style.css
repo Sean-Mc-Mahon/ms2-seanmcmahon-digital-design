@@ -54,6 +54,19 @@ h6 {
 
 /*navigation*/
 
+/*title text animation
+display changed to inline block to enable text to translate*/
+.logo span {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(-100px);
+  display: inline-block;
+}
+.logo span.fade {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 nav {
   width: 95%;
   margin: auto;
@@ -173,8 +186,7 @@ footer {
 .logo svg {
   text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
     0 0 5px #aaaf, 0 0 5px #aaaf;
-  animation: flicker 1s linear;
-  animation-iteration-count: 1;
+  animation: flicker 3s linear infinite;
 }
 
 .logo svg:hover {
@@ -193,7 +205,7 @@ footer {
   20%,
   40%,
   70% {
-    opacity: 0.8;
+    opacity: 0.85;
   }
 }
 
@@ -203,14 +215,14 @@ footer {
       0 0 5px #aaaf, 0 0 5px #aaaf;
   }
   33% {
-    text-shadow: 0 0 25px rgb(255, 0, 221), 0 0 25px rgb(255, 0, 221),
-      0 0 15px rgb(255, 0, 221), 0 0 15px rgb(255, 0, 221),
-      0 0 5px rgb(255, 0, 221), 0 0 5px rgb(255, 0, 221);
+    text-shadow: 0 0 25px rgb(255, 187, 0), 0 0 25px rgb(255, 187, 0),
+      0 0 15px rgb(255, 187, 0), 0 0 15px rgb(255, 187, 0),
+      0 0 5px rgb(255, 187, 0), 0 0 5px rgb(255, 187, 0);
   }
   67% {
-    text-shadow: 0 0 25px rgb(0, 162, 255), 0 0 25px rgb(0, 162, 255),
-      0 0 15px rgb(0, 162, 255), 0 0 15px rgb(0, 162, 255),
-      0 0 5px rgb(0, 162, 255), 0 0 5px rgb(0, 162, 255);
+    text-shadow: 0 0 25px rgb(255, 187, 0), 0 0 25px rgb(255, 187, 0),
+      0 0 15px rgb(255, 187, 0), 0 0 15px rgb(255, 187, 0),
+      0 0 5px rgb(255, 187, 0), 0 0 5px rgb(255, 187, 0);
   }
   100% {
     text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
