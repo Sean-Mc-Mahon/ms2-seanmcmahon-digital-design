@@ -12,7 +12,7 @@ for (let i = 0; i < splitText1.length; i++) {
 }
 
 let char1 = 0;
-let timer1 = setInterval(onTick1, 300);
+let timer1 = setInterval(onTick1, 100);
 
 //add class of fade to all characters at an interval
 function onTick1() {
@@ -61,3 +61,36 @@ function complete2() {
   clearInterval(timer2);
   timer2 = null;
 }
+
+//BURGER ANIMATION
+const burger = document.querySelector(".burger");
+
+//FUNCTIONS
+function navToggle(e) {
+  if (!e.target.classList.contains("active")) {
+    e.target.classList.add("active");
+    gsap.to(".line1", 0.5, {
+      rotate: "45",
+      y: 9.5,
+      background: "var(--bg1)",
+    });
+    gsap.to(".line2", 0.5, { autoAlpha: 0 });
+    gsap.to(".line3", 0.5, {
+      rotate: "-45",
+      y: -9.5,
+      background: "var(--bg1)",
+    });
+    gsap.to(".drop1, .drop2", 1, { color: "var(--bg1)" });
+    gsap.to(".toggle-nav", 1, { clipPath: "circle(2500px at 100% -10%" });
+  } else {
+    e.target.classList.remove("active");
+    gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "var(--text1)" });
+    gsap.to(".line2", 0.5, { autoAlpha: 1 });
+    gsap.to(".line3", 0.5, { rotate: "0", y: 0, background: "var(--text1)" });
+    gsap.to(".toggle-nav", 1, { clipPath: "circle(50px at 100% -20%" });
+    gsap.to(".drop1, .drop2", 1, { color: "var(--text1)" });
+  }
+}
+
+//EVENT LISTENERS
+burger.addEventListener("click", navToggle);
