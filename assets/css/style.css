@@ -1,3 +1,4 @@
+/*GLOBAL*/
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +41,7 @@ li a {
 
 h1 {
   font-family: "Lily Script One", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--text1);
 }
 
@@ -52,7 +53,7 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
-/*navigation*/
+/*NAVIGATION*/
 
 /*title text animation
 display changed to inline block to enable text to translate*/
@@ -65,6 +66,11 @@ display changed to inline block to enable text to translate*/
 .logo span.fade {
   opacity: 1;
   transform: translateY(0px);
+}
+
+/*second drop to be dispalyed on larger screens*/
+.drop2 {
+  display: none;
 }
 
 nav {
@@ -91,8 +97,11 @@ nav {
   justify-content: flex-start;
   align-items: center;
 }
+#logo-text {
+  display: flex;
+}
 
-/*main*/
+/*MAIN*/
 main {
   display: flex;
   align-items: center;
@@ -102,7 +111,7 @@ main {
   margin: auto;
 }
 
-/*home gallery*/
+/*HOME GALLERY*/
 .gallery-container {
   display: flex;
   justify-content: space-evenly;
@@ -128,7 +137,7 @@ main {
   transform: rotate(-180deg);
 }
 
-/*footer*/
+/*FOOTER*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -152,7 +161,7 @@ footer {
   color: var(--bg1);
 }
 
-/*logo animation*/
+/*LOGO ANIMATION*/
 #cog1 {
   animation: cog1 3s linear;
   transform-box: fill-box;
@@ -243,6 +252,9 @@ media queries
 
 /*sm*/
 @media (min-width: 768px) {
+  .drop2 {
+    display: inline-block;
+  }
   .copyright {
     font-size: 1rem;
   }
