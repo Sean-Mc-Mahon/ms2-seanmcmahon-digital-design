@@ -47,7 +47,7 @@ li a {
 
 h1 {
   font-family: "Lily Script One", cursive;
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.3rem + 1vw);
   color: var(--text1);
 }
 
@@ -117,10 +117,11 @@ nav {
 }
 #logo-text {
   display: flex;
+  flex-direction: column;
   z-index: 2;
 }
 #logo-image {
-  width: 30%;
+  width: 40%;
   z-index: 2;
 }
 
@@ -238,7 +239,7 @@ display changed to inline block to enable text to translate*/
 
 /*second drop to be dispalyed on larger screens*/
 .drop2 {
-  display: none;
+  font-size: calc(0.6rem + 1vw);
 }
 
 /*MAIN*/
@@ -314,9 +315,12 @@ media queries
 }
 
 /*small tablet*/
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 565px) {
+  #logo-text {
+    flex-direction: row;
+  }
   .drop2 {
-    display: inline-block;
+    font-size: calc(1.2rem + 1vw);
   }
   #logo-image {
     width: 20%;
