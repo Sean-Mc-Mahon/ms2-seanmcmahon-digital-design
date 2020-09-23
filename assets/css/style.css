@@ -67,8 +67,8 @@ svg.gallery-heading {
 }
 
 .gallery-heading {
-  -webkit-animation: linefill 1s ease forwards 1s;
-          animation: linefill 1s ease forwards 1s;
+  -webkit-animation: linefill 2s ease forwards 1.5s;
+          animation: linefill 2s ease forwards 1.5s;
 }
 
 .gallery-heading path {
