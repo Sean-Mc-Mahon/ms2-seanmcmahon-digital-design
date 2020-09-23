@@ -290,7 +290,7 @@ footer {
 }
 
 .copyright {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 0 1rem;
 }
 
@@ -299,8 +299,11 @@ footer {
 }
 
 .social-links ul li i {
-  text-transform: uppercase;
+  font-size: 1.3rem;
   color: var(--bg1);
+}
+.social-links ul li i:hover {
+  font-size: 1.5rem;
 }
 
 /*------------------------------------------------------------------------------
@@ -343,6 +346,10 @@ media queries
 
 /*monitor*/
 @media screen and (min-width: 1200px) {
+  .drop1,
+  .drop2 {
+    font-size: calc(1.2rem + 1.3vw);
+  }
   .burger {
     display: none;
   }
