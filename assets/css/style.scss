@@ -1,3 +1,5 @@
+@import "home";
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -64,7 +66,7 @@ nav {
   width: 95%;
   margin: auto;
   display: flex;
-  flex: 1 1 10rem;
+  flex: 1 1 50rem;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg1);
@@ -253,30 +255,42 @@ main {
   margin: auto;
 }
 
-/*HOME GALLERY*/
-.gallery-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+/*CSS GRID SETTINGS*/
+.width-1 {
+  grid-column: span 6;
 }
-
-.gallery-item {
-  border: 1px solid black;
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  margin: 0 2rem;
+.width-2 {
+  grid-column: span 6;
 }
-.gallery-image img {
-  width: 200px;
-  height: 200px;
+.width-3 {
+  grid-column: span 6;
 }
-
-.gallery-text p {
-  font-size: 1.7rem;
-  letter-spacing: 0.2rem;
-  writing-mode: vertical-rl;
-  transform: rotate(-180deg);
+.width-4 {
+  grid-column: span 6;
+}
+.width-5 {
+  grid-column: span 6;
+}
+.width-6 {
+  grid-column: span 6;
+}
+.height-1 {
+  grid-row: span 2;
+}
+.height-2 {
+  grid-row: span 2;
+}
+.height-3 {
+  grid-row: span 2;
+}
+.height-4 {
+  grid-row: span 2;
+}
+.height-5 {
+  grid-row: span 2;
+}
+.height-6 {
+  grid-row: span 2;
 }
 
 /*FOOTER*/
@@ -342,13 +356,9 @@ media queries
 
 /*large tablet landscape*/
 @media screen and (min-width: 1024px) {
-}
-
-/*monitor*/
-@media screen and (min-width: 1200px) {
   .drop1,
   .drop2 {
-    font-size: calc(1.2rem + 1.3vw);
+    font-size: calc(1rem + 1.3vw);
   }
   .burger {
     display: none;
@@ -359,6 +369,46 @@ media queries
   .nav-links ul {
     display: flex;
   }
+  .width-1 {
+    grid-column: span 1;
+  }
+  .width-2 {
+    grid-column: span 2;
+  }
+  .width-3 {
+    grid-column: span 3;
+  }
+  .width-4 {
+    grid-column: span 4;
+  }
+  .width-5 {
+    grid-column: span 5;
+  }
+  .width-6 {
+    grid-column: span 6;
+  }
+  .height-1 {
+    grid-row: span 1;
+  }
+  .height-2 {
+    grid-row: span 2;
+  }
+  .height-3 {
+    grid-row: span 3;
+  }
+  .height-4 {
+    grid-row: span 4;
+  }
+  .height-5 {
+    grid-row: span 5;
+  }
+  .height-6 {
+    grid-row: span 6;
+  }
+}
+
+/*monitor*/
+@media screen and (min-width: 1200px) {
 }
 
 /*xl monitor*/

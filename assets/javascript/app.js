@@ -92,3 +92,10 @@ function navToggle(e) {
 
 //EVENT LISTENERS
 burger.addEventListener("click", navToggle);
+
+//TEXT ANIMATION
+const heading = document.querySelectorAll(".gallery-heading path");
+
+for (let i = 0; i < heading.length; i++) {
+  console.log(`Letter ${i} is ${heading[i].getTotalLength()}`);
+}
