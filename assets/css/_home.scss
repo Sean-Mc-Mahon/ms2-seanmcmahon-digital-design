@@ -16,6 +16,11 @@
   overflow: hidden;
   display: flex;
   align-items: baseline;
+  transition: 1s;
+}
+
+.gallery-item:hover {
+  border: 2px solid var(--text1);
 }
 
 .gallery-item .gallery-image {
@@ -39,14 +44,6 @@
 
 .gallery-text {
   margin: 0 0.9rem 0 0.3rem;
-}
-
-.gallery-text p {
-  padding: 0 0 0.5rem 0.5rem;
-  font-size: 1.7rem;
-  letter-spacing: 0.2rem;
-  writing-mode: vertical-rl;
-  transform: rotate(-180deg);
 }
 
 svg.gallery-heading {

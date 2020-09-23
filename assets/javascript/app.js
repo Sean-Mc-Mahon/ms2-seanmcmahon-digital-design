@@ -99,3 +99,24 @@ const heading = document.querySelectorAll(".gallery-heading path");
 for (let i = 0; i < heading.length; i++) {
   console.log(`Letter ${i} is ${heading[i].getTotalLength()}`);
 }
+
+//DARK MODE TOGGLE
+//modified from youtube tutorial by DesignCourse:https://youtu.be/ZKXv_ZHQ654
+var checkbox = document.querySelector("input[name=theme");
+
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+});
+
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
