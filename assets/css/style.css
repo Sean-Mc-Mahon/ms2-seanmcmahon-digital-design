@@ -4,7 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
 }
 
 html {
@@ -24,6 +23,11 @@ html[data-theme="dark"] {
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--text1);
+}
+
+/*body overflow hidden when nav toggle is active*/
+body.hide {
+  overflow: hidden;
 }
 
 a {
@@ -102,8 +106,8 @@ nav {
 }
 
 .toggle-nav-link {
-  font-size: 3rem;
-  padding: 1rem;
+  font-size: calc(1.2rem + 1vw);
+  padding: 0.6rem;
   color: var(--bg1);
   height: 100%;
   display: -webkit-box;
