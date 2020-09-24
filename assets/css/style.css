@@ -581,7 +581,7 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   background-color: var(--panel);
-  min-height: 10vh;
+  min-height: 8vh;
 }
 
 .copyright {
@@ -610,7 +610,7 @@ media queries
 ------------------------------------------------------------------------------*/
 /*xxs*/
 /*phone (default)*/
-@media screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 850px) and (orientation: landscape) {
   .height-1 {
     grid-row: span 4;
   }
