@@ -4,7 +4,7 @@
 
 ### [GitHub](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design)
 
-![Various Devices](#)
+![Various Devices](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/am-i-responsive.JPG)
 
 Sean McMahon-Digital Design & Fabrication is a Milestone 2 project, it is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
 
