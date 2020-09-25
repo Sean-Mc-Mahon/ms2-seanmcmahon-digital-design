@@ -43,13 +43,6 @@ li {
   list-style: none;
 }
 
-li a {
-  margin-right: 1rem;
-  font-size: calc(0.3rem + 1vw);
-  font-weight: 600;
-  cursor: pointer;
-}
-
 h1 {
   font-family: "Lily Script One", cursive;
   font-size: calc(1.3rem + 1vw);
@@ -69,7 +62,7 @@ nav {
   width: 95%;
   margin: auto;
   display: flex;
-  flex: 1 1 50rem;
+  // flex: 1 1 50rem;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg1);
@@ -91,13 +84,18 @@ nav {
   clip-path: circle(50px at 100% -20%);
 }
 
-.toggle-nav-links {
-  padding-top: 4rem;
+.nav-links li a {
+  margin-right: 1rem;
+  font-size: calc(0.3rem + 1vw);
+  font-weight: 600;
+  cursor: pointer;
 }
 
+
 .toggle-nav-link {
+  font-weight: 700;
   font-size: calc(1.2rem + 1vw);
-  padding: 0.6rem;
+  margin:calc(2rem + 1vw) 0rem;
   color: var(--bg1);
   height: 100%;
   display: flex;
@@ -116,6 +114,13 @@ nav {
 
 .nav-link:hover {
   border-bottom: 2px solid var(--text1);
+}
+
+.active-nav-link {
+  border-bottom: 2px solid var(--text1);
+}
+.active-toggle-nav-link {
+  border-bottom: 2px solid var(--bg1);
 }
 
 .logo {
@@ -386,6 +391,14 @@ media queries
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+  /*Toggle Nav*/
+  .toggle-nav-links {
+    transform: translateY(20px);
+  }
+  .toggle-nav-link {
+    margin: .5rem;
+  }
+  /*CSS Grid*/
   .height-1 {
     grid-row: span 4;
   }
