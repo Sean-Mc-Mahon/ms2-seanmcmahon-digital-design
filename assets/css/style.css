@@ -98,6 +98,21 @@ svg.gallery-heading {
   }
 }
 
+.carousel-container-l {
+  max-width: 70rem;
+  margin-bottom: 3rem;
+}
+
+.models {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+model-viewer {
+  height: 600px;
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -449,6 +464,10 @@ display changed to inline block to enable text to translate*/
 
 /*DARK TOGGLE*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
+.toggle-container {
+  margin-bottom: 2rem;
+}
+
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -500,6 +519,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
