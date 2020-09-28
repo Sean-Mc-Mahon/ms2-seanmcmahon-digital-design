@@ -212,10 +212,16 @@ nav {
 }
 
 .nav-links li a {
+  color: var(--text1);
   margin-right: 1rem;
+  padding: 0;
   font-size: calc(0.3rem + 1vw);
   font-weight: 600;
   cursor: pointer;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid var(--text1);
 }
 
 .toggle-nav-link {
@@ -245,10 +251,6 @@ nav {
 
 .nav-links ul {
   display: none;
-}
-
-.nav-link:hover {
-  border-bottom: 2px solid var(--text1);
 }
 
 .active-nav-link {
@@ -583,6 +585,11 @@ main {
 
 .height-6 {
   grid-row: span 2;
+}
+
+/*CAROUSEL*/
+.carousel-caption h3 {
+  text-shadow: 2px 2px 8px black;
 }
 
 /*FOOTER*/
