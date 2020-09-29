@@ -600,19 +600,12 @@ main {
 }
 
 /*CAROUSEL*/
-#carousel-portraits .carousel-control-next,
-#carousel-portraits .carousel-control-prev {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-#carousel-portraits .carousel-indicators {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
 .carousel-caption {
   text-shadow: 2px 2px 5px black;
+}
+
+.carousel-indicators li:hover {
+  opacity: 100%;
 }
 
 /*FOOTER*/
