@@ -153,8 +153,6 @@
         for="switch"
       ></label>
     </div>
-    <!-- <main> -->
-
     <main>
       <h1 class="page-title">Portraits</h1>
       <section class="carousel-container-l">
@@ -172,7 +170,6 @@
             <li data-target="#carousel-portraits" data-slide-to="1"></li>
             <li data-target="#carousel-portraits" data-slide-to="2"></li>
           </ol>
-
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img
@@ -229,15 +226,19 @@
         </div>
       </section>
       <section>
-        <video
-          poster="./assets/images/portraits/roxy.jpg"
-          controls
-          src="./assets/video/dog.mp4"
-        ></video>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 my-col">
+              <video
+                poster="./assets/images/portraits/roxy.jpg"
+                controls
+                src="./assets/video/dog.mp4"
+              ></video>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <!-- </main> -->
     <footer>
       <div class="copyright">
         <p>&copy 2020 Sean McMahon</p>

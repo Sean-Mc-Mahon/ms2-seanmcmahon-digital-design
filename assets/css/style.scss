@@ -67,7 +67,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg1);
-  min-height: 6vh;
+  min-height: 4vh;
 }
 
 .toggle-nav {
@@ -269,7 +269,7 @@ display changed to inline block to enable text to translate*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
   display: block;
-  min-height: 4vh;
+  min-height: 2vh;
   // margin-bottom: 2rem;
 }
 
@@ -383,7 +383,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: var(--panel);
-  min-height: 10vh;
+  min-height: 8vh;
 }
 
 .copyright {
@@ -522,6 +522,10 @@ media queries
 
 /*monitor*/
 @media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: 534px;
+    height: 325px;
+  }
 }
 
 /*xl monitor*/

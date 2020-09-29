@@ -1,11 +1,7 @@
 /*HOME GALLERY*/
-.gallery-container {
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 15vh;
-  grid-gap: 30px;
-  grid-auto-flow: dense;
+.my-col {
+  display: flex;
+  justify-content: center;
 }
 
 .gallery-item {
