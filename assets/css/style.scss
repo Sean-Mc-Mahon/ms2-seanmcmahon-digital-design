@@ -362,8 +362,15 @@ main {
 }
 
 /*CAROUSEL*/
-.carousel-caption h3 {
-  text-shadow: 2px 2px 8px black;
+#carousel-portraits .carousel-control-next,
+#carousel-portraits .carousel-control-prev {
+  filter: invert(100%);
+}
+#carousel-portraits .carousel-indicators {
+  filter: invert(100%);
+}
+.carousel-caption {
+  text-shadow: 2px 2px 5px black;
 }
 
 /*FOOTER*/
