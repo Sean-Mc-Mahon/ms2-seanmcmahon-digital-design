@@ -93,7 +93,7 @@ svg.gallery-heading {
   }
 }
 
-.carousel-container-l {
+.carousel-container {
   max-width: 70rem;
   margin-bottom: 3rem;
 }
@@ -189,6 +189,14 @@ h4,
 h5,
 h6 {
   font-family: "Quicksand", sans-serif;
+}
+
+.big-text {
+  font-size: 3rem;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 /*NAVIGATION*/
@@ -565,6 +573,18 @@ main {
   margin: auto;
 }
 
+/*BOOTSTRAP*/
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
 /*CSS GRID SETTINGS*/
 .width-1 {
   grid-column: span 6;
@@ -615,6 +635,11 @@ main {
 }
 
 /*CAROUSEL*/
+.carousel-container {
+  max-width: 80rem;
+  margin-bottom: 3rem;
+}
+
 .carousel-caption {
   text-shadow: 2px 2px 5px black;
 }
@@ -781,6 +806,9 @@ media queries
   .gallery-item {
     width: 534px;
     height: 325px;
+  }
+  .big-text {
+    font-size: 6rem;
   }
 }
 

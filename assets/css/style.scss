@@ -59,6 +59,13 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+.big-text {
+  font-size: 3rem;
+}
+.bold {
+  font-weight: 500;
+}
+
 /*NAVIGATION*/
 nav {
   width: 95%;
@@ -328,6 +335,13 @@ main {
   margin: auto;
 }
 
+/*BOOTSTRAP*/
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 /*CSS GRID SETTINGS*/
 .width-1 {
   grid-column: span 6;
@@ -367,6 +381,10 @@ main {
 }
 
 /*CAROUSEL*/
+.carousel-container {
+  max-width: 80rem;
+  margin-bottom: 3rem;
+}
 
 .carousel-caption {
   text-shadow: 2px 2px 5px black;
@@ -525,6 +543,9 @@ media queries
   .gallery-item {
     width: 534px;
     height: 325px;
+  }
+  .big-text {
+    font-size: 6rem;
   }
 }
 
