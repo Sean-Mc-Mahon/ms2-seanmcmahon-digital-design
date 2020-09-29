@@ -132,6 +132,7 @@ nav {
 .logo {
   padding: 0.5rem;
   display: flex;
+  flex: 6 1 20rem;
   justify-content: flex-start;
   align-items: center;
 }
@@ -442,6 +443,9 @@ media queries
 
 /*large tablet*/
 @media screen and (min-width: 768px) {
+  #logo-image {
+    width: 15%;
+  }
   main {
     width: 95%;
     margin: auto;
@@ -456,15 +460,19 @@ media queries
 
 /*large tablet landscape*/
 @media screen and (min-width: 1024px) {
+  #logo-image {
+    width: 20%;
+  }
   .drop1,
   .drop2 {
-    font-size: calc(0.7rem + 1vw);
+    font-size: calc(1rem + 2vw);
   }
   .burger {
     display: none;
   }
   .nav-links {
     display: flex;
+    // flex: 3 1 20rem;
   }
   .nav-links ul {
     display: flex;
@@ -509,12 +517,11 @@ media queries
 
 /*monitor*/
 @media screen and (min-width: 1200px) {
-  .drop1,
-  .drop2 {
-    font-size: calc(1rem + 1vw);
-  }
 }
 
 /*xl monitor*/
 @media (min-width: 1500px) {
+  #logo-image {
+    width: 15%;
+  }
 }

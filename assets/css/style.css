@@ -271,6 +271,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 20rem;
+          flex: 6 1 20rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -683,6 +686,9 @@ media queries
 
 /*large tablet*/
 @media screen and (min-width: 768px) {
+  #logo-image {
+    width: 15%;
+  }
   main {
     width: 95%;
     margin: auto;
@@ -697,9 +703,12 @@ media queries
 
 /*large tablet landscape*/
 @media screen and (min-width: 1024px) {
+  #logo-image {
+    width: 20%;
+  }
   .drop1,
   .drop2 {
-    font-size: calc(0.7rem + 1vw);
+    font-size: calc(1rem + 2vw);
   }
   .burger {
     display: none;
@@ -753,12 +762,10 @@ media queries
 }
 
 /*monitor*/
-@media screen and (min-width: 1200px) {
-  .drop1,
-  .drop2 {
-    font-size: calc(1rem + 1vw);
+/*xl monitor*/
+@media (min-width: 1500px) {
+  #logo-image {
+    width: 15%;
   }
 }
-
-/*xl monitor*/
 /*# sourceMappingURL=style.css.map */
