@@ -67,7 +67,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg1);
-  min-height: 10vh;
+  min-height: 6vh;
 }
 
 .toggle-nav {
@@ -268,7 +268,9 @@ display changed to inline block to enable text to translate*/
 /*DARK TOGGLE*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
-  margin-bottom: 2rem;
+  display: block;
+  min-height: 4vh;
+  // margin-bottom: 2rem;
 }
 
 input[type="checkbox"] {
@@ -476,6 +478,9 @@ media queries
   }
   .nav-links ul {
     display: flex;
+  }
+  .page-title {
+    display: none;
   }
   .width-1 {
     grid-column: span 1;
