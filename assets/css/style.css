@@ -93,11 +93,6 @@ svg.gallery-heading {
   }
 }
 
-.carousel-container {
-  max-width: 70rem;
-  margin-bottom: 3rem;
-}
-
 .models {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,7 +498,6 @@ display changed to inline block to enable text to translate*/
 /*DARK TOGGLE*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
-  display: block;
   min-height: 2vh;
 }
 
@@ -555,6 +549,7 @@ label:active:after {
 
 /*MAIN*/
 main {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +631,7 @@ main {
 
 /*CAROUSEL*/
 .carousel-container {
-  max-width: 80rem;
+  max-width: 70rem;
   margin-bottom: 3rem;
 }
 
