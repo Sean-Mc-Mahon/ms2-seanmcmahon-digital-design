@@ -115,6 +115,10 @@ model-viewer {
   height: 600px;
 }
 
+video {
+  width: 100%;
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
