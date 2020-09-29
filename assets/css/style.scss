@@ -108,6 +108,11 @@ nav {
   justify-content: space-evenly;
 }
 
+.toggle-nav-link:hover {
+  color: var(--bg1);
+  border-bottom: 2px solid var(--bg1);
+}
+
 .nav-links {
   display: inline-block;
   align-items: center;
@@ -116,10 +121,6 @@ nav {
 .nav-links ul {
   display: none;
 }
-
-// .nav-link:hover {
-//   border-bottom: 2px solid var(--text1);
-// }
 
 .active-nav-link {
   border-bottom: 2px solid var(--text1);

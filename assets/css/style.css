@@ -242,6 +242,11 @@ nav {
           justify-content: space-evenly;
 }
 
+.toggle-nav-link:hover {
+  color: var(--bg1);
+  border-bottom: 2px solid var(--bg1);
+}
+
 .nav-links {
   display: inline-block;
   -webkit-box-align: center;
