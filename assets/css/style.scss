@@ -62,6 +62,7 @@ h6 {
 
 .big-text {
   font-size: 3rem;
+  display: none;
 }
 .bold {
   font-weight: 500;
@@ -501,6 +502,9 @@ media queries
   }
   .page-title {
     display: none;
+  }
+  .big-text {
+    display: inline-block;
   }
   .width-1 {
     grid-column: span 1;

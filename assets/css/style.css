@@ -99,6 +99,19 @@ svg.gallery-heading {
   }
 }
 
+.models {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#bookcase-model {
+  width: 400px;
+  height: 800px;
+}
+
 video {
   width: 100%;
 }
@@ -120,6 +133,11 @@ video {
 
 #carousel-portraits .carousel-indicators li.active, #carousel-portraits .carousel-indicators li:hover {
   opacity: 100%;
+}
+
+.carousel-item video {
+  max-width: 100%;
+  height: auto;
 }
 
 #library-model {
@@ -220,6 +238,7 @@ h6 {
 
 .big-text {
   font-size: 3rem;
+  display: none;
 }
 
 .bold {
@@ -790,6 +809,9 @@ media queries
   }
   .page-title {
     display: none;
+  }
+  .big-text {
+    display: inline-block;
   }
   .width-1 {
     grid-column: span 1;
