@@ -128,6 +128,18 @@ video {
   opacity: 100%;
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.scene,
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -499,6 +511,7 @@ display changed to inline block to enable text to translate*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
   min-height: 2vh;
+  margin-bottom: 1rem;
 }
 
 input[type="checkbox"] {

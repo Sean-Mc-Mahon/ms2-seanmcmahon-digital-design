@@ -1,0 +1,13 @@
+// .model-container {
+//   position: relative;
+// }
+main {
+  position: relative;
+  overflow: hidden;
+}
+.scene,
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

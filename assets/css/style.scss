@@ -1,6 +1,7 @@
 @import "home";
 @import "furniture";
 @import "portrait";
+@import "3d";
 
 /*GLOBAL*/
 * {
@@ -276,7 +277,7 @@ display changed to inline block to enable text to translate*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
   min-height: 2vh;
-  // margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 input[type="checkbox"] {

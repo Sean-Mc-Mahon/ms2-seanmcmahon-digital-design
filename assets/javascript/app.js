@@ -65,7 +65,7 @@ function complete2() {
 //BURGER ANIMATION
 const burger = document.querySelector(".burger");
 
-//FUNCTIONS
+//functions
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
     e.target.classList.add("active");
@@ -90,10 +90,10 @@ function navToggle(e) {
   }
 }
 
-//EVENT LISTENERS
+//event listeners
 burger.addEventListener("click", navToggle);
 
-//TEXT ANIMATION
+//text animation
 const heading = document.querySelectorAll(".gallery-heading path");
 
 for (let i = 0; i < heading.length; i++) {
@@ -120,3 +120,69 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 1000);
 };
+
+//3D MODEL ANIMATION
+//inspired by youtube tutorial by Dev Ed:https://youtu.be/tsMHONmUkvI
+
+//variables
+let container;
+let camera;
+let renderer;
+let scene;
+let house;
+
+function init() {
+  container = document.querySelector(".scene");
+
+  //create scene
+  scene = new THREE.Scene();
+
+  const fov = 70;
+  const aspect = container.clientWidth / container.clientHeight;
+  const near = 0.1;
+  const far = 500;
+
+  //camera setup
+  camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+  camera.position.set(0, 15, 150);
+
+  const ambient = new THREE.AmbientLight(0x404040, 2);
+  scene.add(ambient);
+
+  const light = new THREE.DirectionalLight(0xffffff, 3);
+  light.position.set(50, 100, 200);
+  scene.add(light);
+  //Renderer
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  container.appendChild(renderer.domElement);
+
+  //Load Model
+  let loader = new THREE.GLTFLoader();
+  loader.load("./assets/3d/scene.gltf", function (gltf) {
+    scene.add(gltf.scene);
+    house = gltf.scene.children[0];
+    animate();
+  });
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  // house.rotation.z += 0.0;
+  house.rotation.y += 0.01;
+  // house.rotation.x += 0.02;
+  renderer.render(scene, camera);
+}
+
+init();
+
+function onWindowResize() {
+  camera.aspect = container.clientWidth / container.clientHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize(container.clientWidth, container.clientHeight);
+}
+
+window.addEventListener("resize", onWindowResize);
