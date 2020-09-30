@@ -144,7 +144,7 @@ function init() {
 
   //camera setup
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 15, 150);
+  camera.position.set(0, 25, 90);
 
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
@@ -161,7 +161,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("./assets/3d/scene.gltf", function (gltf) {
+  loader.load("./assets/3d/library.gltf", function (gltf) {
     scene.add(gltf.scene);
     house = gltf.scene.children[0];
     animate();
@@ -171,7 +171,7 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
   // house.rotation.z += 0.0;
-  house.rotation.y += 0.01;
+  house.rotation.y += 0.03;
   // house.rotation.x += 0.02;
   renderer.render(scene, camera);
 }

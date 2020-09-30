@@ -11,7 +11,7 @@
 }
 
 html[data-theme="light"] {
-  --bg1: #fcfcfc;
+  --bg1: #ffffff;
   --panel: #a3a3a3;
   --panel2: #434343;
   --text1: black;
@@ -22,7 +22,7 @@ html[data-theme="dark"] {
   --bg1: black;
   --panel: #434343;
   --panel2: #a3a3a3;
-  --text1: #fcfcfc;
+  --text1: #ffffff;
   --text2: #3694ff;
 }
 
@@ -447,6 +447,7 @@ media queries
   .gallery-container {
     grid-auto-rows: 100px;
   }
+  
 }
 
 /*small tablet*/
