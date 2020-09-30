@@ -17,8 +17,6 @@
   display: flex;
   -webkit-transition: 1s;
   transition: 1s;
-  border: 1px solid var(--text1);
-  border-radius: 5px;
 }
 
 .gallery-item .gallery-image {
@@ -51,6 +49,10 @@
 .text-back {
   padding: 0 0.5rem;
   background-color: var(--panel);
+}
+
+.gallery-text {
+  margin: 0 0.9rem 0 0.3rem;
 }
 
 svg.gallery-heading {

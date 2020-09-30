@@ -10,8 +10,8 @@
   overflow: hidden;
   display: flex;
   transition: 1s;
-  border: 1px solid var(--text1);
-  border-radius: 5px;
+  // border: 1px solid var(--text1);
+  // border-radius: 5px;
 }
 
 .gallery-item .gallery-image {
@@ -44,9 +44,9 @@
   background-color: var(--panel);
 }
 
-// .gallery-text {
-//   margin: 0 0.9rem 0 0.3rem;
-// }
+.gallery-text {
+  margin: 0 0.9rem 0 0.3rem;
+}
 
 svg.gallery-heading {
   padding: 0.05rem;
