@@ -217,12 +217,18 @@ function initMap() {
       },
     ]
   });
-  //info window
+
+  //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
   const address = '<h6>Sean Mc-Digital Designs <br> St. Lukes Ave. D8, Ireland</h6>';
   const infoWindow = new google.maps.InfoWindow({
     content: address,
   });
-  // The marker, positioned at home
+  //zoom reset code and marker animation taken from google documentation:https://developers.google.com/maps/documentation/javascript/events#MarkerEvents
+  map.addListener("center_changed", () => {
+    window.setTimeout(() => {
+      map.panTo(marker.getPosition());
+    }, 2000);
+  });
   var marker = new google.maps.Marker({ position: homePin, map: map, animation: google.maps.Animation.DROP, icon: "./assets/icons/map-cog.png" });
   marker.addListener("click", () => {
     map.setZoom(16);

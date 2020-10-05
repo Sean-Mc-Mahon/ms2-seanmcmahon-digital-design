@@ -148,12 +148,12 @@ nav {
   padding: 0.5rem;
   display: flex;
   flex: 6 1 20rem;
-  justify-content: flex-start;
   align-items: center;
 }
 #logo-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 5;
 }
 #logo-image {
@@ -274,9 +274,11 @@ display changed to inline block to enable text to translate*/
 }
 .drop1 {
   font-size: calc(1.6rem + 1vw);
+  margin: 0;
 }
 .drop2 {
   font-size: calc(0.7rem + 1vw);
+  margin: 0;
 }
 
 /*DARK TOGGLE*/

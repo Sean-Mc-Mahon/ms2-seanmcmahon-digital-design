@@ -362,9 +362,6 @@ nav {
   -webkit-box-flex: 6;
       -ms-flex: 6 1 20rem;
           flex: 6 1 20rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,6 +375,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 5;
 }
 
@@ -556,10 +556,12 @@ display changed to inline block to enable text to translate*/
 
 .drop1 {
   font-size: calc(1.6rem + 1vw);
+  margin: 0;
 }
 
 .drop2 {
   font-size: calc(0.7rem + 1vw);
+  margin: 0;
 }
 
 /*DARK TOGGLE*/
