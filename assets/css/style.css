@@ -1,64 +1,33 @@
-/*HOME GALLERY*/
-.my-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery-item {
-  width: 100%;
-  height: 100%;
+.slider {
+  width: calc( 210px + 18vw);
+  height: calc( 140px + 12vw);
+  margin: 10px auto;
+  position: relative;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: 1s;
   transition: 1s;
   border: 1px solid var(--text1);
-  border-radius: 5px;
+  border-radius: .5rem;
 }
 
-.gallery-item .gallery-image {
-  width: 100%;
+.slider-text {
+  position: absolute;
   height: 100%;
-  overflow: hidden;
-}
-
-.gallery-item .gallery-image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.gallery-item:hover .gallery-image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.dog video {
-  height: 100%;
-  width: 100%;
-}
-
-.text-back {
-  padding: 0 0.5rem;
-  background-color: var(--panel);
-}
-
-.gallery-text {
-  margin: 0 0.9rem 0 0.3rem;
+  width: 10%;
+  background-color: rgba(129, 129, 129, 0.6);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 svg.gallery-heading {
-  padding: 0.05rem;
+  padding: .2rem;
+  position: relative;
+  bottom: 5px;
 }
 
 .gallery-heading {
@@ -100,6 +69,261 @@ svg.gallery-heading {
   }
   to {
     fill: var(--text1);
+  }
+}
+
+.slider-furniture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.imgur.com/ZsBYbCb.jpg);
+  background-size: 100% auto;
+  -webkit-animation: slideF 15s infinite;
+          animation: slideF 15s infinite;
+}
+
+@-webkit-keyframes slideF {
+  15% {
+    background: url(https://i.imgur.com/ZsBYbCb.jpg);
+    background-size: 100% auto;
+  }
+  25% {
+    background: url(https://i.imgur.com/HceqoJI.jpg);
+    background-size: 100% auto;
+  }
+  40% {
+    background: url(https://i.imgur.com/HceqoJI.jpg);
+    background-size: 100% auto;
+  }
+  50% {
+    background: url(https://i.imgur.com/RaYW2Tx.jpg);
+    background-size: 100% auto;
+  }
+  65% {
+    background: url(https://i.imgur.com/RaYW2Tx.jpg);
+    background-size: 100% auto;
+  }
+  75% {
+    background: url(https://i.imgur.com/RsCZNG3.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/RsCZNG3.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/ZsBYbCb.jpg);
+    background-size: 100% auto;
+  }
+}
+
+@keyframes slideF {
+  15% {
+    background: url(https://i.imgur.com/ZsBYbCb.jpg);
+    background-size: 100% auto;
+  }
+  25% {
+    background: url(https://i.imgur.com/HceqoJI.jpg);
+    background-size: 100% auto;
+  }
+  40% {
+    background: url(https://i.imgur.com/HceqoJI.jpg);
+    background-size: 100% auto;
+  }
+  50% {
+    background: url(https://i.imgur.com/RaYW2Tx.jpg);
+    background-size: 100% auto;
+  }
+  65% {
+    background: url(https://i.imgur.com/RaYW2Tx.jpg);
+    background-size: 100% auto;
+  }
+  75% {
+    background: url(https://i.imgur.com/RsCZNG3.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/RsCZNG3.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/ZsBYbCb.jpg);
+    background-size: 100% auto;
+  }
+}
+
+.slider-portraits {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.imgur.com/Cpidbri.jpg);
+  background-size: 100% auto;
+  -webkit-animation: slideP 20s infinite;
+          animation: slideP 20s infinite;
+}
+
+@-webkit-keyframes slideP {
+  23% {
+    background: url(https://i.imgur.com/Cpidbri.jpg);
+    background-size: 100% auto;
+  }
+  33% {
+    background: url(https://i.imgur.com/3RdLTQ1.jpg);
+    background-size: 100% auto;
+  }
+  56% {
+    background: url(https://i.imgur.com/3RdLTQ1.jpg);
+    background-size: 100% auto;
+  }
+  66% {
+    background: url(https://i.imgur.com/f6wvxGw.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/f6wvxGw.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/Cpidbri.jpg);
+    background-size: 100% auto;
+  }
+}
+
+@keyframes slideP {
+  23% {
+    background: url(https://i.imgur.com/Cpidbri.jpg);
+    background-size: 100% auto;
+  }
+  33% {
+    background: url(https://i.imgur.com/3RdLTQ1.jpg);
+    background-size: 100% auto;
+  }
+  56% {
+    background: url(https://i.imgur.com/3RdLTQ1.jpg);
+    background-size: 100% auto;
+  }
+  66% {
+    background: url(https://i.imgur.com/f6wvxGw.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/f6wvxGw.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/Cpidbri.jpg);
+    background-size: 100% auto;
+  }
+}
+
+.slider-3d {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.imgur.com/W8HkL0T.jpg);
+  background-size: 100% auto;
+}
+
+.slider-renders {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.imgur.com/bjLQRi6.jpg);
+  background-size: 100% auto;
+  -webkit-animation: slideR 20s infinite;
+          animation: slideR 20s infinite;
+}
+
+.slider-renders:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+@-webkit-keyframes slideR {
+  15% {
+    background: url(https://i.imgur.com/bjLQRi6.jpg);
+    background-size: 100% auto;
+  }
+  25% {
+    background: url(https://i.imgur.com/CTfGC40.jpg);
+    background-size: 100% auto;
+  }
+  40% {
+    background: url(https://i.imgur.com/CTfGC40.jpg);
+    background-size: 100% auto;
+  }
+  50% {
+    background: url(https://i.imgur.com/Ito7HKx.jpg);
+    background-size: 100% auto;
+  }
+  65% {
+    background: url(https://i.imgur.com/Ito7HKx.jpg);
+    background-size: 100% auto;
+  }
+  75% {
+    background: url(https://i.imgur.com/T7ulbdR.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/T7ulbdR.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/bjLQRi6.jpg);
+    background-size: 100% auto;
+  }
+}
+
+@keyframes slideR {
+  15% {
+    background: url(https://i.imgur.com/bjLQRi6.jpg);
+    background-size: 100% auto;
+  }
+  25% {
+    background: url(https://i.imgur.com/CTfGC40.jpg);
+    background-size: 100% auto;
+  }
+  40% {
+    background: url(https://i.imgur.com/CTfGC40.jpg);
+    background-size: 100% auto;
+  }
+  50% {
+    background: url(https://i.imgur.com/Ito7HKx.jpg);
+    background-size: 100% auto;
+  }
+  65% {
+    background: url(https://i.imgur.com/Ito7HKx.jpg);
+    background-size: 100% auto;
+  }
+  75% {
+    background: url(https://i.imgur.com/T7ulbdR.jpg);
+    background-size: 100% auto;
+  }
+  90% {
+    background: url(https://i.imgur.com/T7ulbdR.jpg);
+    background-size: 100% auto;
+  }
+  100% {
+    background: url(https://i.imgur.com/bjLQRi6.jpg);
+    background-size: 100% auto;
+  }
+}
+
+/*md-large tablet*/
+@media screen and (min-width: 768px) {
+  .slider {
+    width: calc( 210px + 15vw);
+    height: calc( 140px + 10vw);
+  }
+}
+
+/*lg-large tablet landscape*/
+@media screen and (min-width: 1024px) {
+  .slider {
+    width: calc( 210px + 18vw);
+    height: calc( 140px + 12vw);
   }
 }
 
