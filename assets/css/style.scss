@@ -101,10 +101,13 @@ nav {
   font-size: calc(0.3rem + 1vw);
   font-weight: 600;
   cursor: pointer;
+  opacity: 0.5;
+  line-height: 1.1;
 }
 
 .nav-links li a:hover {
   border-bottom: 2px solid var(--text1);
+  opacity: 1;
 }
 
 .toggle-nav-link {
@@ -132,8 +135,9 @@ nav {
   display: none;
 }
 
-.active-nav-link {
+.nav-links .active-nav-link {
   border-bottom: 2px solid var(--text1);
+  opacity: .9;
 }
 .active-toggle-nav-link {
   border-bottom: 2px solid var(--bg1);
