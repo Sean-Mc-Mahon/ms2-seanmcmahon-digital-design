@@ -2,6 +2,7 @@
 @import "furniture";
 @import "portrait";
 @import "3d";
+@import "contact";
 
 /*GLOBAL*/
 * {
@@ -99,7 +100,7 @@ nav {
   margin-right: 1rem;
   padding: 0;
   font-size: calc(0.3rem + 1vw);
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   opacity: 0.5;
   line-height: 1.1;
