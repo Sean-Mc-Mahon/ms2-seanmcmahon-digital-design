@@ -61,6 +61,10 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+.blue{
+  color: #0077ff;
+}
+
 .big-text {
   font-size: 3rem;
   display: none;
@@ -281,10 +285,138 @@ display changed to inline block to enable text to translate*/
   margin: 0;
 }
 
+/*Color Radio Buttons*/
+.color-buttons {
+  padding-right: 1rem;
+  display: flex;
+}
+.btn-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+/* Hide the browser's default checkbox */
+.btn-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.btn-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 27px;
+  width: 27px;
+  background-color: var(--bg1);
+}
+
+/* On mouse-over, add a grey background color */
+.btn-container:hover input ~ .btn-checkmark {
+  background-color: var(--panel);
+}
+
+/* Customize the label (the container) */
+.btn-container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.btn-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.btn-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: var(--bg1);
+  border-radius: 50%;
+}
+.btn-checkmark-blue {
+  border: 3px solid #2196F3;
+}
+.btn-checkmark-orange {
+  border: 3px solid #f39f21;
+}
+.btn-checkmark-normal {
+  border: 3px solid var(--panel2);
+}
+
+/* On mouse-over, add a grey background color */
+.btn-container:hover input ~ .btn-checkmark {
+  background-color: var(--panel);
+}
+
+/* When the radio button is checked, add a blue background */
+.btn-container-blue input:checked ~ .btn-checkmark {
+  background-color: #2196F3;
+}
+.btn-container-orange input:checked ~ .btn-checkmark {
+  background-color: #f39f21;
+}
+.btn-container-normal input:checked ~ .btn-checkmark {
+  background-color: var(--panel2);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.btn-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.btn-container input:checked ~ .btn-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.btn-container .btn-checkmark:after {
+  top: 4.4px;
+  left: 4.4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg1);
+}
+
 /*DARK TOGGLE*/
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
-  min-height: 2vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 4vh;
   margin-bottom: 1rem;
 }
 
@@ -294,7 +426,7 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-label {
+#darkLight {
   cursor: pointer;
   text-indent: -9999px;
   width: 52px;
@@ -307,7 +439,7 @@ label {
   right: 1rem;
 }
 
-label:after {
+#darkLight:after {
   content: "";
   position: absolute;
   top: 3px;
@@ -319,11 +451,11 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+input:checked + #darkLight {
   background: var(--panel);
 }
 
-input:checked + label:after {
+input:checked + #darkLight:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }

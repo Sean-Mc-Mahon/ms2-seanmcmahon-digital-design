@@ -78,8 +78,8 @@
           </svg>
         </a>
         <a id="logo-text" href="./index.html">
-          <h1 class="drop1">Sean Mc</h1>
-          <h1 class="drop2">-Digital Design</h1>
+          <h1 class="drop1 normal">Sean Mc</h1>
+          <h1 class="drop2 normal">-Digital Design</h1>
         </a>
       </div>
       <div class="nav-links">
@@ -99,7 +99,21 @@
     </nav>
   </header>
   <div class="toggle-container">
-    <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+    <div class="color-buttons">
+      <label class="btn-container btn-container-normal">
+        <input type="radio" id="styleChoice1" name="set-style" value="blue" checked>
+        <span class="btn-checkmark btn-checkmark-normal"></span>
+      </label>
+      <label class="btn-container btn-container-blue">
+        <input type="radio" id="styleChoice1" name="set-style" value="blue">
+        <span class="btn-checkmark btn-checkmark-blue"></span>
+      </label>
+      <label class="btn-container btn-container-orange">
+        <input type="radio" id="styleChoice2" name="set-style" value="orange">
+        <span class="btn-checkmark btn-checkmark-orange"></span>
+      </label>
+    </div>
+    <input type="checkbox" id="switch" name="theme" /><label id="darkLight" for="switch"></label>
   </div>
   <main>
     <!-- <div class="container-fluid container-home">
