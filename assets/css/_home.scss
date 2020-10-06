@@ -136,6 +136,10 @@ svg.gallery-heading {
   background-size: 100% auto;
   animation: slideF 15s infinite;
 }
+.slider-furniture:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 
  @keyframes slideF{
   15%{
@@ -180,6 +184,10 @@ svg.gallery-heading {
   background-size: 100% auto;
   animation: slideP 20s infinite;
 }
+.slider-portraits:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 @keyframes slideP{
   23%{
     background: url(https://i.imgur.com/Cpidbri.jpg);
@@ -214,6 +222,10 @@ svg.gallery-heading {
   background-image: url(https://i.imgur.com/W8HkL0T.jpg);
   background-size: 100% auto;
 }
+.slider-3d:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 
 .slider-renders{
   position: relative;
@@ -225,7 +237,7 @@ svg.gallery-heading {
 }
 .slider-renders:hover{
   transform: scale(1.1);
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes slideR{
