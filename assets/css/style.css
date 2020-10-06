@@ -867,11 +867,6 @@ display changed to inline block to enable text to translate*/
   background-color: var(--bg1);
 }
 
-/* On mouse-over, add a grey background color */
-.btn-container:hover input ~ .btn-checkmark {
-  background-color: var(--panel);
-}
-
 /* Customize the label (the container) */
 .btn-container {
   display: block;
@@ -919,12 +914,7 @@ display changed to inline block to enable text to translate*/
   border: 3px solid var(--panel2);
 }
 
-/* On mouse-over, add a grey background color */
-.btn-container:hover input ~ .btn-checkmark {
-  background-color: var(--panel);
-}
-
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, fill the circle*/
 .btn-container-blue input:checked ~ .btn-checkmark {
   background-color: #218B82;
 }
@@ -935,28 +925,6 @@ display changed to inline block to enable text to translate*/
 
 .btn-container-normal input:checked ~ .btn-checkmark {
   background-color: var(--panel2);
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.btn-checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.btn-container input:checked ~ .btn-checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.btn-container .btn-checkmark:after {
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--bg1);
 }
 
 /*DARK TOGGLE*/
@@ -1017,7 +985,7 @@ input:checked + #darkLight:after {
           transform: translateX(-100%);
 }
 
-label:active:after {
+#darkLight:active:after {
   width: 45px;
 }
 

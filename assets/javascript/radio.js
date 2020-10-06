@@ -1,12 +1,15 @@
 //Code modified from slack call in #interactive-front-end channel led by Eamon_lead on 23-09-20
-function applyStyle(style) {
+function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
+
   if (style === "Blue") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
       target[i].classList.remove('normal');
       target[i].classList.remove('orange');
       target[i].classList.add('blue');
-      console.log('blue');
+      document.querySelector("#styleChoice1").checked = false;
+      document.querySelector("#styleChoice2").checked = true;
+      document.querySelector('#styleChoice3').checked = false;
     }
   } else if (style === "Orange") {
     let target = document.querySelectorAll(".color");
@@ -14,7 +17,9 @@ function applyStyle(style) {
       target[i].classList.remove('normal');
       target[i].classList.remove('blue');
       target[i].classList.add('orange');
-      console.log('orange');
+      document.querySelector("#styleChoice1").checked = false;
+      document.querySelector("#styleChoice2").checked = false;
+      document.querySelector('#styleChoice3').checked = true;
     }
   } else if (style === "Normal") {
     let target = document.querySelectorAll(".color");
@@ -22,7 +27,9 @@ function applyStyle(style) {
       target[i].classList.remove('blue');
       target[i].classList.remove('orange');
       target[i].classList.add('normal');
-      console.log('normal');
+      document.querySelector("#styleChoice1").checked = true;
+      document.querySelector("#styleChoice2").checked = false;
+      document.querySelector('#styleChoice3').checked = false;
     }
   }
 }
@@ -36,10 +43,12 @@ function getUserStyleSetting() {
   for (i = 0; i < max; i++) {
     myRadioSett[i].onclick = function () {
       let style = this.value[0].toUpperCase() + this.value.slice(1);
-      console.log(style);
-      applyStyle(style);
+      sessionStorage.setItem("chosenStyle", style)
+      applyStyle();
     }
   }
 }
-
-getUserStyleSetting();
+window.onload = function () {
+  applyStyle();
+  getUserStyleSetting();
+}
