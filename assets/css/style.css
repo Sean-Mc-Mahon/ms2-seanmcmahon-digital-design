@@ -498,7 +498,7 @@ h6 {
 }
 
 .big-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: none;
 }
 
@@ -1047,6 +1047,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1141,7 +1144,7 @@ footer ul {
 }
 
 .copyright {
-  color: var(--bg1);
+  color: #fcfcfc;
   font-size: 0.9rem;
   margin: 0 1rem;
 }
@@ -1155,7 +1158,7 @@ footer ul {
 .social-links ul li i {
   margin-right: 1rem;
   font-size: 1.3rem;
-  color: var(--bg1);
+  color: #fcfcfc;
 }
 
 .social-links ul li i:hover {

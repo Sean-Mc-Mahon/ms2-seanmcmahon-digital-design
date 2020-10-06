@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: 1px solid black;
 }
 
 html[data-theme="light"] {
@@ -66,7 +67,7 @@ h6 {
 }
 
 .big-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: none;
 }
 .bold {
@@ -490,6 +491,7 @@ main {
 /*BOOTSTRAP*/
 .description {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
@@ -565,7 +567,7 @@ footer ul{
 }
 
 .copyright {
-  color: var(--bg1);
+  color: #fcfcfc;
   font-size: 0.9rem;
   margin: 0 1rem;
 }
@@ -577,7 +579,7 @@ footer ul{
 .social-links ul li i {
   margin-right: 1rem;
   font-size: 1.3rem;
-  color: var(--bg1);
+  color:  #fcfcfc;
 }
 .social-links ul li i:hover {
   color: #5da9ff;
