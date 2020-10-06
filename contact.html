@@ -85,8 +85,8 @@
           </svg>
         </a>
         <a id="logo-text" href="./index.html">
-          <h1 class="drop1">Sean Mc</h1>
-          <h1 class="drop2">-Digital Design</h1>
+          <h1 class="drop1 color">Sean Mc</h1>
+          <h1 class="drop2 color">-Digital Design</h1>
         </a>
       </div>
       <div class="nav-links">
@@ -100,7 +100,7 @@
           <li><a class="nav-link" href="furniture.html">Furniture</a></li>
           <li><a class="nav-link" href="portraits.html">Portraits</a></li>
           <li>
-            <a class="nav-link active-nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active-nav-link color" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -112,15 +112,29 @@
     </nav>
   </header>
   <div class="toggle-container">
-    <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+    <div class="color-buttons">
+      <label class="btn-container btn-container-normal">
+        <input type="radio" id="styleChoice1" name="set-style" value="normal" checked>
+        <span class="btn-checkmark btn-checkmark-normal"></span>
+      </label>
+      <label class="btn-container btn-container-blue">
+        <input type="radio" id="styleChoice2" name="set-style" value="blue">
+        <span class="btn-checkmark btn-checkmark-blue"></span>
+      </label>
+      <label class="btn-container btn-container-orange">
+        <input type="radio" id="styleChoice3" name="set-style" value="orange">
+        <span class="btn-checkmark btn-checkmark-orange"></span>
+      </label>
+    </div>
+    <input type="checkbox" id="switch" name="theme" /><label id="darkLight" for="switch"></label>
   </div>
   <main>
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="form-header">
-            <h3>Got a project in mind?</h3>
-            <h5>Let's work together!</h5>
+            <h3 class=" color">Got a project in mind?</h3>
+            <h5 class=" color">Let's work together!</h5>
           </div>
           <form onsubmit="return sendMail(this);">
             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required>
@@ -131,7 +145,7 @@
           </form>
         </div>
         <div class="col-lg-6">
-          <h3>I'm located in the liberties area of Dublin</h3>
+          <h3 class=" color">I'm located in the liberties area of Dublin</h3>
           <div id="map"></div>
         </div>
       </div>
@@ -189,8 +203,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
-  <script src="./assets/javascript/app.js"></script>
   <script src="assets/javascript/sendEmail.js"></script>
+  <script src="./assets/javascript/radio.js"></script>
+  <script src="./assets/javascript/app.js"></script>
+
 </body>
 
 </html>

@@ -141,7 +141,7 @@ nav {
 }
 
 .nav-links .active-nav-link {
-  border-bottom: 2px solid var(--text1);
+  font-weight: 800;
   opacity: .9;
 }
 .active-toggle-nav-link {
@@ -288,14 +288,15 @@ display changed to inline block to enable text to translate*/
 /*Color Radio Buttons*/
 /*Colors*/
 .normal{
-  color: var(--text1);
+  color: var(--text1) !important;
 }
 .blue{
-  color: #218B82;
+  color: #218B82 !important;
 }
 .orange{
-  color: #EB96AA;
+  color: #ff7797 !important;
 }
+
 .color-buttons {
   padding-right: 1rem;
   display: flex;
@@ -373,10 +374,10 @@ display changed to inline block to enable text to translate*/
   border-radius: 50%;
 }
 .btn-checkmark-blue {
-  border: 3px solid #2196F3;
+  border: 3px solid #218B82;
 }
 .btn-checkmark-orange {
-  border: 3px solid #f39f21;
+  border: 3px solid #ff7797;
 }
 .btn-checkmark-normal {
   border: 3px solid var(--panel2);
@@ -389,10 +390,10 @@ display changed to inline block to enable text to translate*/
 
 /* When the radio button is checked, add a blue background */
 .btn-container-blue input:checked ~ .btn-checkmark {
-  background-color: #2196F3;
+  background-color: #218B82;
 }
 .btn-container-orange input:checked ~ .btn-checkmark {
-  background-color: #f39f21;
+  background-color: #ff7797;
 }
 .btn-container-normal input:checked ~ .btn-checkmark {
   background-color: var(--panel2);
@@ -552,10 +553,19 @@ footer {
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
+  background-color: var(--panel);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul{
+  margin: 0;
 }
 
 .copyright {
-  color: var(--text1);
+  color: var(--bg1);
   font-size: 0.9rem;
   margin: 0 1rem;
 }
@@ -567,6 +577,7 @@ footer {
 .social-links ul li i {
   margin-right: 1rem;
   font-size: 1.3rem;
+  color: var(--bg1);
 }
 .social-links ul li i:hover {
   color: #5da9ff;

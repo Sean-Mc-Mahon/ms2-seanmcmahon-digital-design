@@ -78,8 +78,8 @@
           </svg>
         </a>
         <a id="logo-text" href="./index.html">
-          <h1 class="drop1">Sean Mc</h1>
-          <h1 class="drop2">-Digital Design</h1>
+          <h1 class="drop1 color">Sean Mc</h1>
+          <h1 class="drop2 color">-Digital Design</h1>
         </a>
       </div>
       <div class="nav-links">
@@ -88,7 +88,7 @@
             <a class="nav-link" href="renders.html">Renders</a>
           </li>
           <li>
-            <a class="nav-link active-nav-link" href="3d.html">3D Models</a>
+            <a class="nav-link active-nav-link color" href="3d.html">3D Models</a>
           </li>
           <li><a class="nav-link" href="furniture.html">Furniture</a></li>
           <li><a class="nav-link" href="portraits.html">Portraits</a></li>
@@ -103,10 +103,24 @@
     </nav>
   </header>
   <div class="toggle-container">
-    <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+    <div class="color-buttons">
+      <label class="btn-container btn-container-normal">
+        <input type="radio" id="styleChoice1" name="set-style" value="normal" checked>
+        <span class="btn-checkmark btn-checkmark-normal"></span>
+      </label>
+      <label class="btn-container btn-container-blue">
+        <input type="radio" id="styleChoice2" name="set-style" value="blue">
+        <span class="btn-checkmark btn-checkmark-blue"></span>
+      </label>
+      <label class="btn-container btn-container-orange">
+        <input type="radio" id="styleChoice3" name="set-style" value="orange">
+        <span class="btn-checkmark btn-checkmark-orange"></span>
+      </label>
+    </div>
+    <input type="checkbox" id="switch" name="theme" /><label id="darkLight" for="switch"></label>
   </div>
   <main>
-    <h1 class="page-title">3D Models</h1>
+    <h1 class="page-title color">3D Models</h1>
     <div class="container">
       <div class="row justify-content-center">
         <div class="my-3 col-xl-8 col-xs-12 my-col">
@@ -115,7 +129,7 @@
           </model-viewer>
         </div>
         <div class="description my-3 col-xl-4 col-xs-12 my-col">
-          <h1 class="big-text">3D Models</h1>
+          <h1 class="big-text color">3D Models</h1>
           <p>
             3D models are an excellent way to demonstrate your design to a client. On mobile devices try tapping on the
             icon on the model to view in augmented reality. For more information please <a href="contact.html"> get in
@@ -173,6 +187,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
+  <script src="./assets/javascript/radio.js"></script>
   <script src="./assets/javascript/app.js"></script>
 </body>
 

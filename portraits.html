@@ -78,8 +78,8 @@
           </svg>
         </a>
         <a id="logo-text" href="./index.html">
-          <h1 class="drop1">Sean Mc</h1>
-          <h1 class="drop2">-Digital Design</h1>
+          <h1 class="drop1 color">Sean Mc</h1>
+          <h1 class="drop2 color">-Digital Design</h1>
         </a>
       </div>
       <div class="nav-links">
@@ -88,7 +88,7 @@
           <li><a class="nav-link" href="3d.html">3D Models</a></li>
           <li><a class="nav-link" href="furniture.html">Furniture</a></li>
           <li>
-            <a class="nav-link active-nav-link" href="portraits.html">Portraits</a>
+            <a class="nav-link active-nav-link color" href="portraits.html">Portraits</a>
           </li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -101,10 +101,24 @@
     </nav>
   </header>
   <div class="toggle-container">
-    <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+    <div class="color-buttons">
+      <label class="btn-container btn-container-normal">
+        <input type="radio" id="styleChoice1" name="set-style" value="normal" checked>
+        <span class="btn-checkmark btn-checkmark-normal"></span>
+      </label>
+      <label class="btn-container btn-container-blue">
+        <input type="radio" id="styleChoice2" name="set-style" value="blue">
+        <span class="btn-checkmark btn-checkmark-blue"></span>
+      </label>
+      <label class="btn-container btn-container-orange">
+        <input type="radio" id="styleChoice3" name="set-style" value="orange">
+        <span class="btn-checkmark btn-checkmark-orange"></span>
+      </label>
+    </div>
+    <input type="checkbox" id="switch" name="theme" /><label id="darkLight" for="switch"></label>
   </div>
   <main>
-    <h1 class="page-title">Portraits</h1>
+    <h1 class="page-title color">Portraits</h1>
     <section class="carousel-container container">
       <div class="row justify-content-center">
         <div class="my-3 col-xl-8 col-xs-12 my-col">
@@ -154,7 +168,7 @@
           </div>
         </div>
         <div class=" description my-3 col-xl-4 col-xs-12 my-col">
-          <h1 class="big-text">Portraits</h1>
+          <h1 class="big-text color">Portraits</h1>
           <p class="bold">Polygonal Portraits are simple shapes pieced together to form a minamalist composition. The
             "poly" comes from polygon, a 2d shape made from straight lines and angles.</p>
           <p class="bold">Polygonal Portraits are a great gift idea for brihdays, weddings or any other event, if you
@@ -219,6 +233,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
+  <script src="./assets/javascript/radio.js"></script>
   <script src="./assets/javascript/app.js"></script>
 </body>
 

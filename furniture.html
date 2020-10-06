@@ -78,8 +78,8 @@
           </svg>
         </a>
         <a id="logo-text" href="./index.html">
-          <h1 class="drop1">Sean Mc</h1>
-          <h1 class="drop2">-Digital Design</h1>
+          <h1 class="drop1 color">Sean Mc</h1>
+          <h1 class="drop2 color">-Digital Design</h1>
         </a>
       </div>
       <div class="nav-links">
@@ -87,7 +87,7 @@
           <li><a class="nav-link" href="renders.html">Renders</a></li>
           <li><a class="nav-link" href="3d.html">3D Models</a></li>
           <li>
-            <a class="nav-link active-nav-link" href="furniture.html">Furniture</a>
+            <a class="nav-link active-nav-link color" href="furniture.html">Furniture</a>
           </li>
           <li>
             <a class="nav-link" href="portraits.html">Portraits</a>
@@ -96,17 +96,31 @@
         </ul>
       </div>
       <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+        <div class="line1 color"></div>
+        <div class="line2 color"></div>
+        <div class="line3 color"></div>
       </div>
     </nav>
   </header>
   <div class="toggle-container">
-    <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+    <div class="color-buttons">
+      <label class="btn-container btn-container-normal">
+        <input type="radio" id="styleChoice1" name="set-style" value="normal" checked>
+        <span class="btn-checkmark btn-checkmark-normal"></span>
+      </label>
+      <label class="btn-container btn-container-blue">
+        <input type="radio" id="styleChoice2" name="set-style" value="blue">
+        <span class="btn-checkmark btn-checkmark-blue"></span>
+      </label>
+      <label class="btn-container btn-container-orange">
+        <input type="radio" id="styleChoice3" name="set-style" value="orange">
+        <span class="btn-checkmark btn-checkmark-orange"></span>
+      </label>
+    </div>
+    <input type="checkbox" id="switch" name="theme" /><label id="darkLight" for="switch"></label>
   </div>
   <main>
-    <h1 class="page-title">Furniture</h1>
+    <h1 class="page-title color">Furniture</h1>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -176,7 +190,7 @@
           </section>
         </div>
         <div class=" description my-3 col-xl-4 col-xs-12 my-col">
-          <h1 class="big-text">Furniture</h1>
+          <h1 class="big-text color">Furniture</h1>
           <p class="bold">My furniture is made using birch ply and a CNC routing method whereby a drill precisely cuts
             the ply into shapes specified by a digital drawing. This ensures millimeter precision, the furniture is
             simply slotted together with no need for screws nails or even adhesives. For more information, please <a
@@ -232,6 +246,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
+  <script src="./assets/javascript/radio.js"></script>
   <script src="./assets/javascript/app.js"></script>
 </body>
 
