@@ -112,7 +112,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  border-bottom: 2px solid var(--text1);
+  // border-bottom: 2px solid var(--text1);
   opacity: 1;
 }
 
@@ -129,7 +129,7 @@ nav {
 
 .toggle-nav-link:hover {
   color: var(--bg1);
-  border-bottom: 2px solid var(--bg1);
+  // border-bottom: 2px solid var(--bg1);
 }
 
 .nav-links {
@@ -268,8 +268,7 @@ nav {
 /*NAV TEXT DROP ANIMATION
 display changed to inline block to enable text to translate*/
 .logo span {
-  opacity: 0;
-  transition: all 1s ease;
+  transition: fade 1s ease;
   transform: translateY(-100px);
   display: inline-block;
 }
@@ -433,7 +432,8 @@ input[type="checkbox"] {
 }
 
 input:checked + #darkLight {
-  background: var(--panel);
+  // background: var(--panel);
+  background: yellow;
 }
 
 input:checked + #darkLight:after {
@@ -443,6 +443,14 @@ input:checked + #darkLight:after {
 
 #darkLight:active:after {
   width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
 }
 
 /*MAIN*/
@@ -680,7 +688,7 @@ media queries
     height: 325px;
   }
   .big-text {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 

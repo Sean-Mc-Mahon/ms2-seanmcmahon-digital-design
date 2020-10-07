@@ -1,5 +1,21 @@
+
+
 //Code modified from slack call in #interactive-front-end channel led by Eamon_lead on 23-09-20
-function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
+//Grab radio Buttons
+function getUserStyleSetting() {
+  myRadioSett = document.querySelectorAll('input[name="set-style"]');
+
+  let i, max = myRadioSett.length;
+
+  for (i = 0; i < max; i++) {
+    myRadioSett[i].onclick = function () {
+      let style = this.value[0].toUpperCase() + this.value.slice(1);
+      localStorage.setItem("chosenStyle", style)
+      applyStyle();
+    }
+  }
+}
+function applyStyle(style = localStorage.getItem("chosenStyle")) {
 
   if (style === "Blue") {
     let target = document.querySelectorAll(".color");
@@ -34,41 +50,7 @@ function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
   }
 }
 
-//Grab radio Buttons
-function getUserStyleSetting() {
-  myRadioSett = document.querySelectorAll('input[name="set-style"]');
 
-  let i, max = myRadioSett.length;
-
-  for (i = 0; i < max; i++) {
-    myRadioSett[i].onclick = function () {
-      let style = this.value[0].toUpperCase() + this.value.slice(1);
-      sessionStorage.setItem("chosenStyle", style)
-      applyStyle();
-    }
-  }
-}
-
-//DARK MODE TOGGLE
-//modified from youtube tutorial by DesignCourse:https://youtu.be/ZKXv_ZHQ654
-var checkbox = document.querySelector("input[name=theme");
-
-checkbox.addEventListener("change", function () {
-  if (this.checked) {
-    trans();
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    trans();
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-});
-
-let trans = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 1000);
-};
 
 window.onload = function () {
   applyStyle();
