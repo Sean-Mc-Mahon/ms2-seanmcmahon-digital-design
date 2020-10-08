@@ -67,7 +67,7 @@ h6 {
 }
 
 .big-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: none;
 }
 .bold {
@@ -268,7 +268,8 @@ nav {
 /*NAV TEXT DROP ANIMATION
 display changed to inline block to enable text to translate*/
 .logo span {
-  transition: fade 1s ease;
+  opacity: 1;
+  transition: all 1s ease;
   transform: translateY(-100px);
   display: inline-block;
 }
@@ -688,7 +689,7 @@ media queries
     height: 325px;
   }
   .big-text {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
