@@ -1,33 +1,22 @@
-.slider {
-  width: calc( 210px + 18vw);
-  height: calc( 140px + 12vw);
-  margin: 10px auto;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border: 1px solid var(--text1);
-  border-radius: .5rem;
-}
-
-.slider-text {
-  position: absolute;
-  height: 100%;
-  width: 10%;
-  background-color: rgba(129, 129, 129, 0.6);
-  z-index: 2;
+/*HOME GALLERY*/
+.text-rows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 svg.gallery-heading {
-  padding: .2rem;
+  padding: .1rem;
   position: relative;
   bottom: 5px;
+  display: none;
 }
 
 .gallery-heading {
@@ -72,279 +61,424 @@ svg.gallery-heading {
   }
 }
 
-.slider-furniture {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url(https://i.imgur.com/ZsBYbCb.jpg);
-  background-size: 100% auto;
-  -webkit-animation: slideF 15s infinite;
-          animation: slideF 15s infinite;
+#text-render {
+  -webkit-animation: opacityR 20s infinite;
+          animation: opacityR 20s infinite;
 }
 
-.slider-furniture:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-@-webkit-keyframes slideF {
+@-webkit-keyframes opacityR {
+  0% {
+    opacity: 1;
+  }
   15% {
-    background: url(https://i.imgur.com/ZsBYbCb.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   25% {
-    background: url(https://i.imgur.com/HceqoJI.jpg);
-    background-size: 100% auto;
-  }
-  40% {
-    background: url(https://i.imgur.com/HceqoJI.jpg);
-    background-size: 100% auto;
-  }
-  50% {
-    background: url(https://i.imgur.com/RaYW2Tx.jpg);
-    background-size: 100% auto;
-  }
-  65% {
-    background: url(https://i.imgur.com/RaYW2Tx.jpg);
-    background-size: 100% auto;
-  }
-  75% {
-    background: url(https://i.imgur.com/RsCZNG3.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   90% {
-    background: url(https://i.imgur.com/RsCZNG3.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   100% {
-    background: url(https://i.imgur.com/ZsBYbCb.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
 }
 
-@keyframes slideF {
+@keyframes opacityR {
+  0% {
+    opacity: 1;
+  }
   15% {
-    background: url(https://i.imgur.com/ZsBYbCb.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   25% {
-    background: url(https://i.imgur.com/HceqoJI.jpg);
-    background-size: 100% auto;
-  }
-  40% {
-    background: url(https://i.imgur.com/HceqoJI.jpg);
-    background-size: 100% auto;
-  }
-  50% {
-    background: url(https://i.imgur.com/RaYW2Tx.jpg);
-    background-size: 100% auto;
-  }
-  65% {
-    background: url(https://i.imgur.com/RaYW2Tx.jpg);
-    background-size: 100% auto;
-  }
-  75% {
-    background: url(https://i.imgur.com/RsCZNG3.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   90% {
-    background: url(https://i.imgur.com/RsCZNG3.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   100% {
-    background: url(https://i.imgur.com/ZsBYbCb.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
 }
 
-.slider-portraits {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url(https://i.imgur.com/Cpidbri.jpg);
-  background-size: 100% auto;
-  -webkit-animation: slideP 20s infinite;
-          animation: slideP 20s infinite;
+#text-model {
+  -webkit-animation: opacity3d 20s infinite;
+          animation: opacity3d 20s infinite;
 }
 
-.slider-portraits:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-@-webkit-keyframes slideP {
-  23% {
-    background: url(https://i.imgur.com/Cpidbri.jpg);
-    background-size: 100% auto;
+@-webkit-keyframes opacity3d {
+  0% {
+    opacity: .2;
   }
-  33% {
-    background: url(https://i.imgur.com/3RdLTQ1.jpg);
-    background-size: 100% auto;
-  }
-  56% {
-    background: url(https://i.imgur.com/3RdLTQ1.jpg);
-    background-size: 100% auto;
-  }
-  66% {
-    background: url(https://i.imgur.com/f6wvxGw.jpg);
-    background-size: 100% auto;
-  }
-  90% {
-    background: url(https://i.imgur.com/f6wvxGw.jpg);
-    background-size: 100% auto;
-  }
-  100% {
-    background: url(https://i.imgur.com/Cpidbri.jpg);
-    background-size: 100% auto;
-  }
-}
-
-@keyframes slideP {
-  23% {
-    background: url(https://i.imgur.com/Cpidbri.jpg);
-    background-size: 100% auto;
-  }
-  33% {
-    background: url(https://i.imgur.com/3RdLTQ1.jpg);
-    background-size: 100% auto;
-  }
-  56% {
-    background: url(https://i.imgur.com/3RdLTQ1.jpg);
-    background-size: 100% auto;
-  }
-  66% {
-    background: url(https://i.imgur.com/f6wvxGw.jpg);
-    background-size: 100% auto;
-  }
-  90% {
-    background: url(https://i.imgur.com/f6wvxGw.jpg);
-    background-size: 100% auto;
-  }
-  100% {
-    background: url(https://i.imgur.com/Cpidbri.jpg);
-    background-size: 100% auto;
-  }
-}
-
-.slider-3d {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url(https://i.imgur.com/W8HkL0T.jpg);
-  background-size: 100% auto;
-}
-
-.slider-3d:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.slider-renders {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url(https://i.imgur.com/bjLQRi6.jpg);
-  background-size: 100% auto;
-  -webkit-animation: slideR 20s infinite;
-          animation: slideR 20s infinite;
-}
-
-.slider-renders:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-@-webkit-keyframes slideR {
   15% {
-    background: url(https://i.imgur.com/bjLQRi6.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   25% {
-    background: url(https://i.imgur.com/CTfGC40.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   40% {
-    background: url(https://i.imgur.com/CTfGC40.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   50% {
-    background: url(https://i.imgur.com/Ito7HKx.jpg);
-    background-size: 100% auto;
-  }
-  65% {
-    background: url(https://i.imgur.com/Ito7HKx.jpg);
-    background-size: 100% auto;
-  }
-  75% {
-    background: url(https://i.imgur.com/T7ulbdR.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   90% {
-    background: url(https://i.imgur.com/T7ulbdR.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   100% {
-    background: url(https://i.imgur.com/bjLQRi6.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
 }
 
-@keyframes slideR {
+@keyframes opacity3d {
+  0% {
+    opacity: .2;
+  }
   15% {
-    background: url(https://i.imgur.com/bjLQRi6.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   25% {
-    background: url(https://i.imgur.com/CTfGC40.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   40% {
-    background: url(https://i.imgur.com/CTfGC40.jpg);
-    background-size: 100% auto;
+    opacity: 1;
   }
   50% {
-    background: url(https://i.imgur.com/Ito7HKx.jpg);
-    background-size: 100% auto;
-  }
-  65% {
-    background: url(https://i.imgur.com/Ito7HKx.jpg);
-    background-size: 100% auto;
-  }
-  75% {
-    background: url(https://i.imgur.com/T7ulbdR.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   90% {
-    background: url(https://i.imgur.com/T7ulbdR.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
   100% {
-    background: url(https://i.imgur.com/bjLQRi6.jpg);
-    background-size: 100% auto;
+    opacity: .2;
   }
 }
 
-/*md-large tablet*/
-@media screen and (min-width: 768px) {
-  .slider {
-    width: calc( 210px + 15vw);
-    height: calc( 140px + 10vw);
+#text-furniture {
+  -webkit-animation: opacityF 20s infinite;
+          animation: opacityF 20s infinite;
+}
+
+@-webkit-keyframes opacityF {
+  0% {
+    opacity: .2;
+  }
+  15% {
+    opacity: .2;
+  }
+  25% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .2;
   }
 }
 
-/*lg-large tablet landscape*/
-@media screen and (min-width: 1024px) {
-  .slider {
-    width: calc( 210px + 18vw);
-    height: calc( 140px + 12vw);
+@keyframes opacityF {
+  0% {
+    opacity: .2;
+  }
+  15% {
+    opacity: .2;
+  }
+  25% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+#text-portraits {
+  -webkit-animation: opacityP 20s infinite;
+          animation: opacityP 20s infinite;
+}
+
+@-webkit-keyframes opacityP {
+  0% {
+    opacity: .2;
+  }
+  15% {
+    opacity: .2;
+  }
+  25% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .2;
+  }
+  65% {
+    opacity: .2;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes opacityP {
+  0% {
+    opacity: .2;
+  }
+  15% {
+    opacity: .2;
+  }
+  25% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .2;
+  }
+  65% {
+    opacity: .2;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+.text-rows a #text-render:hover,
+.text-rows a #text-model:hover,
+.text-rows a #text-furniture:hover,
+.text-rows a #text-portraits:hover {
+  opacity: 1 !important;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.gallery-overlay {
+  border: 3px solid var(--bg1);
+  border-radius: calc(5px + 3vw);
+  overflow: hidden;
+  position: relative;
+  width: calc( 90px + 37.5vw);
+  height: calc( 60px + 25vw);
+  margin: 10px auto;
+  -webkit-animation: z 20s infinite;
+          animation: z 20s infinite;
+}
+
+.gallery-overlay img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.img-render {
+  -webkit-animation: opacR 20s infinite;
+          animation: opacR 20s infinite;
+}
+
+@-webkit-keyframes opacR {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacR {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.img-model {
+  -webkit-animation: opac3d 20s infinite;
+          animation: opac3d 20s infinite;
+}
+
+@-webkit-keyframes opac3d {
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes opac3d {
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.img-furniture {
+  -webkit-animation: opacF 20s infinite;
+          animation: opacF 20s infinite;
+}
+
+@-webkit-keyframes opacF {
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacF {
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.img-portrait {
+  -webkit-animation: opacP 20s infinite;
+          animation: opacP 20s infinite;
+}
+
+@-webkit-keyframes opacP {
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacP {
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  svg.gallery-heading {
+    display: inline-block;
+    opacity: .5;
+  }
+  #text-render, #text-model, #text-furniture, #text-portraits {
+    display: none;
+  }
+  #text-render, #text-model, #text-furniture, #text-portaits, .img-render, .img-model, .img-furniture, .img-portrait {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .gallery-overlay img {
+    opacity: 1;
+  }
+  img.active-img-link {
+    z-index: 2;
+  }
+  svg.active-svg {
+    opacity: 1;
   }
 }
 
