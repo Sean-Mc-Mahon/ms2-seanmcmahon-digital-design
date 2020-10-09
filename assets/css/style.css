@@ -403,7 +403,7 @@ video {
   height: 180px;
   margin: 0 auto;
   border: 3px solid var(--bg1);
-  border-radius: 5%;
+  border-radius: calc(5px + 3vw);
 }
 
 /*small tablet*/
@@ -439,7 +439,28 @@ video {
   /* The width is the width of the web page */
 }
 
-.contact-form, .contact-map {
+.form-header {
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+form {
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+form input {
+  margin: 1rem 0;
+}
+
+textarea {
+  margin: 1rem 0;
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--text1);
+  color: var(--text1);
+}
+
+.contact-map {
   margin-bottom: 1rem;
 }
 
@@ -843,16 +864,22 @@ display changed to inline block to enable text to translate*/
 .normal {
   color: var(--text1) !important;
   border-color: var(--bg1) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .blue {
   color: #218B82 !important;
   border-color: #218B82 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .orange {
   color: #ff7797 !important;
   border-color: #ff7797 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .color-buttons {

@@ -1,11 +1,32 @@
 /* Set the size of the div element that contains the map */
-    #map {
-      height: 400px;
-      /* The height is 400 pixels */
-      width: 100%;
-      /* The width is the width of the web page */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
     }
 
-    .contact-form, .contact-map {
-      margin-bottom: 1rem;
-    }
+.form-header{
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+form {
+  margin: 0rem 1rem 1rem 1rem;
+  }
+
+form input{
+  margin: 1rem 0;
+}
+
+textarea {
+  margin: 1rem 0;
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--text1);
+  color: var(--text1);
+}
+
+.contact-map {
+  margin-bottom: 1rem;
+  }

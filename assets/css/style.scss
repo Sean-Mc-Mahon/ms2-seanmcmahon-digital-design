@@ -310,14 +310,17 @@ display changed to inline block to enable text to translate*/
 .normal{
   color: var(--text1) !important;
   border-color:  var(--bg1) !important;
+  transition: 1s;
 }
 .blue{
   color: #218B82 !important;
   border-color:  #218B82 !important;
+  transition: 1s;
 }
 .orange{
   color: #ff7797 !important;
   border-color:  #ff7797 !important;
+  transition: 1s;
 }
 
 .color-buttons {
