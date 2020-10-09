@@ -392,7 +392,8 @@ video {
 #library-model {
   width: 300px;
   height: 200px;
-  border: none;
+  margin: 0 auto;
+  border: 5px solid var(--text1);
 }
 
 /*small tablet*/
@@ -414,7 +415,7 @@ video {
 /*large tablet landscape*/
 @media screen and (min-width: 1024px) {
   #library-model {
-    width: 900px;
+    width: 800px;
     height: 600px;
   }
 }
@@ -479,6 +480,21 @@ a {
   color: var(--text1);
 }
 
+a:hover {
+  color: inherit;
+}
+
+p a {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+p a:hover {
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
 li {
   list-style: none;
 }
@@ -508,6 +524,10 @@ h6 {
 
 .bold {
   font-weight: 500;
+}
+
+.page-title {
+  margin: .5rem 0;
 }
 
 /*NAVIGATION*/
@@ -1089,7 +1109,6 @@ main {
 /*CAROUSEL*/
 .carousel-container {
   max-width: 70rem;
-  margin-bottom: 3rem;
 }
 
 .carousel-caption {
@@ -1149,7 +1168,7 @@ footer ul {
 media queries
 ------------------------------------------------------------------------------*/
 /*xxs*/
-/*phone (default)*/
+/*xs phone (default)*/
 @media screen and (max-width: 736px) and (orientation: landscape) {
   /*Toggle Nav*/
   .toggle-nav-links {
@@ -1179,6 +1198,9 @@ media queries
   #logo-image {
     width: 20%;
   }
+  .page-title {
+    font-size: calc(2rem + 1vw);
+  }
 }
 
 /*large tablet*/
@@ -1196,10 +1218,13 @@ media queries
   .social-links ul li i {
     font-size: 2rem;
   }
+  .page-title {
+    font-size: calc(2.5rem + 1vw);
+  }
 }
 
 /*large tablet landscape*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #logo-image {
     width: 20%;
   }
@@ -1225,42 +1250,7 @@ media queries
   }
   .big-text {
     display: inline-block;
-  }
-  .width-1 {
-    grid-column: span 1;
-  }
-  .width-2 {
-    grid-column: span 2;
-  }
-  .width-3 {
-    grid-column: span 3;
-  }
-  .width-4 {
-    grid-column: span 4;
-  }
-  .width-5 {
-    grid-column: span 5;
-  }
-  .width-6 {
-    grid-column: span 6;
-  }
-  .height-1 {
-    grid-row: span 1;
-  }
-  .height-2 {
-    grid-row: span 2;
-  }
-  .height-3 {
-    grid-row: span 3;
-  }
-  .height-4 {
-    grid-row: span 4;
-  }
-  .height-5 {
-    grid-row: span 5;
-  }
-  .height-6 {
-    grid-row: span 6;
+    font-size: calc(2.9rem + 3vw);
   }
 }
 
@@ -1269,9 +1259,6 @@ media queries
   .gallery-item {
     width: 534px;
     height: 325px;
-  }
-  .big-text {
-    font-size: 6rem;
   }
 }
 
