@@ -1,15 +1,16 @@
 #library-model{
-  width: 300px;
-  height: 200px;
+  width: 270px;
+  height: 180px;
   margin: 0 auto;
-  border: 5px solid var(--text1);
+  border: 3px solid var(--bg1);
+  border-radius: 5%;
 }
 
 /*small tablet*/
 @media screen and (min-width: 565px) {
   #library-model{
-    width: 500px;
-    height: 333px;
+    width: 450px;
+    height: 300px;
   }
 }
 
@@ -22,17 +23,17 @@
 }
 
 /*large tablet landscape*/
-@media screen and (min-width: 1024px) {
-  #library-model{
-    width: 800px;
-    height: 600px;
-  }
+@media screen and (min-width: 992px) {
+  // #library-model{
+  //   width: 800px;
+  //   height: 600px;
+  // }
 }
 
 /*monitor*/
 @media screen and (min-width: 1200px) {
   #library-model{
-    width: calc( 675 + 1vw );
-    height: 450px;
+    width: calc( 660px + 6vw );
+    height: calc( 440px + 4vw );
   }
 }

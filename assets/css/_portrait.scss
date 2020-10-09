@@ -1,5 +1,7 @@
 video {
   width: 100%;
+  border: 3px solid var(--bg1);
+  border-radius: calc(5px + 3vw);
 }
 #carousel-portraits .carousel-control-next-icon,
 #carousel-portraits .carousel-control-prev-icon {
@@ -19,3 +21,10 @@ video {
 }
 
 .carousel-item video{ max-width: 100%; height: auto; }
+
+/*lg large tablet landscape*/
+@media screen and (min-width: 992px) {
+  video {
+    border: 5px solid var(--bg1);
+  }
+}

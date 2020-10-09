@@ -363,6 +363,8 @@ svg.gallery-heading {
 
 video {
   width: 100%;
+  border: 3px solid var(--bg1);
+  border-radius: calc(5px + 3vw);
 }
 
 #carousel-portraits .carousel-control-next-icon,
@@ -389,18 +391,26 @@ video {
   height: auto;
 }
 
+/*lg large tablet landscape*/
+@media screen and (min-width: 992px) {
+  video {
+    border: 5px solid var(--bg1);
+  }
+}
+
 #library-model {
-  width: 300px;
-  height: 200px;
+  width: 270px;
+  height: 180px;
   margin: 0 auto;
-  border: 5px solid var(--text1);
+  border: 3px solid var(--bg1);
+  border-radius: 5%;
 }
 
 /*small tablet*/
 @media screen and (min-width: 565px) {
   #library-model {
-    width: 500px;
-    height: 333px;
+    width: 450px;
+    height: 300px;
   }
 }
 
@@ -413,18 +423,11 @@ video {
 }
 
 /*large tablet landscape*/
-@media screen and (min-width: 1024px) {
-  #library-model {
-    width: 800px;
-    height: 600px;
-  }
-}
-
 /*monitor*/
 @media screen and (min-width: 1200px) {
   #library-model {
-    width: calc( 675 + 1vw);
-    height: 450px;
+    width: calc( 660px + 6vw);
+    height: calc( 440px + 4vw);
   }
 }
 
@@ -839,14 +842,17 @@ display changed to inline block to enable text to translate*/
 /*Colors*/
 .normal {
   color: var(--text1) !important;
+  border-color: var(--bg1) !important;
 }
 
 .blue {
   color: #218B82 !important;
+  border-color: #218B82 !important;
 }
 
 .orange {
   color: #ff7797 !important;
+  border-color: #ff7797 !important;
 }
 
 .color-buttons {
@@ -1108,6 +1114,9 @@ main {
 
 /*CAROUSEL*/
 .carousel-container {
+  border: 3px solid var(--bg1);
+  border-radius: calc(5px + 3vw);
+  overflow: hidden;
   max-width: 70rem;
 }
 
@@ -1203,7 +1212,7 @@ media queries
   }
 }
 
-/*large tablet*/
+/*md large tablet*/
 @media screen and (min-width: 768px) {
   #logo-image {
     width: 15%;
@@ -1223,7 +1232,7 @@ media queries
   }
 }
 
-/*large tablet landscape*/
+/*lg large tablet landscape*/
 @media screen and (min-width: 992px) {
   #logo-image {
     width: 20%;
@@ -1252,9 +1261,12 @@ media queries
     display: inline-block;
     font-size: calc(2.9rem + 3vw);
   }
+  .carousel-container {
+    border: 5px solid var(--bg1);
+  }
 }
 
-/*monitor*/
+/*xl monitor*/
 @media screen and (min-width: 1200px) {
   .gallery-item {
     width: 534px;
@@ -1262,7 +1274,7 @@ media queries
   }
 }
 
-/*xl monitor*/
+/*xxl monitor*/
 @media (min-width: 1500px) {
   #logo-image {
     width: 15%;

@@ -101,6 +101,7 @@ nav {
   align-items: center;
   background-color: var(--bg1);
   min-height: 4vh;
+  // position: fixed;
 }
 
 .toggle-nav {
@@ -308,12 +309,15 @@ display changed to inline block to enable text to translate*/
 /*Colors*/
 .normal{
   color: var(--text1) !important;
+  border-color:  var(--bg1) !important;
 }
 .blue{
   color: #218B82 !important;
+  border-color:  #218B82 !important;
 }
 .orange{
   color: #ff7797 !important;
+  border-color:  #ff7797 !important;
 }
 
 .color-buttons {
@@ -342,6 +346,7 @@ display changed to inline block to enable text to translate*/
   height: 0;
   width: 0;
 }
+
 
 /* Create a custom checkbox */
 .btn-checkmark {
@@ -532,6 +537,9 @@ main {
 
 /*CAROUSEL*/
 .carousel-container {
+  border: 3px solid var(--bg1);
+  border-radius: calc(5px + 3vw);
+  overflow: hidden;
   max-width: 70rem;
 }
 
@@ -622,7 +630,7 @@ media queries
   }
 }
 
-/*large tablet*/
+/*md large tablet*/
 @media screen and (min-width: 768px) {
   #logo-image {
     width: 15%;
@@ -642,7 +650,7 @@ media queries
   }
 }
 
-/*large tablet landscape*/
+/*lg large tablet landscape*/
 @media screen and (min-width: 992px) {
   #logo-image {
     width: 20%;
@@ -668,20 +676,20 @@ media queries
     display: inline-block;
     font-size: calc(2.9rem + 3vw)
   }
+  .carousel-container {
+    border: 5px solid var(--bg1);
+  }
 }
 
-/*monitor*/
+/*xl monitor*/
 @media screen and (min-width: 1200px) {
   .gallery-item {
     width: 534px;
     height: 325px;
   }
-  // .big-text {
-  //   font-size: 5.5rem;
-  // }
 }
 
-/*xl monitor*/
+/*xxl monitor*/
 @media (min-width: 1500px) {
   #logo-image {
     width: 15%;
