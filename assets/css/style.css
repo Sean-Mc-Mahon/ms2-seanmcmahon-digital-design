@@ -6,7 +6,7 @@
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
-  border: 1px solid var(--text1);
+  border: 1px solid #000;
   border-radius: .5rem;
 }
 
@@ -59,7 +59,7 @@ svg.gallery-heading {
     fill: transparent;
   }
   to {
-    fill: var(--text1);
+    fill: #000;
   }
 }
 
@@ -68,7 +68,7 @@ svg.gallery-heading {
     fill: transparent;
   }
   to {
-    fill: var(--text1);
+    fill: #000;
   }
 }
 
@@ -447,26 +447,8 @@ video {
           box-sizing: border-box;
 }
 
-html[data-theme="light"] {
-  --bg1: #ffffff;
-  --panel: #a3a3a3;
-  --panel2: #434343;
-  --text1: black;
-  --text2: #0077ff;
-}
-
-html[data-theme="dark"] {
-  --bg1: black;
-  --panel: #434343;
-  --panel2: #a3a3a3;
-  --text1: #ffffff;
-  --text2: #3694ff;
-}
-
-body {
+html {
   font-family: "Montserrat", sans-serif;
-  color: var(--text1);
-  background: var(--bg1);
 }
 
 /*body overflow hidden when nav toggle is active*/
@@ -474,9 +456,13 @@ body.hide {
   overflow: hidden;
 }
 
+p {
+  background: none !important;
+}
+
 a {
   text-decoration: none;
-  color: var(--text1);
+  color: #000;
 }
 
 li {
@@ -486,7 +472,7 @@ li {
 h1 {
   font-family: "Lily Script One", cursive;
   font-size: calc(1.3rem + 1vw);
-  color: var(--text1);
+  color: #000;
 }
 
 h2,
@@ -523,7 +509,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--bg1);
   min-height: 4vh;
 }
 
@@ -533,7 +518,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--text1);
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +534,6 @@ nav {
 }
 
 .nav-links li a {
-  color: var(--text1);
   margin-right: 1rem;
   padding: 0;
   font-size: calc(0.3rem + 1vw);
@@ -561,13 +545,14 @@ nav {
 
 .nav-links li a:hover {
   opacity: 1;
+  color: inherit;
 }
 
 .toggle-nav-link {
+  color: #fff;
   font-weight: 700;
   font-size: calc(1.2rem + 1vw);
   margin: calc(2rem + 1vw) 0rem;
-  color: var(--bg1);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,7 +567,7 @@ nav {
 }
 
 .toggle-nav-link:hover {
-  color: var(--bg1);
+  color: #fff;
 }
 
 .nav-links {
@@ -602,7 +587,7 @@ nav {
 }
 
 .active-toggle-nav-link {
-  border-bottom: 2px solid var(--bg1);
+  border-bottom: 2px solid #fff;
 }
 
 .logo {
@@ -645,7 +630,7 @@ nav {
 .line1,
 .line2,
 .line3 {
-  background-color: var(--text1);
+  background-color: #000;
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
@@ -800,6 +785,7 @@ display changed to inline block to enable text to translate*/
 }
 
 .logo span.fade {
+  background: none !important;
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -818,7 +804,7 @@ display changed to inline block to enable text to translate*/
 /*Color Radio Buttons*/
 /*Colors*/
 .normal {
-  color: var(--text1) !important;
+  color: #000;
 }
 
 .blue {
@@ -866,7 +852,7 @@ display changed to inline block to enable text to translate*/
   left: 0;
   height: 27px;
   width: 27px;
-  background-color: var(--bg1);
+  background-color: #fff;
 }
 
 /* Customize the label (the container) */
@@ -900,7 +886,7 @@ display changed to inline block to enable text to translate*/
   left: 0;
   height: 26px;
   width: 26px;
-  background-color: var(--bg1);
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -913,7 +899,7 @@ display changed to inline block to enable text to translate*/
 }
 
 .btn-checkmark-normal {
-  border: 3px solid var(--panel2);
+  border: 3px solid #434343;
 }
 
 /* When the radio button is checked, fill the circle*/
@@ -926,10 +912,20 @@ display changed to inline block to enable text to translate*/
 }
 
 .btn-container-normal input:checked ~ .btn-checkmark {
-  background-color: var(--panel2);
+  background-color: #434343;
 }
 
 /*DARK TOGGLE*/
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
 /*toggle modified from a codepen by Marcus Burnette:https://codepen.io/mburnette/pen/LxNxNg*/
 .toggle-container {
   display: -webkit-box;
@@ -956,7 +952,7 @@ input[type="checkbox"] {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: var(--panel);
+  background: #a3a3a3;
   float: right;
   border-radius: 100px;
   position: relative;
@@ -971,7 +967,7 @@ input[type="checkbox"] {
   left: 3px;
   width: 20px;
   height: 20px;
-  background: var(--panel2);
+  background: #434343;
   border-radius: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1017,7 +1013,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--bg1);
   min-height: 80vh;
   margin: auto;
 }
@@ -1112,7 +1107,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   min-height: 8vh;
-  background-color: var(--panel);
+  background-color: #a3a3a3;
 }
 
 footer p {
