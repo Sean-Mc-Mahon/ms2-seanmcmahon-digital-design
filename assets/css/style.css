@@ -688,6 +688,10 @@ h6 {
   margin: .5rem 0;
 }
 
+.row {
+  margin-bottom: 1rem;
+}
+
 /*NAVIGATION*/
 nav {
   width: 95%;
@@ -1414,6 +1418,9 @@ media queries
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .row {
+    margin-bottom: 3rem;
   }
   .page-title {
     display: none;

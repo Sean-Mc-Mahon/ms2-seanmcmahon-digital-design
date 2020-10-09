@@ -91,6 +91,9 @@ h6 {
 .page-title {
   margin: .5rem 0;
 }
+.row{
+  margin-bottom: 1rem;
+}
 
 /*NAVIGATION*/
 nav {
@@ -671,6 +674,9 @@ media queries
   }
   .nav-links ul {
     display: flex;
+  }
+  .row{
+    margin-bottom: 3rem;
   }
   .page-title {
     display: none;
