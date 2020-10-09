@@ -217,3 +217,56 @@ function initMap() {
     infoWindow.open(map, marker);
   });
 }
+
+//hOME IMAGE GALLERY
+$("svg#svg-render").hover(function () {
+  $("svg#svg-render").addClass('active-svg');
+  $("img.img-render").addClass('active-img-link');
+  $("svg#svg-model").removeClass('active-svg');
+  $("img.img-model").removeClass('active-img-link');
+  $("svg#svg-furniture").removeClass('active-svg');
+  $("img.img-furniture").removeClass('active-img-link');
+  $("svg#svg-portrait").removeClass('active-svg');
+  $("img.img-portrait").removeClass('active-img-link');
+  console.log('ducky');
+})
+
+$("svg#svg-model").hover(function () {
+  $("svg#svg-model").addClass('active-svg');
+  $("img.img-model").addClass('active-img-link');
+  $("svg#svg-render").removeClass('active-svg');
+  $("img.img-render").removeClass('active-img-link');
+  $("svg#svg-furniture").removeClass('active-svg');
+  $("img.img-furniture").removeClass('active-img-link');
+  $("svg#svg-portrait").removeClass('active-svg');
+  $("img.img-portrait").removeClass('active-img-link');
+  console.log('ducky')
+}
+)
+
+
+$("svg#svg-furniture").hover(function () {
+  $("svg#svg-furniture").addClass('active-svg');
+  $("img.img-furniture").addClass('active-img-link');
+  $("svg#svg-render").removeClass('active-svg');
+  $("img.img-render").removeClass('active-img-link');
+  $("svg#svg-model").removeClass('active-svg');
+  $("img.img-model").removeClass('active-img-link');
+  $("svg#svg-portrait").removeClass('active-svg');
+  $("img.img-portrait").removeClass('active-img-link');
+  console.log('ducky')
+}
+)
+
+$("svg#svg-portrait").hover(function () {
+  $("svg#svg-portrait").addClass('active-svg');
+  $("img.img-portrait").addClass('active-img-link');
+  $("svg#svg-render").removeClass('active-svg');
+  $("img.img-render").removeClass('active-img-link');
+  $("svg#svg-model").removeClass('active-svg');
+  $("img.img-model").removeClass('active-img-link');
+  $("svg#svg-furniture").removeClass('active-svg');
+  $("img.img-furniture").removeClass('active-img-link');
+  console.log('ducky')
+}
+)

@@ -10,12 +10,12 @@ function getUserStyleSetting() {
   for (i = 0; i < max; i++) {
     myRadioSett[i].onclick = function () {
       let style = this.value[0].toUpperCase() + this.value.slice(1);
-      localStorage.setItem("chosenStyle", style)
+      sessionStorage.setItem("chosenStyle", style)
       applyStyle();
     }
   }
 }
-function applyStyle(style = localStorage.getItem("chosenStyle")) {
+function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
 
   if (style === "Blue") {
     let target = document.querySelectorAll(".color");
