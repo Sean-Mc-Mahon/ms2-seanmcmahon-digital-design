@@ -13,7 +13,7 @@
 }
 
 svg.gallery-heading {
-  padding: .1rem;
+  padding: 0.1rem;
   position: relative;
   bottom: 5px;
   display: none;
@@ -74,10 +74,10 @@ svg.gallery-heading {
     opacity: 1;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -92,10 +92,10 @@ svg.gallery-heading {
     opacity: 1;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -109,10 +109,10 @@ svg.gallery-heading {
 
 @-webkit-keyframes opacity3d {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
     opacity: 1;
@@ -121,22 +121,22 @@ svg.gallery-heading {
     opacity: 1;
   }
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
 @keyframes opacity3d {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
     opacity: 1;
@@ -145,13 +145,13 @@ svg.gallery-heading {
     opacity: 1;
   }
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
@@ -162,16 +162,16 @@ svg.gallery-heading {
 
 @-webkit-keyframes opacityF {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   40% {
-    opacity: .2;
+    opacity: 0.2;
   }
   50% {
     opacity: 1;
@@ -183,25 +183,25 @@ svg.gallery-heading {
     opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
 @keyframes opacityF {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   40% {
-    opacity: .2;
+    opacity: 0.2;
   }
   50% {
     opacity: 1;
@@ -213,10 +213,10 @@ svg.gallery-heading {
     opacity: 0.2;
   }
   90% {
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
@@ -227,22 +227,22 @@ svg.gallery-heading {
 
 @-webkit-keyframes opacityP {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   40% {
-    opacity: .2;
+    opacity: 0.2;
   }
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
   65% {
-    opacity: .2;
+    opacity: 0.2;
   }
   75% {
     opacity: 1;
@@ -251,28 +251,28 @@ svg.gallery-heading {
     opacity: 1;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
 @keyframes opacityP {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   15% {
-    opacity: .2;
+    opacity: 0.2;
   }
   25% {
-    opacity: .2;
+    opacity: 0.2;
   }
   40% {
-    opacity: .2;
+    opacity: 0.2;
   }
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
   65% {
-    opacity: .2;
+    opacity: 0.2;
   }
   75% {
     opacity: 1;
@@ -281,7 +281,7 @@ svg.gallery-heading {
     opacity: 1;
   }
   100% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
@@ -299,11 +299,12 @@ svg.gallery-heading {
   border-radius: calc(5px + 3vw);
   overflow: hidden;
   position: relative;
-  width: calc( 150px + 37.5vw);
-  height: calc( 100px + 25vw);
+  width: calc(150px + 45vw);
+  height: calc(100px + 30vw);
   margin: 10px auto;
   -webkit-animation: z 20s infinite;
           animation: z 20s infinite;
+  max-width: 90vw;
 }
 
 .gallery-overlay img {
@@ -461,15 +462,37 @@ svg.gallery-heading {
   }
 }
 
+@media (min-width: 565px) {
+  .gallery-overlay {
+    width: calc(150px + 60vw);
+    height: calc(100px + 40vw);
+  }
+}
+
 @media (min-width: 992px) {
   svg.gallery-heading {
     display: inline-block;
-    opacity: .5;
+    opacity: 0.5;
   }
-  #text-render, #text-model, #text-furniture, #text-portraits {
+  .gallery-overlay {
+    width: calc(150px + 37.5vw);
+    height: calc(100px + 25vw);
+    max-width: 40vw;
+  }
+  #text-render,
+  #text-model,
+  #text-furniture,
+  #text-portraits {
     display: none;
   }
-  #text-render, #text-model, #text-furniture, #text-portaits, .img-render, .img-model, .img-furniture, .img-portrait {
+  #text-render,
+  #text-model,
+  #text-furniture,
+  #text-portaits,
+  .img-render,
+  .img-model,
+  .img-furniture,
+  .img-portrait {
     -webkit-animation: none;
             animation: none;
   }
@@ -535,11 +558,12 @@ video {
 }
 
 #library-model {
-  width: 270px;
-  height: 180px;
+  width: 300px;
+  height: 200px;
   margin: 0 auto;
   border: 3px solid var(--bg1);
   border-radius: calc(5px + 3vw);
+  max-width: 90vw;
 }
 
 /*small tablet*/
@@ -562,8 +586,8 @@ video {
 /*monitor*/
 @media screen and (min-width: 1200px) {
   #library-model {
-    width: calc( 660px + 6vw);
-    height: calc( 440px + 4vw);
+    width: calc(660px + 6vw);
+    height: calc(440px + 4vw);
   }
 }
 
