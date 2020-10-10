@@ -147,6 +147,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .toggle-nav-link:hover {
@@ -319,11 +320,15 @@ display changed to inline block to enable text to translate*/
   color: #218B82 !important;
   border-color:  #218B82 !important;
   transition: 1s;
+  fill: #218B82 !important;
+  stroke: #218B82 !important;
 }
 .orange{
   color: #ff7797 !important;
   border-color:  #ff7797 !important;
   transition: 1s;
+  fill: #ff7797 !important;
+  stroke: #ff7797 !important;
 }
 
 .color-buttons {
@@ -613,11 +618,19 @@ media queries
   .toggle-nav-link {
     margin: 0.5rem;
   }
-  /*CSS Grid*/
-  .gallery-container {
-    grid-auto-rows: 100px;
+}
+
+/*small tablet*/
+@media screen and (max-height: 565px) {
+  /*Toggle Nav*/
+  .toggle-nav-links {
+    transform: translateY(20px);
   }
-  
+  .toggle-nav-link {
+    margin: 0rem;
+  }
+//   .toggle-nav{
+//   background-color: yellow;}
 }
 
 /*small tablet*/
@@ -676,7 +689,7 @@ media queries
     display: flex;
   }
   .row{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .page-title {
     display: none;
@@ -703,4 +716,4 @@ media queries
   #logo-image {
     width: 15%;
   }
-}
+  }
