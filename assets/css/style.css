@@ -558,8 +558,8 @@ video {
 }
 
 #library-model {
-  width: 330px;
-  height: 220px;
+  width: 360px;
+  height: 240px;
   margin: 0 auto;
   border: 3px solid var(--bg1);
   border-radius: calc(5px + 3vw);
@@ -710,10 +710,6 @@ h6 {
   font-weight: 500;
 }
 
-.page-title {
-  margin: .5rem 0;
-}
-
 .row {
   margin-bottom: 1rem;
 }
@@ -807,7 +803,7 @@ nav {
 
 .nav-links .active-nav-link {
   font-weight: 800;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .active-toggle-nav-link {
@@ -1034,12 +1030,12 @@ display changed to inline block to enable text to translate*/
 }
 
 .blue {
-  color: #218B82 !important;
-  border-color: #218B82 !important;
+  color: #218b82 !important;
+  border-color: #218b82 !important;
   -webkit-transition: 1s;
   transition: 1s;
-  fill: #218B82 !important;
-  stroke: #218B82 !important;
+  fill: #218b82 !important;
+  stroke: #218b82 !important;
 }
 
 .orange {
@@ -1127,7 +1123,7 @@ display changed to inline block to enable text to translate*/
 }
 
 .btn-checkmark-blue {
-  border: 3px solid #218B82;
+  border: 3px solid #218b82;
 }
 
 .btn-checkmark-orange {
@@ -1140,7 +1136,7 @@ display changed to inline block to enable text to translate*/
 
 /* When the radio button is checked, fill the circle*/
 .btn-container-blue input:checked ~ .btn-checkmark {
-  background-color: #218B82;
+  background-color: #218b82;
 }
 
 .btn-container-orange input:checked ~ .btn-checkmark {
@@ -1241,7 +1237,7 @@ main {
           align-items: center;
   background-color: var(--bg1);
   min-height: 80vh;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 /*BOOTSTRAP*/

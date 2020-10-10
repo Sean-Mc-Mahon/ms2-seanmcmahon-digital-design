@@ -45,7 +45,6 @@ a {
 }
 a:hover {
   color: inherit;
-  
 }
 
 p a {
@@ -77,7 +76,7 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
-.blue{
+.blue {
   color: #0077ff;
 }
 
@@ -88,10 +87,10 @@ h6 {
 .bold {
   font-weight: 500;
 }
-.page-title {
-  margin: .5rem 0;
-}
-.row{
+// .page-title {
+//   margin: .5rem 0;
+// }
+.row {
   margin-bottom: 1rem;
 }
 
@@ -166,7 +165,7 @@ nav {
 
 .nav-links .active-nav-link {
   font-weight: 800;
-  opacity: .9;
+  opacity: 0.9;
 }
 .active-toggle-nav-link {
   border-bottom: 2px solid var(--bg1);
@@ -311,21 +310,21 @@ display changed to inline block to enable text to translate*/
 
 /*Color Radio Buttons*/
 /*Colors*/
-.normal{
+.normal {
   color: var(--text1) !important;
-  border-color:  var(--bg1) !important;
+  border-color: var(--bg1) !important;
   transition: 1s;
 }
-.blue{
-  color: #218B82 !important;
-  border-color:  #218B82 !important;
+.blue {
+  color: #218b82 !important;
+  border-color: #218b82 !important;
   transition: 1s;
-  fill: #218B82 !important;
-  stroke: #218B82 !important;
+  fill: #218b82 !important;
+  stroke: #218b82 !important;
 }
-.orange{
+.orange {
   color: #ff7797 !important;
-  border-color:  #ff7797 !important;
+  border-color: #ff7797 !important;
   transition: 1s;
   fill: #ff7797 !important;
   stroke: #ff7797 !important;
@@ -357,7 +356,6 @@ display changed to inline block to enable text to translate*/
   height: 0;
   width: 0;
 }
-
 
 /* Create a custom checkbox */
 .btn-checkmark {
@@ -404,7 +402,7 @@ display changed to inline block to enable text to translate*/
   border-radius: 50%;
 }
 .btn-checkmark-blue {
-  border: 3px solid #218B82;
+  border: 3px solid #218b82;
 }
 .btn-checkmark-orange {
   border: 3px solid #ff7797;
@@ -413,10 +411,9 @@ display changed to inline block to enable text to translate*/
   border: 3px solid var(--panel2);
 }
 
-
 /* When the radio button is checked, fill the circle*/
 .btn-container-blue input:checked ~ .btn-checkmark {
-  background-color: #218B82;
+  background-color: #218b82;
 }
 .btn-container-orange input:checked ~ .btn-checkmark {
   background-color: #ff7797;
@@ -497,7 +494,7 @@ main {
   align-items: center;
   background-color: var(--bg1);
   min-height: 80vh;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 /*BOOTSTRAP*/
@@ -576,7 +573,7 @@ footer p {
   margin: 0;
 }
 
-footer ul{
+footer ul {
   margin: 0;
 }
 
@@ -593,7 +590,7 @@ footer ul{
 .social-links ul li i {
   margin-right: 1rem;
   font-size: 1.3rem;
-  color:  #fcfcfc;
+  color: #fcfcfc;
 }
 .social-links ul li i:hover {
   color: #5da9ff;
@@ -686,7 +683,7 @@ media queries
   .nav-links ul {
     display: flex;
   }
-  .row{
+  .row {
     margin-bottom: 2rem;
   }
   .page-title {
@@ -694,7 +691,7 @@ media queries
   }
   .big-text {
     display: inline-block;
-    font-size: calc(2.9rem + 3vw)
+    font-size: calc(2.9rem + 3vw);
   }
   .carousel-container {
     border: 5px solid var(--bg1);
@@ -714,4 +711,4 @@ media queries
   #logo-image {
     width: 15%;
   }
-  }
+}
