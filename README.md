@@ -184,7 +184,7 @@ I used Balsamiq and figma to create the wireframes.
 5. I uploaded all files to my Github repository.
 
 6. To publish the project to see it on the web, I then went into the Settings on my respository, scrolled down to the heading, GitHub Pages. Under the Source setting, I used the drop-down menu to select master branch as a publishing source and saved it. Refreshed the github page, and you are then given a url where your page is published;
-   Your site is published at https://sean-mc-mahon.github.io/ms1virtualireland/index.html
+   Your site is published at https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design
 
 7. To run this code on a local machine, you would go to my respository at
    https://github.com/Sean-Mc-Mahon/ and on the home page on the right hand side just above all the files, you will see a green button that says,
