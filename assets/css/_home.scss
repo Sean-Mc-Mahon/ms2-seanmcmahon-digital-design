@@ -38,126 +38,135 @@ svg.gallery-heading {
 }
 
 #text-render {
-  animation: opacityR 20s infinite;
+  animation: opacityR 12s infinite;
 }
 
 @keyframes opacityR {
   0% {
     opacity: 1;
+    text-decoration: underline;
   }
   15% {
     opacity: 1;
+    text-decoration: underline;
   }
   25% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   100% {
     opacity: 1;
+    text-decoration: underline;
   }
 }
 #text-model {
-  animation: opacity3d 20s infinite;
+  animation: opacity3d 12s infinite;
 }
 
 @keyframes opacity3d {
   0% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   15% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   25% {
     opacity: 1;
+    text-decoration: underline;
   }
   40% {
     opacity: 1;
+    text-decoration: underline;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
 }
 #text-furniture {
-  animation: opacityF 20s infinite;
+  animation: opacityF 12s infinite;
 }
 
 @keyframes opacityF {
   0% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   15% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   25% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   40% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   50% {
     opacity: 1;
+    text-decoration: underline;
   }
   65% {
     opacity: 1;
+    text-decoration: underline;
   }
   75% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
 }
 #text-portraits {
-  animation: opacityP 20s infinite;
+  animation: opacityP 12s infinite;
 }
 
 @keyframes opacityP {
   0% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   15% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   25% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   40% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   65% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
   75% {
     opacity: 1;
+    text-decoration: underline;
   }
   90% {
     opacity: 1;
+    text-decoration: underline;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.5;
+    text-decoration: none;
   }
-}
-
-.text-rows a #text-render:hover,
-.text-rows a #text-model:hover,
-.text-rows a #text-furniture:hover,
-.text-rows a #text-portraits:hover {
-  opacity: 1 !important;
-  animation-play-state: paused;
 }
 
 .gallery-overlay {
@@ -181,7 +190,7 @@ svg.gallery-heading {
 }
 
 .img-render {
-  animation: opacR 20s infinite;
+  animation: opacR 12s infinite;
 }
 
 @keyframes opacR {
@@ -203,7 +212,7 @@ svg.gallery-heading {
 }
 
 .img-model {
-  animation: opac3d 20s infinite;
+  animation: opac3d 12s infinite;
 }
 
 @keyframes opac3d {
@@ -222,7 +231,7 @@ svg.gallery-heading {
 }
 
 .img-furniture {
-  animation: opacF 20s infinite;
+  animation: opacF 12s infinite;
 }
 
 @keyframes opacF {
@@ -241,7 +250,7 @@ svg.gallery-heading {
 }
 
 .img-portrait {
-  animation: opacP 20s infinite;
+  animation: opacP 12s infinite;
 }
 
 @keyframes opacP {

@@ -100,8 +100,6 @@ for (let i = 0; i < heading.length; i++) {
   console.log(`Letter ${i} is ${heading[i].getTotalLength()}`);
 }
 
-
-
 //GOOGLE MAPS
 
 // Initialize and add the map
@@ -109,9 +107,10 @@ function initMap() {
   // My location
   var homePin = { lat: 53.338706, lng: -6.279315 };
   // The map, centered at home
-  var map = new google.maps.Map(
-    document.getElementById('map'), {
-    zoom: 10, center: homePin, styles: [
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: homePin,
+    styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       {
         elementType: "labels.text.stroke",
@@ -196,11 +195,12 @@ function initMap() {
         elementType: "labels.text.stroke",
         stylers: [{ color: "#17263c" }],
       },
-    ]
+    ],
   });
 
   //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
-  const address = '<h6>Sean Mc-Digital Designs <br> St. Lukes Ave. D8, Ireland</h6>';
+  const address =
+    "<h6>Sean Mc-Digital Designs <br> St. Lukes Ave. D8, Ireland</h6>";
   const infoWindow = new google.maps.InfoWindow({
     content: address,
   });
@@ -210,7 +210,12 @@ function initMap() {
       map.panTo(marker.getPosition());
     }, 2000);
   });
-  var marker = new google.maps.Marker({ position: homePin, map: map, animation: google.maps.Animation.DROP, icon: "./assets/icons/map-cog.png" });
+  var marker = new google.maps.Marker({
+    position: homePin,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: "./assets/icons/map-cog.png",
+  });
   marker.addListener("click", () => {
     map.setZoom(16);
     map.setCenter(marker.getPosition());
@@ -220,53 +225,45 @@ function initMap() {
 
 //hOME IMAGE GALLERY
 $("svg#svg-render").hover(function () {
-  $("svg#svg-render").addClass('active-svg');
-  $("img.img-render").addClass('active-img-link');
-  $("svg#svg-model").removeClass('active-svg');
-  $("img.img-model").removeClass('active-img-link');
-  $("svg#svg-furniture").removeClass('active-svg');
-  $("img.img-furniture").removeClass('active-img-link');
-  $("svg#svg-portrait").removeClass('active-svg');
-  $("img.img-portrait").removeClass('active-img-link');
-  console.log('ducky');
-})
+  $("svg#svg-render").addClass("active-svg");
+  $("img.img-render").addClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
 
 $("svg#svg-model").hover(function () {
-  $("svg#svg-model").addClass('active-svg');
-  $("img.img-model").addClass('active-img-link');
-  $("svg#svg-render").removeClass('active-svg');
-  $("img.img-render").removeClass('active-img-link');
-  $("svg#svg-furniture").removeClass('active-svg');
-  $("img.img-furniture").removeClass('active-img-link');
-  $("svg#svg-portrait").removeClass('active-svg');
-  $("img.img-portrait").removeClass('active-img-link');
-  console.log('ducky')
-}
-)
-
+  $("svg#svg-model").addClass("active-svg");
+  $("img.img-model").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
 
 $("svg#svg-furniture").hover(function () {
-  $("svg#svg-furniture").addClass('active-svg');
-  $("img.img-furniture").addClass('active-img-link');
-  $("svg#svg-render").removeClass('active-svg');
-  $("img.img-render").removeClass('active-img-link');
-  $("svg#svg-model").removeClass('active-svg');
-  $("img.img-model").removeClass('active-img-link');
-  $("svg#svg-portrait").removeClass('active-svg');
-  $("img.img-portrait").removeClass('active-img-link');
-  console.log('ducky')
-}
-)
+  $("svg#svg-furniture").addClass("active-svg");
+  $("img.img-furniture").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
 
 $("svg#svg-portrait").hover(function () {
-  $("svg#svg-portrait").addClass('active-svg');
-  $("img.img-portrait").addClass('active-img-link');
-  $("svg#svg-render").removeClass('active-svg');
-  $("img.img-render").removeClass('active-img-link');
-  $("svg#svg-model").removeClass('active-svg');
-  $("img.img-model").removeClass('active-img-link');
-  $("svg#svg-furniture").removeClass('active-svg');
-  $("img.img-furniture").removeClass('active-img-link');
-  console.log('ducky')
-}
-)
+  $("svg#svg-portrait").addClass("active-svg");
+  $("img.img-portrait").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+});
