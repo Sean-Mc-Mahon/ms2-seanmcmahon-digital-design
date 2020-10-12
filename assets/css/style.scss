@@ -76,10 +76,6 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
-.blue {
-  color: #0077ff;
-}
-
 .big-text {
   font-size: 2rem;
   display: none;
@@ -311,7 +307,6 @@ display changed to inline block to enable text to translate*/
 /*Colors*/
 .normal {
   color: var(--text1) !important;
-  border-color: var(--bg1) !important;
   transition: 1s;
 }
 .yellow {
@@ -322,18 +317,18 @@ display changed to inline block to enable text to translate*/
   stroke: #d8be25 !important;
 }
 .blue {
-  color: #86b6c6 !important;
-  border-color: #86b6c6 !important;
+  color: FFFFF0 !important;
+  border-color: #00bfff !important;
   transition: 1s;
-  fill: #86b6c6 !important;
-  stroke: #86b6c6 !important;
+  fill: #00bfff !important;
+  stroke: #00bfff !important;
 }
 .green {
-  color: #7fc197 !important;
-  border-color: #7fc197 !important;
+  color: #48c074 !important;
+  border-color: #48c074 !important;
   transition: 1s;
-  fill: #7fc197 !important;
-  stroke: #7fc197 !important;
+  fill: #48c074 !important;
+  stroke: #48c074 !important;
 }
 .pink {
   color: #ff8596 !important;
@@ -343,11 +338,11 @@ display changed to inline block to enable text to translate*/
   stroke: #ff8596 !important;
 }
 .brown {
-  color: #ecbc8f !important;
-  border-color: #ecbc8f !important;
+  color: #b36e2f !important;
+  border-color: #b36e2f !important;
   transition: 1s;
-  fill: #ecbc8f !important;
-  stroke: #ecbc8f !important;
+  fill: #b36e2f !important;
+  stroke: #b36e2f !important;
 }
 
 .color-buttons {
@@ -425,16 +420,16 @@ display changed to inline block to enable text to translate*/
   border: 3px solid #d8be25;
 }
 .btn-checkmark-blue {
-  border: 3px solid #86b6c6;
+  border: 3px solid #00bfff;
 }
 .btn-checkmark-green {
-  border: 3px solid #7fc197;
+  border: 3px solid#48c074;
 }
 .btn-checkmark-pink {
   border: 3px solid #ff8596;
 }
 .btn-checkmark-brown {
-  border: 3px solid #ecbc8f;
+  border: 3px solid #b36e2f;
 }
 .btn-checkmark-normal {
   border: 3px solid var(--panel2);
@@ -445,16 +440,16 @@ display changed to inline block to enable text to translate*/
   background-color: #d8be25;
 }
 .btn-container-blue input:checked ~ .btn-checkmark {
-  background-color: #86b6c6;
+  background-color: #00bfff;
 }
 .btn-container-green input:checked ~ .btn-checkmark {
-  background-color: #7fc197;
+  background-color: #48c074;
 }
 .btn-container-pink input:checked ~ .btn-checkmark {
   background-color: #ff8596;
 }
 .btn-container-brown input:checked ~ .btn-checkmark {
-  background-color: #ecbc8f;
+  background-color: #b36e2f;
 }
 .btn-container-normal input:checked ~ .btn-checkmark {
   background-color: var(--panel2);
