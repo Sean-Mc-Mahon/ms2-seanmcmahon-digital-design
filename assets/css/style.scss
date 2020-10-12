@@ -476,14 +476,6 @@ input:checked + #darkLight:after {
   width: 45px;
 }
 
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 500ms !important;
-  transition-delay: 0 !important;
-}
-
 /*MAIN*/
 main {
   width: 100%;
