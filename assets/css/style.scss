@@ -314,19 +314,40 @@ display changed to inline block to enable text to translate*/
   border-color: var(--bg1) !important;
   transition: 1s;
 }
-.blue {
-  color: #218b82 !important;
-  border-color: #218b82 !important;
+.yellow {
+  color: #d8be25 !important;
+  border-color: #d8be25 !important;
   transition: 1s;
-  fill: #218b82 !important;
-  stroke: #218b82 !important;
+  fill: #d8be25 !important;
+  stroke: #d8be25 !important;
 }
-.orange {
-  color: #ff7797 !important;
-  border-color: #ff7797 !important;
+.blue {
+  color: #86b6c6 !important;
+  border-color: #86b6c6 !important;
   transition: 1s;
-  fill: #ff7797 !important;
-  stroke: #ff7797 !important;
+  fill: #86b6c6 !important;
+  stroke: #86b6c6 !important;
+}
+.green {
+  color: #7fc197 !important;
+  border-color: #7fc197 !important;
+  transition: 1s;
+  fill: #7fc197 !important;
+  stroke: #7fc197 !important;
+}
+.pink {
+  color: #ff8596 !important;
+  border-color: #ff8596 !important;
+  transition: 1s;
+  fill: #ff8596 !important;
+  stroke: #ff8596 !important;
+}
+.brown {
+  color: #ecbc8f !important;
+  border-color: #ecbc8f !important;
+  transition: 1s;
+  fill: #ecbc8f !important;
+  stroke: #ecbc8f !important;
 }
 
 .color-buttons {
@@ -400,22 +421,40 @@ display changed to inline block to enable text to translate*/
   background-color: var(--bg1);
   border-radius: 50%;
 }
-.btn-checkmark-blue {
-  border: 3px solid #218b82;
+.btn-checkmark-yellow {
+  border: 3px solid #d8be25;
 }
-.btn-checkmark-orange {
-  border: 3px solid #ff7797;
+.btn-checkmark-blue {
+  border: 3px solid #86b6c6;
+}
+.btn-checkmark-green {
+  border: 3px solid #7fc197;
+}
+.btn-checkmark-pink {
+  border: 3px solid #ff8596;
+}
+.btn-checkmark-brown {
+  border: 3px solid #ecbc8f;
 }
 .btn-checkmark-normal {
   border: 3px solid var(--panel2);
 }
 
 /* When the radio button is checked, fill the circle*/
-.btn-container-blue input:checked ~ .btn-checkmark {
-  background-color: #218b82;
+.btn-container-yellow input:checked ~ .btn-checkmark {
+  background-color: #d8be25;
 }
-.btn-container-orange input:checked ~ .btn-checkmark {
-  background-color: #ff7797;
+.btn-container-blue input:checked ~ .btn-checkmark {
+  background-color: #86b6c6;
+}
+.btn-container-green input:checked ~ .btn-checkmark {
+  background-color: #7fc197;
+}
+.btn-container-pink input:checked ~ .btn-checkmark {
+  background-color: #ff8596;
+}
+.btn-container-brown input:checked ~ .btn-checkmark {
+  background-color: #ecbc8f;
 }
 .btn-container-normal input:checked ~ .btn-checkmark {
   background-color: var(--panel2);
