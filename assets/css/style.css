@@ -633,18 +633,18 @@ textarea {
 }
 
 html[data-theme="light"] {
-  --bg1: #ffffff;
+  --bg1: #fffff0;
   --panel: #a3a3a3;
   --panel2: #434343;
-  --text1: black;
+  --text1: #212121;
   --text2: #0077ff;
 }
 
 html[data-theme="dark"] {
-  --bg1: black;
+  --bg1: #212121;
   --panel: #434343;
   --panel2: #a3a3a3;
-  --text1: #ffffff;
+  --text1: #fffff0;
   --text2: #3694ff;
 }
 
