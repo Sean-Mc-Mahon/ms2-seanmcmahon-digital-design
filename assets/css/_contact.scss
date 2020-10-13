@@ -4,17 +4,17 @@
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
-    }
+}
 
-.form-header{
+.form-header {
   margin: 0rem 1rem 1rem 1rem;
 }
 
 form {
   margin: 0rem 1rem 1rem 1rem;
-  }
+}
 
-form input{
+form input {
   margin: 1rem 0;
 }
 
@@ -23,10 +23,11 @@ textarea {
 }
 
 .btn-outline-primary {
-  border: 1px solid var(--text1);
+  border: 2px solid var(--text1);
+  font-weight: 600;
   color: var(--text1);
 }
 
 .contact-map {
   margin-bottom: 1rem;
-  }
+}
