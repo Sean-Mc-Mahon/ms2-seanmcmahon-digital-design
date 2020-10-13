@@ -284,6 +284,7 @@ svg.gallery-heading {
     width: calc(150px + 37.5vw);
     height: calc(100px + 25vw);
     max-width: 40vw;
+    border: 5px solid var(--bg1);
   }
 
   #text-render,

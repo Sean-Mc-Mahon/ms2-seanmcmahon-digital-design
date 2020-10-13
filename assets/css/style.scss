@@ -13,7 +13,7 @@
 }
 
 html[data-theme="light"] {
-  --bg1: #fffffe;
+  --bg1: #fffffa;
   --panel: #a3a3a3;
   --panel2: #434343;
   --text1: #212121;
@@ -331,11 +331,11 @@ display changed to inline block to enable text to translate*/
   stroke: #48c074 !important;
 }
 .pink {
-  color: #ff8596 !important;
-  border-color: #ff8596 !important;
+  color: #ff6075 !important;
+  border-color: #ff6075 !important;
   transition: 1s;
-  fill: #ff8596 !important;
-  stroke: #ff8596 !important;
+  fill: #ff6075 !important;
+  stroke: #ff6075 !important;
 }
 .brown {
   color: #b36e2f !important;
@@ -426,7 +426,7 @@ display changed to inline block to enable text to translate*/
   border: 3px solid#48c074;
 }
 .btn-checkmark-pink {
-  border: 3px solid #ff8596;
+  border: 3px solid #ff6075;
 }
 .btn-checkmark-brown {
   border: 3px solid #b36e2f;
@@ -446,7 +446,7 @@ display changed to inline block to enable text to translate*/
   background-color: #48c074;
 }
 .btn-container-pink input:checked ~ .btn-checkmark {
-  background-color: #ff8596;
+  background-color: #ff6075;
 }
 .btn-container-brown input:checked ~ .btn-checkmark {
   background-color: #b36e2f;
@@ -498,7 +498,7 @@ input[type="checkbox"] {
 
 input:checked + #darkLight {
   // background: var(--panel);
-  background: yellow;
+  background: rgb(255, 230, 0);
 }
 
 input:checked + #darkLight:after {
