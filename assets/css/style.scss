@@ -32,6 +32,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--text1);
   background: var(--bg1);
+  overflow-x: hidden;
 }
 
 /*body overflow hidden when nav toggle is active*/
@@ -89,6 +90,25 @@ h6 {
 }
 .row {
   margin-bottom: 1rem;
+}
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.text-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.reveal-text,
+.reveal-img,
+.reveal-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg1);
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 
 /*NAVIGATION*/
@@ -533,6 +553,7 @@ main {
 
 /*CAROUSEL*/
 .carousel-container {
+  position: relative;
   border: 3px solid var(--bg1);
   border-radius: calc(5px + 3vw);
   overflow: hidden;

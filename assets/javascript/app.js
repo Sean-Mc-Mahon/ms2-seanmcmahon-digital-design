@@ -267,3 +267,26 @@ $("svg#svg-portrait").hover(function () {
   $("svg#svg-furniture").removeClass("active-svg");
   $("img.img-furniture").removeClass("active-img-link");
 });
+
+//IMAGE AND TEXT REVEALS
+//code modified from tutorial as part of Creative Javascript Course @ https://developedbyed.com/
+function animateSlides() {
+  const sliders = document.querySelectorAll(".slide");
+  //loop over each slide
+  sliders.forEach((slide) => {
+    const revealImg = slide.querySelector(".reveal-img");
+    const img = slide.querySelector("img");
+    const revealText = slide.querySelectorAll(".reveal-text");
+    const revealVideo = slide.querySelector(".reveal-video");
+    //gsap
+    const slideTl = gsap.timeline({
+      defaults: { duration: 2, ease: "power1.inOut" },
+    });
+    slideTl.fromTo(revealImg, { x: "0%" }, { x: "-100%" });
+    slideTl.fromTo(img, { scale: 1.5 }, { scale: 1 }, "-=2");
+    slideTl.fromTo(revealText, { y: "0%" }, { y: "100%" }, "-=2");
+    slideTl.fromTo(revealVideo, { x: "0%" }, { x: "100%" }, "-=2");
+  });
+}
+
+animateSlides();
