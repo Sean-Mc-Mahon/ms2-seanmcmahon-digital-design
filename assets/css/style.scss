@@ -83,9 +83,10 @@ h6 {
 .bold {
   font-weight: 500;
 }
-// .page-title {
-//   margin: .5rem 0;
-// }
+.page-title {
+  font-size: calc(2rem + 1vw);
+  margin: 0.5rem 0;
+}
 .row {
   margin-bottom: 1rem;
 }
@@ -627,7 +628,7 @@ media queries
     width: 20%;
   }
   .page-title {
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
   }
 }
 
@@ -648,7 +649,7 @@ media queries
     font-size: 2rem;
   }
   .page-title {
-    font-size: calc(2.5rem + 1vw);
+    font-size: calc(2.5rem + 3vw);
   }
 }
 
@@ -679,7 +680,7 @@ media queries
   }
   .big-text {
     display: inline-block;
-    font-size: calc(2.9rem + 3vw);
+    font-size: calc(2.9rem + 2.5vw);
   }
   .carousel-container {
     border: 5px solid var(--bg1);

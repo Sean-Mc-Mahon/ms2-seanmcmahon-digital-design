@@ -3,24 +3,27 @@ video {
   border: 3px solid var(--bg1);
   border-radius: calc(5px + 3vw);
 }
-#carousel-portraits .carousel-control-next-icon,
-#carousel-portraits .carousel-control-prev-icon {
-  filter: invert(100%);
-}
-#carousel-portraits .carousel-indicators {
-  filter: invert(100%);
-}
-#carousel-portraits .carousel-indicators {
-  li {
-    background-color: #999;
-    &.active,
-    &:hover {
-      opacity: 100%;
-    }
-  }
-}
+// #carousel-portraits .carousel-control-next-icon,
+// #carousel-portraits .carousel-control-prev-icon {
+//   filter: invert(100%);
+// }
+// #carousel-portraits .carousel-indicators {
+//   filter: invert(100%);
+// }
+// #carousel-portraits .carousel-indicators {
+//   li {
+//     background-color: #999;
+//     &.active,
+//     &:hover {
+//       opacity: 100%;
+//     }
+//   }
+// }
 
-.carousel-item video{ max-width: 100%; height: auto; }
+.carousel-item video {
+  max-width: 100%;
+  height: auto;
+}
 
 /*lg large tablet landscape*/
 @media screen and (min-width: 992px) {

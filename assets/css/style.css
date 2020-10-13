@@ -552,25 +552,6 @@ video {
   border-radius: calc(5px + 3vw);
 }
 
-#carousel-portraits .carousel-control-next-icon,
-#carousel-portraits .carousel-control-prev-icon {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-#carousel-portraits .carousel-indicators {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-#carousel-portraits .carousel-indicators li {
-  background-color: #999;
-}
-
-#carousel-portraits .carousel-indicators li.active, #carousel-portraits .carousel-indicators li:hover {
-  opacity: 100%;
-}
-
 .carousel-item video {
   max-width: 100%;
   height: auto;
@@ -745,6 +726,11 @@ h6 {
 
 .bold {
   font-weight: 500;
+}
+
+.page-title {
+  font-size: calc(2rem + 1vw);
+  margin: 0.5rem 0;
 }
 
 .row {
@@ -1436,7 +1422,7 @@ media queries
     width: 20%;
   }
   .page-title {
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
   }
 }
 
@@ -1459,7 +1445,7 @@ media queries
     font-size: 2rem;
   }
   .page-title {
-    font-size: calc(2.5rem + 1vw);
+    font-size: calc(2.5rem + 3vw);
   }
 }
 
@@ -1493,7 +1479,7 @@ media queries
   }
   .big-text {
     display: inline-block;
-    font-size: calc(2.9rem + 3vw);
+    font-size: calc(2.9rem + 2.5vw);
   }
   .carousel-container {
     border: 5px solid var(--bg1);
