@@ -269,6 +269,10 @@ $("svg#svg-portrait").hover(function () {
 });
 
 //IMAGE AND TEXT REVEALS
+//code used to suppress unnecessary warnings found on https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
+gsap.config({
+  nullTargetWarn: false,
+});
 //code modified from tutorial as part of Creative Javascript Course @ https://developedbyed.com/
 function animateSlides() {
   const sliders = document.querySelectorAll(".slide");
@@ -413,56 +417,64 @@ window.onload = function () {
 };
 
 //PAGE TRANSITIONS
-function pageTransition() {
-  var tl = gsap.timeline();
+// function pageTransition() {
+//   var tl = gsap.timeline();
 
-  tl.to("ul.transition li", {
-    duration: 0.5,
-    scaleY: 1,
-    transformOrigin: "bottom left",
-    stagger: 0.2,
-  });
-  // tl.to("ul.transition li", {
-  //   duration: 0.5,
-  //   scaleY: 0,
-  //   transformOrigin: "bottom left",
-  //   stagger: 0.1,
-  //   delay: 0.1,
-  // });
-}
+//   tl.to("ul.transition li", {
+//     duration: 0.5,
+//     scaleY: 1,
+//     transformOrigin: "bottom left",
+//     stagger: 0.2,
+//   });
+// tl.to("ul.transition li", {
+//   duration: 0.5,
+//   scaleY: 0,
+//   transformOrigin: "bottom left",
+//   stagger: 0.1,
+//   delay: 0.1,
+// });
+// }
 
-function delay(n) {
-  n = n || 1300;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
+// function delay(n) {
+//   n = n || 1300;
+//   return new Promise((done) => {
+//     setTimeout(() => {
+//       done();
+//     }, n);
+//   });
+// }
 
-barba.init({
-  sync: true,
+// barba.init({
+//   sync: true,
 
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
+//   transitions: [
+//     {
+//       async leave(data) {
+//         const done = this.async();
 
-        pageTransition();
-        await delay(1300);
-        done();
-      },
+//         pageTransition();
+//         await delay(1300);
+//         done();
+//       },
 
-      async enter(data) {
-        animateSlides();
-        applyStyle();
-        getUserStyleSetting();
-      },
-      async once(data) {
-        animateSlides();
-        onTick1();
-        onTick2();
-      },
-    },
-  ],
+//       async enter(data) {
+//         animateSlides();
+//         applyStyle();
+//         getUserStyleSetting();
+//       },
+//       async once(data) {
+//         animateSlides();
+//         onTick1();
+//         onTick2();
+//       },
+//     },
+//   ],
+// });
+
+//PRELOADER
+//function to get rid of preloader
+
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
 });

@@ -63,13 +63,13 @@ li {
   list-style: none;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Lily Script One", cursive;
   font-size: calc(1.3rem + 1vw);
   color: var(--text1);
 }
 
-h2,
 h3,
 h4,
 h5,
@@ -531,26 +531,66 @@ input:checked + #darkLight:after {
   width: 45px;
 }
 
-/*PAGE TRANSITIONS*/
-.transition {
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  height: 100%;
-  width: 100%;
+/*PRELOADER*/
+.preload {
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: opacity 0.5s ease;
+}
+
+.loading-cog {
+  animation: loading-cog 10s linear infinite;
+}
+
+.preload h2 {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-10%);
+  font-size: 40px;
+  color: var(--text1);
+}
+
+.preload-finish {
+  opacity: 0;
   pointer-events: none;
 }
 
-ul.transition li {
-  transform: scaleY(0);
-  background: var(--text1);
-  width: 20%;
+@keyframes loading-cog {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
+
+/*PAGE TRANSITIONS*/
+// .transition {
+//   display: flex;
+//   position: absolute;
+//   z-index: 100;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   margin: 0;
+//   pointer-events: none;
+// }
+
+// ul.transition li {
+//   transform: scaleY(0);
+//   background: var(--text1);
+//   width: 20%;
+// }
 
 /*MAIN*/
 main {
