@@ -1,3 +1,8 @@
+window.onload = function () {
+  applyStyle();
+  getUserStyleSetting();
+};
+
 // NAV TEXT DROP ANIMATION (inspired by youtube tutorial by Dev Ed:https://youtu.be/GUEB9FogoP8)
 const text1 = document.querySelector(".drop1");
 const strText1 = text1.textContent;
@@ -224,6 +229,7 @@ function initMap() {
 }
 
 //HOME IMAGE GALLERY
+//on hover display appropriate image and highlight appropriate text
 $("svg#svg-render").hover(function () {
   $("svg#svg-render").addClass("active-svg");
   $("img.img-render").addClass("active-img-link");
@@ -295,7 +301,7 @@ function animateSlides() {
 
 animateSlides();
 
-//Code modified from slack call in #interactive-front-end channel led by Eamon_lead on 23-09-20
+//Inspired by slack call in #interactive-front-end channel led by Eamon_lead on 23-09-20
 //Grab radio Buttons
 function getUserStyleSetting() {
   myRadioSett = document.querySelectorAll('input[name="set-style"]');
@@ -311,110 +317,52 @@ function getUserStyleSetting() {
     };
   }
 }
+//apply appropriate class, remove the others and check appropriate checkbox
 function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
   if (style === "Blue") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("normal");
-      target[i].classList.remove("pink");
+      target[i].classList.remove("normal", "pink", "yellow", "green", "brown");
       target[i].classList.add("blue");
-      target[i].classList.remove("yellow");
-      target[i].classList.remove("green");
-      target[i].classList.remove("brown");
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice2").checked = false;
       document.querySelector("#styleChoice3").checked = true;
-      document.querySelector("#styleChoice4").checked = false;
-      document.querySelector("#styleChoice5").checked = false;
-      document.querySelector("#styleChoice6").checked = false;
     }
   } else if (style === "Pink") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("normal");
-      target[i].classList.remove("blue");
+      target[i].classList.remove("normal", "blue", "yellow", "green", "brown");
       target[i].classList.add("pink");
-      target[i].classList.remove("yellow");
-      target[i].classList.remove("green");
-      target[i].classList.remove("brown");
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice2").checked = false;
-      document.querySelector("#styleChoice3").checked = false;
-      document.querySelector("#styleChoice4").checked = false;
       document.querySelector("#styleChoice5").checked = true;
-      document.querySelector("#styleChoice6").checked = false;
     }
   } else if (style === "Normal") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("blue");
-      target[i].classList.remove("pink");
+      target[i].classList.remove("blue", "pink", "yellow", "green", "brown");
       target[i].classList.add("normal");
-      target[i].classList.remove("yellow");
-      target[i].classList.remove("green");
-      target[i].classList.remove("brown");
       document.querySelector("#styleChoice1").checked = true;
-      document.querySelector("#styleChoice2").checked = false;
-      document.querySelector("#styleChoice3").checked = false;
-      document.querySelector("#styleChoice4").checked = false;
-      document.querySelector("#styleChoice5").checked = false;
-      document.querySelector("#styleChoice6").checked = false;
     }
   } else if (style === "Yellow") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("blue");
-      target[i].classList.remove("pink");
-      target[i].classList.remove("normal");
+      target[i].classList.remove("blue", "pink", "normal", "green", "brown");
       target[i].classList.add("yellow");
-      target[i].classList.remove("green");
-      target[i].classList.remove("brown");
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice1").checked = true;
-      document.querySelector("#styleChoice3").checked = false;
-      document.querySelector("#styleChoice4").checked = false;
-      document.querySelector("#styleChoice5").checked = false;
-      document.querySelector("#styleChoice6").checked = false;
+      document.querySelector("#styleChoice2").checked = true;
     }
   } else if (style === "Green") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("blue");
-      target[i].classList.remove("pink");
-      target[i].classList.remove("normal");
-      target[i].classList.remove("yellow");
+      target[i].classList.remove("blue", "pink", "normal", "yellow", "brown");
       target[i].classList.add("green");
-      target[i].classList.remove("brown");
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice3").checked = false;
       document.querySelector("#styleChoice4").checked = true;
-      document.querySelector("#styleChoice5").checked = false;
-      document.querySelector("#styleChoice6").checked = false;
     }
   } else if (style === "Brown") {
     let target = document.querySelectorAll(".color");
     for (let i = 0; i < target.length; i++) {
-      target[i].classList.remove("blue");
-      target[i].classList.remove("pink");
-      target[i].classList.remove("normal");
-      target[i].classList.remove("yellow");
-      target[i].classList.remove("green");
+      target[i].classList.remove("blue", "pink", "normal", "yellow", "green");
       target[i].classList.add("brown");
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice1").checked = false;
-      document.querySelector("#styleChoice3").checked = false;
-      document.querySelector("#styleChoice4").checked = false;
-      document.querySelector("#styleChoice5").checked = false;
       document.querySelector("#styleChoice6").checked = true;
     }
   }
 }
-
-window.onload = function () {
-  applyStyle();
-  getUserStyleSetting();
-};
 
 //PAGE TRANSITIONS
 // function pageTransition() {
