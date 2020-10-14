@@ -478,3 +478,22 @@ window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
   preload.classList.add("preload-finish");
 });
+
+//DARK MODE
+//code taken from Stack Overflow:https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2
+
+var checkBox = document.getElementById("switch");
+
+var theme = window.localStorage.getItem("data-theme");
+if (theme) document.documentElement.setAttribute("data-theme", theme);
+checkBox.checked = theme == "dark" ? true : false;
+
+checkBox.addEventListener("change", function () {
+  if (this.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    window.localStorage.setItem("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    window.localStorage.setItem("data-theme", "light");
+  }
+});
