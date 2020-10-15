@@ -6,7 +6,7 @@
 
 ![Various Devices](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/responsive.JPG)
 
-Sean McMahon-Digital Design & Fabrication is a Milestone 2 project, it is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
+Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
 
 ## Table of Contents
 
@@ -67,9 +67,9 @@ The expectation for users is that they be able to sample the work of the digital
 
 ### User Stories
 
-_- User Story A: Joe is an architect and would like to like to commission renders of a project he is working on to assist with a planning application._  
-_- User Story B: Joe would also like to commission a 3D model of a project to demonstrate his ideas to a client._  
-_- User Story C: Liz is interested in commissioning some modern furniture for her living room._  
+_- User Story A: Joe is an architect and would like to use renders to assist with a planning application._  
+_- User Story B: Liz would also like to commission a 3D model of a project to demonstrate her ideas to a client._  
+_- User Story C: Joe is interested in commissioning some modern furniture for his living room._  
 _- User Story D: Hazel would like to commission a digital portrait as an anniversary present._
 
 ### Design
@@ -80,17 +80,20 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 - [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
 
+- [JQuery](https://jquery.com/) - is a Javascirpt library. I primarily used JQuery to add and remove classes on hover states.
+
 #### Color Scheme
 
-Colours are kept to a bare minimum, using only the colors for bootstrap bg-light, bg-dark and one green. My palette is located on [Coolors](https://coolors.co/d8be25-00bfff-48c074-ff8596-b36e2f-212121-fffff0)
+Colours on the site are highly adaptable for users preferences, a dark mode stores user preferences on local storage while a color toggle saves user prefernces on session storage. Without a color selected the palette is limited to [Coolors](https://coolors.co/d8be25-00bfff-48c074-ff8596-b36e2f-212121-fffff0)
+
+![Color Palette](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/coolors-palette.JPG)
 
 #### Typography
 
-3 [Google Fonts](https://fonts.google.com/) were used across the site:
+2 [Google Fonts](https://fonts.google.com/) were used across the site:
 
-- [Lily Script One](https://fonts.google.com/specimen/Lily+Script+One?query=lily) : Logo
-- [Quicksand](https://fonts.google.com/specimen/Quicksand?query=quicksan) : Headings
-- [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montse) : Body
+- [Lily Script One](https://fonts.google.com/specimen/Lily+Script+One?query=lily) : Logo & Headings, used for it's bold style.
+- [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montse) : Body, used for it's excellent readability.
 
 ### Wireframes
 
@@ -110,19 +113,19 @@ I used Balsamiq and figma to create the wireframes.
 
 ### Existing Features
 
-- All Pages - All pages will have atoggle switch allowing users to switch between dark and light modes.
+> - All Pages - All pages will have atoggle switch allowing users to switch between dark and light modes which stores preferences to local storage. Color themes can be selected and are saved to session storage. The footer provides links to social pages.
 
-- Index - The index uses a gallery to showcase projects in each section of the site.
+> - Index - The index uses a gallery to showcase projects in each section of the site. On large devices users may hover over a header to display the relevant image in the gallery, on small devices both headers and gallery images cycle through in sync using keyframes.
 
-- Renders - This page uses a toggle to switch between different versions of an image.
+> - Renders - A bootstrap carousel allows users to cycle through images.
 
-- 3D Models - This page uses Google Model Viewer to orbit around a model.
+> - 3D Models - This page uses Google Model Viewer to orbit around a model, this page uses Google Model Viewer which allows users to orbit around the model and even view the model in Augmented Reality on a mobile device.
 
-- Furniture - This page uses Google Model Viewer to orbit around digital models and a carousel to display photographs of the finished project.
+> - Furniture - A bootstrap carousel allows users to cycle through images.
 
-- Portraits - This page uses images as well as a video on autoplay to display digital portraits.
+> - Portraits - This page uses images as well as a video on autoplay to display digital portraits.
 
-- Contact - This section has a form where users can enquire about updates as well as a google map.
+> - Contact - This section has a form where users can enquire about updates as well as a google map.
 
 ### Features Left to Implement
 
