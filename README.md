@@ -84,7 +84,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Color Scheme
 
-Colours on the site are highly adaptable for users preferences, a dark mode stores user preferences on local storage while a color toggle saves user prefernces on session storage. Without a color selected the palette is limited to [Coolors](https://coolors.co/d8be25-00bfff-48c074-ff8596-b36e2f-212121-fffff0)
+Colours on the site are highly adaptable for users preferences, a dark mode stores user preferences on local storage while a color toggle saves user prefernces on session storage. Dark Mode colors are set with CSS variables. [Coolors](https://coolors.co/d8be25-00bfff-48c074-ff8596-b36e2f-212121-fffff0)
 
 ![Color Palette](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/coolors-palette.JPG)
 
@@ -94,6 +94,8 @@ Colours on the site are highly adaptable for users preferences, a dark mode stor
 
 - [Lily Script One](https://fonts.google.com/specimen/Lily+Script+One?query=lily) : Logo & Headings, used for it's bold style.
 - [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montse) : Body, used for it's excellent readability.
+
+Font sizes for the headings are mostly responsive using the calc() function.
 
 ### Wireframes
 
@@ -139,14 +141,14 @@ I used Balsamiq and figma to create the wireframes.
    https://developer.mozilla.org/en-US/docs/Web/HTML
 2. **CSS (Cascading Style Sheets):** Used throughout the site;
    https://www.w3.org/Style/CSS/Overview.en.html
-3. **Bootstrap:** Used to aid responsive design and for componants such as ... https://getbootstrap.com/
+3. **Bootstrap:** Used to aid responsive design and for componants such as carousels and buttons https://getbootstrap.com/
 4. **Visual Studio Code:** Code Editor used to create the site.
    https://code.visualstudio.com/
-5. **GitHub:** Used to host repos for the site https://github.
-6. **Chrome/Firefox/Bing DevTools:** Regularly used to test the the site https://developers.google.com/web/tools/chrome-devtools
+5. **GitHub:** Used to host repos for the site https://https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design
+6. **Chrome/Firefox/Bing DevTools:** Regularly used to test the site https://developers.google.com/web/tools/chrome-devtools
 7. **W3C Markup Validation Service** Used to test code for errors; https://validator.w3.org/https://jigsaw.w3.org/css-validator/validator
 8. **Affinity Designer** Illustration software used to create ...; https://affinity.serif.com/en-gb/
-9. **Figma** Collaborative interface design tool used for ...; https://figma.com
+9. **Figma** Collaborative interface design tool used for creating wireframes as well logos and SVGs; https://figma.com
 10. **Balsamiq** Used to create wireframes; https://balsamiq.com/?gclid=EAIaIQobChMIuoqlhfWi6wIV6YBQBh2f9w7DEAAYASAAEgLUTfD_BwE
 11. **Tinypng** Used to compress images; https://tinypng.com/
 12. **Croppola** Used to crop images; https://croppola.com/
