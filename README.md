@@ -51,20 +51,6 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 
 SM Digital Design is a website for a digital designer offering services such as artistic rendering and 3D models (primarily for the construction industry) as well as digital portraits and furniture design.
 
-## UX
-
-The expectation for users is that they be able to sample the work of the digital designer. They can orbit around 3d moddles as well as explore galleries of various services. A landing page gives an overview of the services on offer. Each design discipline has it's own page where a user can see relevant projects and learn more about the processes involved. A contact page allows allows the user to enquire about the work and engage with the designer in order to collaborate.
-
-### UX Planes
-
-#### Scope Plane
-
-#### Structure Plane
-
-#### Skeleton Plane
-
-#### Surface Plane
-
 ### User Stories
 
 _- User Story A: Joe is an architect and would like to use renders to assist with a planning application._  
@@ -72,15 +58,45 @@ _- User Story B: Liz would also like to commission a 3D model of a project to de
 _- User Story C: Joe is interested in commissioning some modern furniture for his living room._  
 _- User Story D: Hazel would like to commission a digital portrait as an anniversary present._
 
-### Design
+## UX Planes
+
+The expectation for users is that they be able to sample the work of the digital designer. They can orbit around 3d models as well as explore galleries of various services. A landing page gives an overview of the services on offer. Each design discipline has it's own page where a user can see relevant projects and learn more about the processes involved. A contact page allows allows the user to enquire about the work and engage with the designer in order to collaborate.
+
+### Strategy Plane
+
+#### Project Goals:
+
+-Showcase my digital design skills as well as demonstrate the usefulness of digital design in general.
+-Provide people who may wish to commission work or collaborate to get in touch through a form or with social media links.
+
+#### User Goals:
+
+-Source services for 3d modelling, architectural rendering, furniture design and digital portraits.
+-Ability to contact the designer.
+-Mobile friendly site allows users to browse from anywhere.
+-Ability to set preferences for viewing site such as dark mode.
+
+### Scope Plane
+
+Features such as Google Model Viewer allow the user to engage with a 3d model, to orbit around it and even view it in augmented reality. Bootstrap Carousels allows users to easily browse through image galleries of various services and a video player enables users to experience the process of creating a polygonal prtrait. A map lets the user find the location of the designer and a form lets them get in touch.
+
+### Structure Plane
+
+The site is highly interactive. Hovering over the logo triggers an animation. A toggle enables users to switch between light and dark modes. Radio buttons allow users to choose a color scheme. Buttons and indicators help users navigate Bootstrap Carousels and an orbit feature allows users to pan around a model.
+
+### Skeleton Plane
+
+- Nav Bar: Contains displays menu items, highlighting the page the user is on and uses the logo and heading to direct users back to the homepage. On smaller devices a burger toggler is used to display the menu items.
+- Main: Content organised using Bootstrap grid. On desktop max heights are assigned to containers so that users should not have to scroll to see content.
+- Footer: Displays copyright information and provides links to social pages.
+
+Each page may be navigated to eachother with one click.
+
+### Surface Plane
+
+#### Design
 
 A standard layout is fully responsive on mobile devices and larger screens.
-
-#### Libraries
-
-- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
-
-- [JQuery](https://jquery.com/) - is a Javascirpt library. I primarily used JQuery to add and remove classes on hover states.
 
 #### Color Scheme
 
@@ -97,6 +113,10 @@ Colours on the site are highly adaptable for users preferences, a dark mode stor
 
 Font sizes for the headings are mostly responsive using the calc() function.
 
+#### Media
+
+All images, models and featured products are the authors own. Logos are also produced by the author.
+
 ### Wireframes
 
 I used Balsamiq and figma to create the wireframes.
@@ -108,6 +128,12 @@ I used Balsamiq and figma to create the wireframes.
 - [Figma Wireframe-Dark](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-figma-dark.jpg)
 
 ##### back to [top](#table-of-contents)
+
+#### Libraries
+
+- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
+
+- [JQuery](https://jquery.com/) - is a Javascirpt library. I primarily used JQuery to add and remove classes on hover states.
 
 ---
 
