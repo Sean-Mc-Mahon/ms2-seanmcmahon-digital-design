@@ -364,6 +364,54 @@ function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
   }
 }
 
+//Modified from Code Institute Module @ https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c
+function sendMail(contactForm) {
+  emailjs
+    .send("gmail", "SeanMc", {
+      from_name: contactForm.name.value,
+      from_email: contactForm.emailaddress.value,
+      project_request: contactForm.projectsummary.value,
+    })
+    .then(
+      function (response) {
+        alert("Thanks for Getting in Touch!", response);
+      },
+      function (error) {
+        alert("Sorry, I'm afraid we didn't recieve your message.", error);
+      }
+    );
+  $("#formContact").val("");
+  $('#formContact input[type="text"]').val("");
+  $('#formContact input[type="email"]').val("");
+  $("#formContact textarea").val("");
+  return false; // To block from loading a new page
+}
+
+//DARK MODE
+//code taken from Stack Overflow:https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2
+var checkBox = document.getElementById("switch");
+
+var theme = window.localStorage.getItem("data-theme");
+if (theme) document.documentElement.setAttribute("data-theme", theme);
+checkBox.checked = theme == "dark" ? true : false;
+
+checkBox.addEventListener("change", function () {
+  if (this.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    window.localStorage.setItem("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    window.localStorage.setItem("data-theme", "light");
+  }
+});
+
+//PRELOADER
+//function to get rid of preloader
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
+});
+
 //PAGE TRANSITIONS
 // function pageTransition() {
 //   var tl = gsap.timeline();
@@ -418,30 +466,3 @@ function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
 //     },
 //   ],
 // });
-
-//PRELOADER
-//function to get rid of preloader
-
-window.addEventListener("load", () => {
-  const preload = document.querySelector(".preload");
-  preload.classList.add("preload-finish");
-});
-
-//DARK MODE
-//code taken from Stack Overflow:https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2
-
-var checkBox = document.getElementById("switch");
-
-var theme = window.localStorage.getItem("data-theme");
-if (theme) document.documentElement.setAttribute("data-theme", theme);
-checkBox.checked = theme == "dark" ? true : false;
-
-checkBox.addEventListener("change", function () {
-  if (this.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    window.localStorage.setItem("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    window.localStorage.setItem("data-theme", "light");
-  }
-});

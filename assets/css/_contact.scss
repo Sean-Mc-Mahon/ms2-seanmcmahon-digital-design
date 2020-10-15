@@ -32,6 +32,11 @@ textarea {
   background-color: inherit;
 }
 
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: none;
+}
+
 .contact-map {
   margin-bottom: 1rem;
 }
