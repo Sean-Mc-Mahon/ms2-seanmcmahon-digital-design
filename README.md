@@ -4,7 +4,7 @@
 
 ### [GitHub](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design)
 
-![Various Devices](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/am-i-responsive.JPG)
+![Various Devices](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/responsive.JPG)
 
 Sean McMahon-Digital Design & Fabrication is a Milestone 2 project, it is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
 
@@ -53,7 +53,7 @@ SM Digital Design is a website for a digital designer offering services such as 
 
 ## UX
 
-The expectation for users is that they be able to sample the work of the digital designer. They can orbit around 3d moddles as well as explore galleries and toggle between different views of drawings/models. A landing page gives an overview of the services on offer. Each design discipline has it's own page where a user can see relevant projects and learn more about the processes involved. A contact page allows allows the user to enquire about the work and engage with the designer in order to collaborate.
+The expectation for users is that they be able to sample the work of the digital designer. They can orbit around 3d moddles as well as explore galleries of various services. A landing page gives an overview of the services on offer. Each design discipline has it's own page where a user can see relevant projects and learn more about the processes involved. A contact page allows allows the user to enquire about the work and engage with the designer in order to collaborate.
 
 ### UX Planes
 
@@ -78,7 +78,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Libraries
 
-- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as...
+- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
 
 #### Color Scheme
 
@@ -148,7 +148,7 @@ I used Balsamiq and figma to create the wireframes.
 11. **Tinypng** Used to compress images; https://tinypng.com/
 12. **Croppola** Used to crop images; https://croppola.com/
 13. **mp4compress** Used to compress video files; https://www.mp4compress.com/
-14. **Windows Movie Maker** Used to create videos from Google Earth Studio Images; https://www.mp4compress.com/
+14. **Google Model Viewer** Used to display author's own 3d model; https://modelviewer.dev/
 
 ## Testing
 
