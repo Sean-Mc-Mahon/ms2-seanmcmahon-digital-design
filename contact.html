@@ -255,7 +255,7 @@
               <h3 class="color">Got a project in mind?</h3>
               <h5 class="color">Let's work together!</h5>
             </div>
-            <form onsubmit="return sendMail(this);">
+            <form id="formContact" onsubmit="return sendMail(this);">
               <input
                 type="text"
                 name="name"
@@ -265,7 +265,7 @@
                 required
               />
               <input
-                type="text"
+                type="email"
                 name="emailaddress"
                 class="form-control"
                 id="emailaddress"
@@ -360,7 +360,6 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/javascript/sendEmail.js"></script>
     <script src="./assets/javascript/app.js"></script>
   </body>
 </html>
