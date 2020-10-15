@@ -17,7 +17,6 @@ html[data-theme="light"] {
   --panel: #a3a3a3;
   --panel2: #434343;
   --text1: #212121;
-  --text2: #0077ff;
 }
 
 html[data-theme="dark"] {
@@ -25,7 +24,6 @@ html[data-theme="dark"] {
   --panel: #434343;
   --panel2: #a3a3a3;
   --text1: #fffff0;
-  --text2: #3694ff;
 }
 
 body {
@@ -120,7 +118,6 @@ nav {
   align-items: center;
   background-color: var(--bg1);
   min-height: 4vh;
-  // position: fixed;
 }
 
 .toggle-nav {
@@ -149,7 +146,6 @@ nav {
 }
 
 .nav-links li a:hover {
-  // border-bottom: 2px solid var(--text1);
   opacity: 1;
 }
 
@@ -167,7 +163,6 @@ nav {
 
 .toggle-nav-link:hover {
   color: var(--bg1);
-  // border-bottom: 2px solid var(--bg1);
 }
 
 .nav-links {

@@ -66,15 +66,15 @@ The expectation for users is that they be able to sample the work of the digital
 
 #### Project Goals:
 
--Showcase my digital design skills as well as demonstrate the usefulness of digital design in general.
--Provide people who may wish to commission work or collaborate to get in touch through a form or with social media links.
+- Showcase my digital design skills as well as demonstrate the usefulness of digital design in general.
+- Provide people who may wish to commission work or collaborate to get in touch through a form or with social media links.
 
 #### User Goals:
 
--Source services for 3d modelling, architectural rendering, furniture design and digital portraits.
--Ability to contact the designer.
--Mobile friendly site allows users to browse from anywhere.
--Ability to set preferences for viewing site such as dark mode.
+- Source services for 3d modelling, architectural rendering, furniture design and digital portraits.
+- Ability to contact the designer.
+- Mobile friendly site allows users to browse from anywhere.
+- Ability to set preferences for viewing site such as dark mode.
 
 ### Scope Plane
 
@@ -182,6 +182,14 @@ I used Balsamiq and figma to create the wireframes.
 14. **Google Model Viewer** Used to display author's own 3d model; https://modelviewer.dev/
 
 ## Testing
+
+## Problems and Solutions
+
+- Home Page: Hover function on headings to display relevant image not mobile friendly. I overcame this by using animations for both the headings and gallery so that they would cycle through in sync with each other on small screens.
+
+- Logo: On loading each page the logo animation was not animating as expected and the image was spinning on a wide arc. 'Transform-origin: center' fixed this issue on all browsers except firefox. I posted a query on Firefox Support and I reached out on slack for a solution as well as Code Institute Tutor Support and have so far not been able to find a solution.
+
+- Loading: Loading the 3D model on the model page was causing the animations to glitch. To overcome this I created a custom loader to display while features such as this one are loading.
 
 ### Validators
 
