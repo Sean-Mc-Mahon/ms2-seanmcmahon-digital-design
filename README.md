@@ -67,9 +67,9 @@ The expectation for users is that they be able to sample the work of the digital
 
 ### User Stories
 
-_- User Story A: Joe is an architect and would like to like to commission renders of a project he is working on to assist with a planning application._
-_- User Story B: Joe would also like to commission a 3D model of a project to demonstrate his ideas to a client._
-_- User Story C: Liz is interested in commissioning some modern furniture for her living room._
+_- User Story A: Joe is an architect and would like to like to commission renders of a project he is working on to assist with a planning application._  
+_- User Story B: Joe would also like to commission a 3D model of a project to demonstrate his ideas to a client._  
+_- User Story C: Liz is interested in commissioning some modern furniture for her living room._  
 _- User Story D: Hazel would like to commission a digital portrait as an anniversary present._
 
 ### Design
