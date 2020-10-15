@@ -28,6 +28,10 @@ textarea {
   color: var(--text1);
 }
 
+.btn-outline-primary:hover {
+  background-color: inherit;
+}
+
 .contact-map {
   margin-bottom: 1rem;
 }
