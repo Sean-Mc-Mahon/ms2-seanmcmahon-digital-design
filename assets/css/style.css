@@ -1,3 +1,4 @@
+/*individual style sheets not needed for render and furniture pages*/
 /*HOME GALLERY*/
 .text-rows {
   display: -webkit-box;
@@ -533,19 +534,7 @@ svg.gallery-heading {
   }
 }
 
-.models {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#bookcase-model {
-  width: 400px;
-  height: 800px;
-}
-
+/*video sized resonsively*/
 video {
   width: 100%;
   border: 3px solid var(--bg1);
@@ -564,6 +553,7 @@ video {
   }
 }
 
+/*library model sized responsively*/
 #library-model {
   width: 390px;
   height: 260px;
@@ -612,7 +602,7 @@ video {
   }
 }
 
-/* Set the size of the div element that contains the map */
+/* map sized responsively*/
 #map {
   height: 320px;
   width: 100%;
