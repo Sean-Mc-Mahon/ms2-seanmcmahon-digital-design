@@ -585,14 +585,14 @@ video {
 @media screen and (min-width: 768px) {
   #library-model {
     width: 600px;
-    height: 400px;
+    height: 320px;
   }
 }
 
 /*large tablet landscape*/
 @media screen and (min-width: 992px) {
   #library-model {
-    max-height: 400px;
+    max-height: 320px;
     border: 5px solid var(--bg1);
   }
 }
@@ -614,10 +614,8 @@ video {
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px;
-  /* The height is 400 pixels */
+  height: 320px;
   width: 100%;
-  /* The width is the width of the web page */
 }
 
 .form-header {
@@ -656,6 +654,14 @@ textarea {
   margin-bottom: 1rem;
 }
 
+/*xxl monitor*/
+@media screen and (min-width: 1500px) {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -679,6 +685,17 @@ html[data-theme="dark"] {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   color: var(--text1);
   background: var(--bg1);
@@ -1393,7 +1410,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--bg1);
-  min-height: 84vh;
   margin: 1rem auto;
 }
 
@@ -1431,6 +1447,7 @@ main {
 
 /*FOOTER*/
 footer {
+  padding: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1440,7 +1457,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8vh;
+  min-height: 6vh;
   background-color: var(--panel);
 }
 
@@ -1537,7 +1554,7 @@ media queries
     font-size: 1rem;
   }
   .social-links ul li i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .page-title {
     font-size: calc(2.5rem + 3vw);
@@ -1578,7 +1595,7 @@ media queries
   }
   .carousel-container {
     border: 5px solid var(--bg1);
-    max-width: 35vw;
+    max-width: 40vw;
   }
 }
 
@@ -1597,6 +1614,9 @@ media queries
   }
   .carousel-container {
     max-width: 70vw;
+  }
+  .social-links ul li i {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

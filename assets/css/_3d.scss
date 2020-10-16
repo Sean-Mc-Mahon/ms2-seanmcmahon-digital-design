@@ -19,14 +19,14 @@
 @media screen and (min-width: 768px) {
   #library-model {
     width: 600px;
-    height: 400px;
+    height: 320px;
   }
 }
 
 /*large tablet landscape*/
 @media screen and (min-width: 992px) {
   #library-model {
-    max-height: 400px;
+    max-height: 320px;
     border: 5px solid var(--bg1);
   }
 }

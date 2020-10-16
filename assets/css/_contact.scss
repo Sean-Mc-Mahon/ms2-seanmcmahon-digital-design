@@ -1,9 +1,7 @@
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px;
-  /* The height is 400 pixels */
+  height: 320px;
   width: 100%;
-  /* The width is the width of the web page */
 }
 
 .form-header {
@@ -39,4 +37,12 @@ textarea {
 
 .contact-map {
   margin-bottom: 1rem;
+}
+
+/*xxl monitor*/
+@media screen and (min-width: 1500px) {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
 }
