@@ -122,7 +122,7 @@ All images, models and featured products are the authors own. Logos are also pro
 
 I used Balsamiq and figma to create the wireframes.
 
-- [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design/blob/master/wireframes/digital-design-wire.pdf)
+- [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-balsamiq.pdf)
 
 - [Figma Wireframe-Light](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-figma-light.jpg)
 
@@ -208,31 +208,31 @@ Hazel can find the portraits page directly from the homepage which will show her
 
 ### Validators
 
-1. **HTML** [W3C HTML Validator](https://validator.w3.org/) Used to identify HTML errors. Small errors were found in SVG's attributes which were rectified. Each page has a warning for a section lacking a header. this is the toggle menu and does not require a heading.
+1. **HTML:** [W3C HTML Validator](https://validator.w3.org/) Used to identify HTML errors. Small errors were found in SVG's attributes which were rectified. Each page has a warning for a section lacking a header. this is the toggle menu and does not require a heading.
 
-2. **CSS** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Used to identify CSS errors. No errors were found.
+2. **CSS:** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Used to identify CSS errors. No errors were found.
 
-3. **Javascript** [JSHint](https://jshint.com/) Used to identify Javascript errors, none found.
+3. **Javascript:** [JSHint](https://jshint.com/) Used to identify Javascript errors, none found.
 
 ### Manual Testing
 
-1. **Developer Tools** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness. An issue regarding the logo SVG was found in the firefox browser (See Problems and Solutions).
+1. **Developer Tools:** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness. An issue regarding the logo SVG was found in the firefox browser (See Problems and Solutions).
 
-2. **Lighthouse** A number of issues were resolved using lighthouse. I increased the contrast between the background and text to improve accessibility. I decreased the size of my images to increase performance. My Best practices score was improved by adding 'rel=noopener' to my social links.
+2. **Lighthouse:** A number of issues were resolved using lighthouse. I increased the contrast between the background and text to improve accessibility. I decreased the size of my images to increase performance. My Best practices score was improved by adding 'rel=noopener' to my social links.
 
-3. **Mobile Devices** I used my Google Pixel 3a phone and Amazon Fire tablet to test the site. Using these devices I found overflow issues when in landscape that did not appear in chrome dev tools when viewing on iphone5 landscape. These issues were rectified in media queries.
+3. **Mobile Devices:** I used my Google Pixel 3a phone and Amazon Fire tablet to test the site. Using these devices I found overflow issues when in landscape that did not appear in chrome dev tools when viewing on iphone5 landscape. These issues were rectified in media queries.
 
-4. **amiresponsive** [Am I Responsive](http://ami.responsivedesign.is/) Used to test responsiveness across a range of devices.
+4. **amiresponsive:** [Am I Responsive](http://ami.responsivedesign.is/) Used to test responsiveness across a range of devices.
 
-5. **Friends and family** I asked for feedback from friends and family in order to get a users perspective.
+5. **Friends and family:** I asked for feedback from friends and family in order to get a users perspective.
 
-6. **Contact Form** On the contact page the form may not be submitted without using correct syntax for the e-mail input or if either input is blank. Once inputs are filled properly and submit is clicked the form will clear without the page being refreshed and an alert will inform user that the message has been sent. I have recieved numerous emails testing this procedure.
+6. **Contact Form:** On the contact page the form may not be submitted without using correct syntax for the e-mail input or if either input is blank. Once inputs are filled properly and submit is clicked the form will clear without the page being refreshed and an alert will inform user that the message has been sent. I have recieved numerous emails testing this procedure.
 
-7. **Dark Mode** Repeatedly clicked toggle to ensure dark mode is functioning correctly. Closed window and reopened to ensure user preferences are saved to local storage.
+7. **Dark Mode:** Repeatedly clicked toggle to ensure dark mode is functioning correctly. Closed window and reopened to ensure user preferences are saved to local storage.
 
-8. **Color Toggle** Clicked through all buttons to ensure classes are added and removed as required.
+8. **Color Toggle:** Clicked through all buttons to ensure classes are added and removed as required.
 
-9. **Navigation** Clicked through all links to ensure they all go to the correct location.
+9. **Navigation:** Clicked through all links to ensure they all go to the correct location.
 
 ## Deployment
 
@@ -241,7 +241,7 @@ Hazel can find the portraits page directly from the homepage which will show her
 
 2. I installed Git and set up a username and password.
 
-3. I created a repository on Github (#)
+3. I created a repository on Github (https://github.com/Sean-Mc-Mahon/seanmcmahon-digital-design)
 
 4. On VS Code I opened the command pallette and selected Git Clone, I pasted in the URL for the repo on GitHub and selected a folder on my computer to sync to.
 
@@ -251,7 +251,7 @@ Hazel can find the portraits page directly from the homepage which will show her
    Your site is published at https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design
 
 7. To run this code on a local machine, you would go to my respository at
-   https://github.com/Sean-Mc-Mahon/ and on the home page on the right hand side just above all the files, you will see a green button that says,
+   https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design and on the home page on the right hand side just above all the files, you will see a green button that says,
    "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file.
    To continue with cloning, you would;
 
