@@ -10,7 +10,9 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 
 ## Table of Contents
 
-1. [**Project overview**](#project-overview) -[**_User Stories_**](#user-stories)
+1. [**Project overview**](#project-overview)
+
+   - [**User Stories**](#user-stories)
 
 2. [**UX Planes**](#ux-planes)
 
