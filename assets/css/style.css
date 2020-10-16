@@ -670,6 +670,7 @@ textarea {
           box-sizing: border-box;
 }
 
+/*dark/light mode color themes*/
 html[data-theme="light"] {
   --bg1: #fffffa;
   --panel: #a3a3a3;
@@ -731,6 +732,7 @@ li {
   list-style: none;
 }
 
+/*throughout project I try to make headings responsive*/
 h1,
 h2 {
   font-family: "Lily Script One", cursive;
@@ -745,18 +747,20 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+/*used for headings in various pages but only on large devices*/
 .big-text {
   font-size: 2rem;
   display: none;
 }
 
-.bold {
-  font-weight: 500;
-}
-
+/*used for headings in various pages but only on small devices*/
 .page-title {
   font-size: calc(2rem + 1vw);
   margin: 0.5rem 0;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .row {
@@ -773,6 +777,21 @@ h6 {
   position: relative;
 }
 
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+/*overlay to be removed upon loading for various pages*/
 .reveal-text,
 .reveal-img,
 .reveal-video {
@@ -800,85 +819,6 @@ nav {
           align-items: center;
   background-color: var(--bg1);
   min-height: 4vh;
-}
-
-.toggle-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--text1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 3;
-  opacity: 1;
-  -webkit-clip-path: circle(50px at 100% -20%);
-          clip-path: circle(50px at 100% -20%);
-}
-
-.nav-links li a {
-  color: var(--text1);
-  margin-right: 1rem;
-  padding: 0;
-  font-size: calc(0.3rem + 1vw);
-  font-weight: 400;
-  cursor: pointer;
-  opacity: 0.5;
-  line-height: 1.1;
-}
-
-.nav-links li a:hover {
-  opacity: 1;
-}
-
-.toggle-nav-link {
-  font-weight: 700;
-  font-size: calc(1.2rem + 1vw);
-  margin: calc(2rem + 1vw) 0rem;
-  color: var(--bg1);
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: center;
-}
-
-.toggle-nav-link:hover {
-  color: var(--bg1);
-}
-
-.nav-links {
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-links ul {
-  display: none;
-}
-
-.nav-links .active-nav-link {
-  font-weight: 800;
-  opacity: 0.9;
-}
-
-.active-toggle-nav-link {
-  border-bottom: 2px solid var(--bg1);
 }
 
 .logo {
@@ -913,6 +853,41 @@ nav {
   z-index: 5;
 }
 
+.nav-links li a {
+  color: var(--text1);
+  margin-right: 1rem;
+  padding: 0;
+  font-size: calc(0.3rem + 1vw);
+  font-weight: 400;
+  cursor: pointer;
+  opacity: 0.5;
+  line-height: 1.1;
+}
+
+.nav-links {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links li a:hover {
+  opacity: 1;
+}
+
+.nav-links ul {
+  display: none;
+}
+
+.nav-links .active-nav-link {
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.active-toggle-nav-link {
+  border-bottom: 2px solid var(--bg1);
+}
+
 .burger {
   cursor: pointer;
   z-index: 5;
@@ -929,7 +904,53 @@ nav {
   z-index: 5;
 }
 
+/*out of view until burger is clicked*/
+.toggle-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  opacity: 1;
+  -webkit-clip-path: circle(50px at 100% -20%);
+          clip-path: circle(50px at 100% -20%);
+}
+
+.toggle-nav-link {
+  font-weight: 700;
+  font-size: calc(1.2rem + 1vw);
+  margin: calc(2rem + 1vw) 0rem;
+  color: var(--bg1);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.toggle-nav-link:hover {
+  color: var(--bg1);
+}
+
 /*LOGO ANIMATION*/
+/*cogs to rotate once on page loading*/
 .cog1 {
   -webkit-animation: cog1 3.5s ease-in-out;
           animation: cog1 3.5s ease-in-out;
@@ -994,6 +1015,7 @@ nav {
   }
 }
 
+/*cogs to flicker infinitely and change color when hovered over*/
 .logo svg {
   text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf, 0 0 5px #aaaf, 0 0 5px #aaaf;
   -webkit-animation: flicker 3s linear infinite;
@@ -1064,8 +1086,8 @@ nav {
   }
 }
 
-/*NAV TEXT DROP ANIMATION
-display changed to inline block to enable text to translate*/
+/*NAV TEXT DROP ANIMATION*/
+/*display changed to inline block to enable text to translate*/
 .logo span {
   opacity: 1;
   -webkit-transition: all 1s ease;
@@ -1092,7 +1114,8 @@ display changed to inline block to enable text to translate*/
 }
 
 /*Color Radio Buttons*/
-/*Colors*/
+/*radio buttons modified from w3schools article @ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+/*!important used to override color settings on various states*/
 .normal {
   color: var(--text1) !important;
   -webkit-transition: 1s;
@@ -1174,7 +1197,7 @@ display changed to inline block to enable text to translate*/
   width: 0;
 }
 
-/* Create a custom checkbox */
+/* Custom checkbox */
 .btn-checkmark {
   position: absolute;
   top: 0;
@@ -1184,7 +1207,7 @@ display changed to inline block to enable text to translate*/
   background-color: var(--bg1);
 }
 
-/* Customize the label (the container) */
+/* Custom label*/
 .btn-container {
   display: block;
   position: relative;
@@ -1199,7 +1222,7 @@ display changed to inline block to enable text to translate*/
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
+/* Hide default radio button */
 .btn-container input {
   position: absolute;
   opacity: 0;
@@ -1208,7 +1231,7 @@ display changed to inline block to enable text to translate*/
   width: 0;
 }
 
-/* Create a custom radio button */
+/* Custom radio button */
 .btn-checkmark {
   position: absolute;
   top: 0;
@@ -1243,7 +1266,7 @@ display changed to inline block to enable text to translate*/
   border: 3px solid var(--panel2);
 }
 
-/* When the radio button is checked, fill the circle*/
+/*fill the circle when checked*/
 .btn-container-yellow input:checked ~ .btn-checkmark {
   background-color: #d8be25;
 }
@@ -1331,6 +1354,7 @@ input:checked + #darkLight:after {
 }
 
 /*PRELOADER*/
+/*only to be viewed when page is loading*/
 .preload {
   position: fixed;
   top: 0;
@@ -1365,6 +1389,7 @@ input:checked + #darkLight:after {
   color: var(--text1);
 }
 
+/*opacity and pointer events modified rather than display none to allow smooth transition*/
 .preload-finish {
   opacity: 0;
   pointer-events: none;
@@ -1392,7 +1417,6 @@ input:checked + #darkLight:after {
   }
 }
 
-/*PAGE TRANSITIONS*/
 /*MAIN*/
 main {
   width: 100%;
@@ -1413,22 +1437,7 @@ main {
   margin: 1rem auto;
 }
 
-/*BOOTSTRAP*/
-.description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-/*CAROUSEL*/
+/*BOOTSTRAP CAROUSEL*/
 .carousel-container {
   position: relative;
   border: 3px solid var(--bg1);
@@ -1494,8 +1503,6 @@ footer ul {
 /*------------------------------------------------------------------------------
 media queries
 ------------------------------------------------------------------------------*/
-/*xxs*/
-/*xs phone (default)*/
 @media screen and (max-width: 736px) and (orientation: landscape) {
   /*Toggle Nav*/
   .toggle-nav-links {
@@ -1521,6 +1528,7 @@ media queries
 
 /*small tablet*/
 @media screen and (min-width: 565px) {
+  /*NAV*/
   #logo-text {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1533,6 +1541,7 @@ media queries
   #logo-image {
     width: 20%;
   }
+  /*MAIN*/
   .page-title {
     font-size: calc(2.5rem + 1vw);
   }
@@ -1540,9 +1549,11 @@ media queries
 
 /*md large tablet*/
 @media screen and (min-width: 768px) {
+  /*NAV*/
   #logo-image {
     width: 15%;
   }
+  /*MAIN*/
   main {
     width: 95%;
     margin: auto;
@@ -1550,19 +1561,21 @@ media queries
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .page-title {
+    font-size: calc(2.5rem + 3vw);
+  }
+  /*FOOTER*/
   .copyright {
     font-size: 1rem;
   }
   .social-links ul li i {
     font-size: 1.5rem;
   }
-  .page-title {
-    font-size: calc(2.5rem + 3vw);
-  }
 }
 
 /*lg large tablet landscape*/
 @media screen and (min-width: 992px) {
+  /*NAV*/
   #logo-image {
     width: 20%;
   }
@@ -1583,6 +1596,7 @@ media queries
     display: -ms-flexbox;
     display: flex;
   }
+  /*MAIN*/
   .row {
     margin-bottom: 2rem;
   }
@@ -1601,6 +1615,7 @@ media queries
 
 /*xl monitor*/
 @media screen and (min-width: 1200px) {
+  /*MAIN*/
   .gallery-item {
     width: 534px;
     height: 325px;
@@ -1609,9 +1624,11 @@ media queries
 
 /*xxl monitor*/
 @media (min-width: 1500px) {
+  /*NAV*/
   #logo-image {
     width: 15%;
   }
+  /*MAIN*/
   .carousel-container {
     max-width: 70vw;
   }
