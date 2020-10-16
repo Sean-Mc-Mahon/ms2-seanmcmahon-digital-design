@@ -11,18 +11,18 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 ## Table of Contents
 
 1. [**Project overview**](#project-overview)
-2. [**UX**](#ux)
+2. [\***_User Stories_**](#user-stories)
 
 - [**UX Planes**](#ux-planes)
+  - [**Strategy Plane**](#strategy-plane)
   - [**Scope Plane**](#scope-plane)
   - [**Structure Plane**](#structure-plane)
   - [**Skeleton Plane**](#skeleton-plane)
   - [**Surface Plane**](#surface-plane)
-- [**User Stories**](#user-stories)
-- [**Design**](#design)
-  - [**Libraries**](#libraries)
-  - [**Color Scheme**](#color-scheme)
-  - [**Typography**](#typography)
+  - [**_Libraries_**](#libraries)
+  - [**_Color Scheme_**](#color-scheme)
+  - [**_Typography_**](#typography)
+  - [**_Media_**](#Media)
 - [**Wireframes**](#wireframes)
 
 3. [**Features**](#features)
@@ -34,15 +34,15 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 
 5. [**Testing**](#testing)
 
-- [**Validators**](#validators)
-- [**Manual Testing**](#manual-testing)
+- [**_Problems and Solutions_**](#problems-and-solutions)
+- [**_Validators_**](#validators)
+- [**_Manual Testing_**](#manual-testing)
 
 6. [**Deployment**](#deployment)
 
 7. [**Credits**](#credits)
 
 - [**Content**](#content)
-- [**Media**](#media)
 - [**Acknowledgements**](#acknowledgements)
 
 ---
@@ -282,8 +282,6 @@ For more information about the above process; https://help.github.com/en/github/
 7.  Slack; Color switch toggle inspired by tutorial via slack by Eamon_Lead in the CI Interactive Frontend channel.
 
 8.  Youtube; Bootstrap Carousel inspired by youtube tutorial by [Clever Techie](https://youtu.be/AvMl3StAju4)
-
-### Media
 
 ### Acknowledgements
 
