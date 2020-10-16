@@ -34,6 +34,7 @@
   </head>
 
   <body>
+    <!--As some pages take a few seconds to load causing some animations to glitch I created a preloader-->
     <div class="preload">
       <svg
         class="loading-cog"
@@ -66,12 +67,14 @@
       </svg>
       <h2>Loading</h2>
     </div>
+    <!--To be displayed if the user does not have Javascript enabled.-->
     <noscript style="left: 0px">
       <p>JavaScript must be enabled for this website to function</p>
     </noscript>
     <header>
       <!--Navigation-->
       <nav>
+        <!--Logo designed by author using Affinity designer, animates when hovered over.-->
         <div class="logo">
           <a id="logo-image" href="./index.html">
             <svg
@@ -154,6 +157,7 @@
               </g>
             </svg>
           </a>
+          <!--Text logo to drop down in two parts, originally one animation but I was not satisfied with how this looked on small screens-->
           <a id="logo-text" href="./index.html">
             <h2 class="drop1">SeanMc</h2>
             <h2 class="drop2">-Digital Design</h2>
@@ -176,6 +180,7 @@
       </nav>
     </header>
     <div class="toggle-container">
+      <!--Used to switch color schemes, these preferences are saved to session storage-->
       <div class="color-buttons">
         <label class="btn-container btn-container-normal">
           <input
@@ -223,6 +228,7 @@
           <span class="btn-checkmark btn-checkmark-brown"></span>
         </label>
       </div>
+      <!--Used to toggle between dark/light modes, these preferences are saved to local storage-->
       <input
         type="checkbox"
         onclick="darkLight()"
@@ -231,9 +237,11 @@
       /><label id="darkLight" for="switch"></label>
     </div>
     <main>
+      <!--Bootstrap grid is used throughout project-->
       <div class="container-fluid">
         <div class="row slide">
           <div class="my-2 col-lg-6 align-items-center">
+            <!--Images overlapping, hovering over headings brings relevant image to foreground on desktop while on small devices an animation cycles through images in sync with another animation highlighting headings.-->
             <div class="gallery-overlay color">
               <img
                 class="img-render active-img-link"
@@ -257,7 +265,7 @@
               />
             </div>
           </div>
-
+          <!--SVG Headings are animated when page loads on desktop-->
           <div class="my-2 col-lg-6 text-rows align-items-center">
             <a href="./renders.html">
               <svg
@@ -570,6 +578,7 @@
         </ul>
       </div>
     </footer>
+    <!--Colors for Toggle nav are the inverse of regular dark/light colors-->
     <section class="toggle-nav">
       <div class="toggle-nav-links">
         <ul>
@@ -585,7 +594,7 @@
         </ul>
       </div>
     </section>
-    <!--GSAP used for Burger Toggle-->
+    <!--GSAP used for Burger Toggle and column transitions-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
       integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="

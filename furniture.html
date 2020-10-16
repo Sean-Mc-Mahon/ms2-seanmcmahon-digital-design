@@ -34,6 +34,7 @@
   </head>
 
   <body>
+    <!--As some pages take a few seconds to load causing some animations to glitch I created a preloader.-->
     <div class="preload">
       <svg
         class="loading-cog"
@@ -66,6 +67,7 @@
       </svg>
       <h2>Loading</h2>
     </div>
+    <!--To be displayed if the user does not have Javascript enabled.-->
     <noscript style="left: 0px">
       <p>JavaScript must be enabled for this website to function</p>
     </noscript>
@@ -73,6 +75,7 @@
       <!--Navigation-->
       <nav>
         <div class="logo">
+          <!--Logo designed by author using Affinity designer, animates when hovered over.-->
           <a id="logo-image" href="./index.html">
             <svg
               width="100%"
@@ -154,6 +157,7 @@
               </g>
             </svg>
           </a>
+          <!--Text logo to drop down in two parts, originally one animation but I was not satisfied with how this looked on small screens-->
           <a id="logo-text" href="./index.html">
             <h2 class="drop1">Sean Mc</h2>
             <h2 class="drop2">-Digital Design</h2>
@@ -182,6 +186,7 @@
       </nav>
     </header>
     <div class="toggle-container">
+      <!--Used to switch color schemes, these preferences are saved to session storage-->
       <div class="color-buttons">
         <label class="btn-container btn-container-normal">
           <input
@@ -229,15 +234,19 @@
           <span class="btn-checkmark btn-checkmark-brown"></span>
         </label>
       </div>
+      <!--Used to toggle between dark/light modes, these preferences are saved to local storage-->
       <input type="checkbox" id="switch" name="theme" /><label
         id="darkLight"
         for="switch"
       ></label>
     </div>
     <main>
+      <!--'.page-title' Only displays on small devices-->
       <h1 class="page-title color">Furniture</h1>
+      <!--Bootstrap grid is used throughout project-->
       <div class="container">
         <div class="row slide">
+          <!--Column transitions on loading using GSAP-->
           <div class="col my-2 col-lg-8 image-wrapper">
             <div class="reveal-img"></div>
             <section class="carousel-container color">
@@ -347,8 +356,11 @@
               </div>
             </section>
           </div>
+
+          <!--Column transitions on loading using GSAP-->
           <div class="description my-2 col-lg-4 col-xs-12 my-col text-wrapper">
             <div class="reveal-text"></div>
+            <!--'.big-text' Only displays on large devices-->
             <h1 class="big-text color">Furniture</h1>
             <p class="bold">
               My furniture is made using birch ply and a CNC routing method
@@ -383,6 +395,7 @@
         </ul>
       </div>
     </footer>
+    <!--Colors for Toggle nav are the inverse of regular dark/light colors-->
     <section class="toggle-nav">
       <div class="toggle-nav-links">
         <ul>
