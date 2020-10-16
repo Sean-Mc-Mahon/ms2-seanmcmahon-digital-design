@@ -277,7 +277,11 @@ For more information about the above process; https://help.github.com/en/github/
 
 5.  Youtube; Image SVG animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/gWai7fYp9PY)
 
-6.  Youtube; Image SVG animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/gWai7fYp9PY)
+6.  Stack Overfow; Code to implement Local Storage taken from answer by Sandro Schaurer [Stack Overflow](https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2)
+
+7.  Slack; Color switch toggle inspired by tutorial via slack by Eamon_Lead in the CI Interactive Frontend channel.
+
+8.  Youtube; Bootstrap Carousel inspired by youtube tutorial by [Clever Techie](https://youtu.be/AvMl3StAju4)
 
 ### Media
 
