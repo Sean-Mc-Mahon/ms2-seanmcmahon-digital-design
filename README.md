@@ -183,7 +183,21 @@ I used Balsamiq and figma to create the wireframes.
 
 ## Testing
 
-## Problems and Solutions
+### User Stories
+
+_- User Story A: Joe is an architect and would like to use renders to assist with a planning application._  
+Joe can find examples of renders on the render page with a brief desription of their usefulness and a link in the description takes him to the contact page where he may contact the designer and see their location.
+
+_- User Story B: Liz would also like to commission a 3D model of a project to demonstrate her ideas to a client._  
+Liz can find the 3D model page directly from the home page and once their is able to orbit around a sample model, if she is using a mobile device she can see the model in Augmented Reality. A link in the description takes her to the contact page where she may contact the designer and see their location.
+
+_- User Story C: Harry is interested in commissioning some modern furniture for his living room._  
+Harry can find the furniture page directly from the homepage which will show him sample designs that demonstrate the pieces as a whole as well as up close views. A description descibes the process in making the furniture. A link in the description takes him to the contact page where he may contact the designer and see their location.
+
+_- User Story D: Hazel would like to commission a digital portrait as an anniversary present._
+Hazel can find the portraits page directly from the homepage which will show her samples of the portraits as well a description which describes the process and a video illustrating the process. A link in the description takes her to the contact page where she may contact the designer and see their location.
+
+### Problems and Solutions
 
 - Home Page: Hover function on headings to display relevant image not mobile friendly. I overcame this by using animations for both the headings and gallery so that they would cycle through in sync with each other on small screens.
 
@@ -193,17 +207,19 @@ I used Balsamiq and figma to create the wireframes.
 
 ### Validators
 
-1. **HTML** [W3C HTML Validator](https://validator.w3.org/) Used to identify HTML errors
+1. **HTML** [W3C HTML Validator](https://validator.w3.org/) Used to identify HTML errors. Small errors were found in SVG's attributes which were rectified. Each page has a warning for a section lacking a header. this is the toggle menu and does not require a heading.
 
-2. **CSS** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Used to identify CSS errors
+2. **CSS** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Used to identify CSS errors. No errors were found.
+
+3. **Javascript** [JSHint](https://jshint.com/) Used to identify Javascript errors, none found.
 
 ### Manual Testing
 
 1. **amiresponsive** [Am I Responsive](http://ami.responsivedesign.is/) Used to test responsiveness across a range of devices.
 
-2. **Developer Tools** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness.
+2. **Developer Tools** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness. An issue regarding the logo SVG was found in the firefox browser (See Problems and Solutions)
 
-3. **Mobile Devices** I used my Google Pixel 3a phone and Amazon Fire tablet to test the site, using this method I found that not all of the fonts were loaded properly originally.
+3. **Mobile Devices** I used my Google Pixel 3a phone and Amazon Fire tablet to test the site. Using these devices I found overflow issues when in landscape that did not appear in chrome dev tools when viewing on iphone5 landscape. These issues were rectified in media queries.
 
 4. **Friends and family** I asked for feedback from friends and family in order to get a users perspective.
 

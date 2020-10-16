@@ -218,13 +218,13 @@ nav {
 /*LOGO ANIMATION*/
 
 .cog1 {
-  animation: cog1 2.3s ease-in-out;
+  animation: cog1 3.5s ease-in-out;
   transform-box: fill-box;
   transform-origin: center;
 }
 
 .cog2 {
-  animation: cog2 2.3s ease-in-out;
+  animation: cog2 3.5s ease-in-out;
   transform-box: fill-box;
   transform-origin: center;
 }
@@ -595,7 +595,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   background-color: var(--bg1);
-  min-height: 80vh;
+  min-height: 84vh;
   margin: 1rem auto;
 }
 
@@ -761,7 +761,7 @@ media queries
   }
   .carousel-container {
     border: 5px solid var(--bg1);
-    max-width: 50vw;
+    max-width: 35vw;
   }
 }
 

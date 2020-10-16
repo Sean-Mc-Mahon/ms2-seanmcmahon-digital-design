@@ -914,16 +914,16 @@ nav {
 
 /*LOGO ANIMATION*/
 .cog1 {
-  -webkit-animation: cog1 2.3s ease-in-out;
-          animation: cog1 2.3s ease-in-out;
+  -webkit-animation: cog1 3.5s ease-in-out;
+          animation: cog1 3.5s ease-in-out;
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
 .cog2 {
-  -webkit-animation: cog2 2.3s ease-in-out;
-          animation: cog2 2.3s ease-in-out;
+  -webkit-animation: cog2 3.5s ease-in-out;
+          animation: cog2 3.5s ease-in-out;
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -1393,7 +1393,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--bg1);
-  min-height: 80vh;
+  min-height: 84vh;
   margin: 1rem auto;
 }
 
@@ -1578,7 +1578,7 @@ media queries
   }
   .carousel-container {
     border: 5px solid var(--bg1);
-    max-width: 50vw;
+    max-width: 35vw;
   }
 }
 
