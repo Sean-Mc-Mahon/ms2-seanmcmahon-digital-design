@@ -15,15 +15,15 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 
 2. [**UX Planes**](#ux-planes)
 
-- [**Strategy Plane**](#strategy-plane)
-- [**Scope Plane**](#scope-plane)
-- [**Structure Plane**](#structure-plane)
-- [**Skeleton Plane**](#skeleton-plane)
-- [**Surface Plane**](#surface-plane)
-- [**_*Color Scheme*_**](#color-scheme)
-- [**_*Typography*_**](#typography)
-- [**_*Media*_**](#Media)
-- [**_Wireframes_**](#wireframes)
+   - [**Strategy Plane**](#strategy-plane)
+   - [**Scope Plane**](#scope-plane)
+   - [**Structure Plane**](#structure-plane)
+   - [**Skeleton Plane**](#skeleton-plane)
+   - [**Surface Plane**](#surface-plane)
+   - [**_*Color Scheme*_**](#color-scheme)
+   - [**_*Typography*_**](#typography)
+   - [**_*Media*_**](#Media)
+   - [**_Wireframes_**](#wireframes)
 
 3. [**Features**](#features)
 
@@ -31,6 +31,9 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
    - [**Features Left to Implement**](#features-left-to-implement)
 
 4. [**Technologies Used**](#technologies-used)
+
+   - [**_Libraries_**](#libraries)
+   - [**_Version Control_**](#version-control)
 
 5. [**Testing**](#testing)
 
@@ -130,12 +133,6 @@ I used Balsamiq and figma to create the wireframes.
 
 ##### back to [top](#table-of-contents)
 
-### Libraries
-
-- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
-
-- [JQuery](https://jquery.com/) - is a Javascirpt library. I primarily used JQuery to add and remove classes on hover states.
-
 ---
 
 ## Features
@@ -181,6 +178,18 @@ I used Balsamiq and figma to create the wireframes.
 12. **Croppola** Used to crop images; https://croppola.com/
 13. **mp4compress** Used to compress video files; https://www.mp4compress.com/
 14. **Google Model Viewer** Used to display author's own 3d model; https://modelviewer.dev/
+
+### Libraries
+
+- [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
+
+- [JQuery](https://jquery.com/) - is a Javascirpt library. I primarily used JQuery to add and remove classes on hover states.
+
+### Version Control
+
+- [Git](https://git-scm.com/) - used for version control
+
+- Branches were used to work on features such as alternative version to my dark mode as well as an alternative home page layout.
 
 ## Testing
 
