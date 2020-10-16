@@ -11,19 +11,19 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 ## Table of Contents
 
 1. [**Project overview**](#project-overview)
-2. [**_User Stories_**](#user-stories)
+   [**_User Stories_**](#user-stories)
 
-- [**UX Planes**](#ux-planes)
-  - [**Strategy Plane**](#strategy-plane)
-  - [**Scope Plane**](#scope-plane)
-  - [**Structure Plane**](#structure-plane)
-  - [**Skeleton Plane**](#skeleton-plane)
-  - [**Surface Plane**](#surface-plane)
-  - [**_*Libraries*_**](#libraries)
-  - [**_*Color Scheme*_**](#color-scheme)
-  - [**_*Typography*_**](#typography)
-  - [**_*Media*_**](#Media)
-  - [**_Wireframes_**](#wireframes)
+2. [**UX Planes**](#ux-planes)
+
+- [**Strategy Plane**](#strategy-plane)
+- [**Scope Plane**](#scope-plane)
+- [**Structure Plane**](#structure-plane)
+- [**Skeleton Plane**](#skeleton-plane)
+- [**Surface Plane**](#surface-plane)
+- [**_*Color Scheme*_**](#color-scheme)
+- [**_*Typography*_**](#typography)
+- [**_*Media*_**](#Media)
+- [**_Wireframes_**](#wireframes)
 
 3. [**Features**](#features)
 
@@ -118,7 +118,7 @@ Font sizes for the headings are mostly responsive using the calc() function.
 
 All images, models and featured products are the authors own. Logos are also produced by the author.
 
-### Wireframes
+#### Wireframes
 
 I used Balsamiq and figma to create the wireframes.
 
@@ -130,7 +130,7 @@ I used Balsamiq and figma to create the wireframes.
 
 ##### back to [top](#table-of-contents)
 
-#### Libraries
+### Libraries
 
 - [Bootstrap 4](https://getbootstrap.com/) - is a framework for building responsive, mobile-first websites. I primarily used bootstrap to format layouts and for certain components such as image carousels and buttons.
 
