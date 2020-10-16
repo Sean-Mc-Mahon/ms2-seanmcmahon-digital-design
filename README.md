@@ -68,6 +68,7 @@ The expectation for users is that they be able to sample the work of the digital
 
 - Showcase my digital design skills as well as demonstrate the usefulness of digital design in general.
 - Provide people who may wish to commission work or collaborate to get in touch through a form or with social media links.
+- As part of the MS2 requirements I tried to ensure a significant amount of features are implemented using Javascript, these include: dark/light mode, color toggle, emailjs, google maps, burger toggle animation, logo text dropdown animation, container transitions upon loading using GSAP, a preloader and adding/removing classes using JQuery.
 
 #### User Goals:
 
@@ -215,15 +216,23 @@ Hazel can find the portraits page directly from the homepage which will show her
 
 ### Manual Testing
 
-1. **amiresponsive** [Am I Responsive](http://ami.responsivedesign.is/) Used to test responsiveness across a range of devices.
+1. **Developer Tools** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness. An issue regarding the logo SVG was found in the firefox browser (See Problems and Solutions).
 
-2. **Developer Tools** Chrome, Firefox and Microsoft Edge web dev tools using iPhone 5 and Ipad as toggle devices to test responsiveness. An issue regarding the logo SVG was found in the firefox browser (See Problems and Solutions)
+2. **Lighthouse** A number of issues were resolved using lighthouse. I increased the contrast between the background and text to improve accessibility. I decreased the size of my images to increase performance. My Best practices score was improved by adding 'rel=noopener' to my social links.
 
 3. **Mobile Devices** I used my Google Pixel 3a phone and Amazon Fire tablet to test the site. Using these devices I found overflow issues when in landscape that did not appear in chrome dev tools when viewing on iphone5 landscape. These issues were rectified in media queries.
 
-4. **Friends and family** I asked for feedback from friends and family in order to get a users perspective.
+4. **amiresponsive** [Am I Responsive](http://ami.responsivedesign.is/) Used to test responsiveness across a range of devices.
 
-5. **Contact Form** On the contact page the form may not be submitted without using correct syntax for the e-mail input or if either input is blank. Once inputs are filled properly the sign up button will lead to a form dump page.
+5. **Friends and family** I asked for feedback from friends and family in order to get a users perspective.
+
+6. **Contact Form** On the contact page the form may not be submitted without using correct syntax for the e-mail input or if either input is blank. Once inputs are filled properly and submit is clicked the form will clear without the page being refreshed and an alert will inform user that the message has been sent. I have recieved numerous emails testing this procedure.
+
+7. **Dark Mode** Repeatedly clicked toggle to ensure dark mode is functioning correctly. Closed window and reopened to ensure user preferences are saved to local storage.
+
+8. **Color Toggle** Clicked through all buttons to ensure classes are added and removed as required.
+
+9. **Navigation** Clicked through all links to ensure they all go to the correct location.
 
 ## Deployment
 
@@ -260,7 +269,15 @@ For more information about the above process; https://help.github.com/en/github/
 
 1.  Google Fonts for font styles; https://fonts.google.com/
 
-2.  Youtube; Image Gallery inspired by youtube tutorial by [Follow Andrew](https://youtu.be/gvPyJ0rc944)
+2.  Youtube; Preloader inspired by youtube tutorial by [Dev Ed](https://youtu.be/NZNhuzyeD-Y)
+
+3.  Youtube; Text Drop Down animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/GUEB9FogoP8)
+
+4.  Youtube; Text SVG animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/vJNVramny9k)
+
+5.  Youtube; Image SVG animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/gWai7fYp9PY)
+
+6.  Youtube; Image SVG animation inspired by youtube tutorial by [Dev Ed](https://youtu.be/gWai7fYp9PY)
 
 ### Media
 
@@ -269,5 +286,7 @@ For more information about the above process; https://help.github.com/en/github/
 1.  My mentor Adegbenga Adeye for his support and input.
 
 2.  My peers on slack for their generosity in sharing their knowledge and experience.
+
+3.  Eamon_Lead for his excellent slack tutorial in the CI Interactive Frontend channel.
 
 ##### back to [top](#table-of-contents)
