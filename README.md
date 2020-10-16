@@ -38,9 +38,9 @@ Sean McMahon-Digital Design is a Milestone 2 project, it is part of the Fullstac
 
 5. [**Testing**](#testing)
 
-- [**_Problems and Solutions_**](#problems-and-solutions)
-- [**_Validators_**](#validators)
-- [**_Manual Testing_**](#manual-testing)
+   - [**_Problems and Solutions_**](#problems-and-solutions)
+   - [**_Validators_**](#validators)
+   - [**_Manual Testing_**](#manual-testing)
 
 6. [**Deployment**](#deployment)
 
