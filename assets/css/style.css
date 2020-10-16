@@ -606,6 +606,7 @@ video {
 #map {
   height: 320px;
   width: 100%;
+  color: black;
 }
 
 .form-header {
