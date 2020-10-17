@@ -98,13 +98,6 @@ function navToggle(e) {
 //event listeners
 burger.addEventListener("click", navToggle);
 
-//text animation
-const heading = document.querySelectorAll(".gallery-heading path");
-
-for (let i = 0; i < heading.length; i++) {
-  console.log(`Letter ${i} is ${heading[i].getTotalLength()}`);
-}
-
 //GOOGLE MAPS
 
 // Initialize and add the map
@@ -115,6 +108,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: homePin,
+    //styles for nightmode sourced from https://developers.google.com/maps/documentation/javascript/examples/style-array
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       {
@@ -372,12 +366,23 @@ function sendMail(contactForm) {
       from_email: contactForm.emailaddress.value,
       project_request: contactForm.projectsummary.value,
     })
+    //custom alert from https://sweetalert.js.org/
     .then(
-      function (response) {
-        alert("Thanks for Getting in Touch!", response);
+      function response (response) {
+          swal({
+      title: "Thanks for reaching out!",
+      text: "I'll be in touch",
+      icon: "success",
+      button: "All Done",
+    });
       },
       function (error) {
-        alert("Sorry, I'm afraid we didn't recieve your message.", error);
+        swal({
+          title: "Sorry, that message didn't send",
+          text: "Please try again",
+          icon: "error",
+          button: "All Done",
+        });
       }
     );
   $("#formContact").val("");

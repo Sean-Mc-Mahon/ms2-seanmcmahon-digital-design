@@ -284,8 +284,9 @@
                 name="projectsummary"
                 class="form-control"
                 id="projectsummary"
+                required
               ></textarea>
-              <button type="submit" class="btn btn-outline-primary color">
+              <button type="submit" class="btn btn-outline-primary color" onclick="response();">
                 Submit
               </button>
             </form>
@@ -329,9 +330,9 @@
       <div class="toggle-nav-links">
         <ul>
           <li>
-            <a class="toggle-nav-link" href="renders.html">Renders</a>
+            <a class="toggle-nav-link" id="username" href="renders.html">Renders</a>
           </li>
-          <li><a class="toggle-nav-link" href="3d.html">3D Models</a></li>
+          <li><a class="toggle-nav-link" id="password" href="3d.html">3D Models</a></li>
           <li>
             <a class="toggle-nav-link" href="furniture.html">Furniture</a>
           </li>
@@ -348,6 +349,7 @@
         </ul>
       </div>
     </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxtm_y9TFSCZc3I4z5uCkP4EV7oUYUyF8&callback=initMap"

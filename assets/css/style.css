@@ -631,8 +631,10 @@ textarea {
   color: var(--text1);
 }
 
-.btn-outline-primary:hover {
+button.btn-outline-primary:hover {
+  color: inherit;
   background-color: inherit;
+  border-color: inherit;
 }
 
 .btn-check:focus + .btn-outline-primary,
