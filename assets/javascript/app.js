@@ -3,6 +3,13 @@ window.onload = function () {
   getUserStyleSetting();
 };
 
+//PRELOADER
+//function to get rid of preloader
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
+});
+
 let mapStyles = [];
 
 // NAV TEXT DROP ANIMATION (inspired by youtube tutorial by Dev Ed:https://youtu.be/GUEB9FogoP8)
@@ -413,9 +420,4 @@ checkBox.addEventListener("change", function () {
   }
 });
 
-//PRELOADER
-//function to get rid of preloader
-window.addEventListener("load", () => {
-  const preload = document.querySelector(".preload");
-  preload.classList.add("preload-finish");
-});
+
