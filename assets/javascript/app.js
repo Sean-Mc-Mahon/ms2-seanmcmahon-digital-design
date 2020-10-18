@@ -3,9 +3,6 @@ window.onload = function () {
   getUserStyleSetting();
 };
 
-
-let mapStyles = [];
-
 // NAV TEXT DROP ANIMATION (inspired by youtube tutorial by Dev Ed:https://youtu.be/GUEB9FogoP8)
 const text1 = document.querySelector(".drop1");
 const strText1 = text1.textContent;
@@ -101,91 +98,6 @@ function navToggle(e) {
 //event listeners
 burger.addEventListener("click", navToggle);
 
-//GOOGLE MAPS
-
-// Initialize and add the map
-function initMap() {
-  // My location
-  var homePin = { lat: 53.338706, lng: -6.279315 };
-  // The map, centered at home
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: homePin,
-    //styles for nightmode sourced from https://developers.google.com/maps/documentation/javascript/examples/style-array
-    styles: mapStyles,
-  });
-
-  //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
-  const address =
-    "<h6>Sean Mc-Digital Designs <br> St. Lukes Ave. D8, Ireland</h6>";
-  const infoWindow = new google.maps.InfoWindow({
-    content: address,
-  });
-  //zoom reset code and marker animation taken from google documentation:https://developers.google.com/maps/documentation/javascript/events#MarkerEvents
-  map.addListener("center_changed", () => {
-    window.setTimeout(() => {
-      map.panTo(marker.getPosition());
-    }, 2000);
-  });
-  var marker = new google.maps.Marker({
-    position: homePin,
-    map: map,
-    animation: google.maps.Animation.DROP,
-    icon: "./assets/icons/map-cog.png",
-  });
-  marker.addListener("click", () => {
-    map.setZoom(16);
-    map.setCenter(marker.getPosition());
-    infoWindow.open(map, marker);
-  });
-}
-
-//HOME IMAGE GALLERY
-//on hover display appropriate image and highlight appropriate text
-$("svg#svg-render").hover(function () {
-  $("svg#svg-render").addClass("active-svg");
-  $("img.img-render").addClass("active-img-link");
-  $("svg#svg-model").removeClass("active-svg");
-  $("img.img-model").removeClass("active-img-link");
-  $("svg#svg-furniture").removeClass("active-svg");
-  $("img.img-furniture").removeClass("active-img-link");
-  $("svg#svg-portrait").removeClass("active-svg");
-  $("img.img-portrait").removeClass("active-img-link");
-});
-
-$("svg#svg-model").hover(function () {
-  $("svg#svg-model").addClass("active-svg");
-  $("img.img-model").addClass("active-img-link");
-  $("svg#svg-render").removeClass("active-svg");
-  $("img.img-render").removeClass("active-img-link");
-  $("svg#svg-furniture").removeClass("active-svg");
-  $("img.img-furniture").removeClass("active-img-link");
-  $("svg#svg-portrait").removeClass("active-svg");
-  $("img.img-portrait").removeClass("active-img-link");
-});
-
-$("svg#svg-furniture").hover(function () {
-  $("svg#svg-furniture").addClass("active-svg");
-  $("img.img-furniture").addClass("active-img-link");
-  $("svg#svg-render").removeClass("active-svg");
-  $("img.img-render").removeClass("active-img-link");
-  $("svg#svg-model").removeClass("active-svg");
-  $("img.img-model").removeClass("active-img-link");
-  $("svg#svg-portrait").removeClass("active-svg");
-  $("img.img-portrait").removeClass("active-img-link");
-});
-
-$("svg#svg-portrait").hover(function () {
-  $("svg#svg-portrait").addClass("active-svg");
-  $("img.img-portrait").addClass("active-img-link");
-  $("svg#svg-render").removeClass("active-svg");
-  $("img.img-render").removeClass("active-img-link");
-  $("svg#svg-model").removeClass("active-svg");
-  $("img.img-model").removeClass("active-img-link");
-  $("svg#svg-furniture").removeClass("active-svg");
-  $("img.img-furniture").removeClass("active-img-link");
-});
-
 //IMAGE AND TEXT REVEALS
 //code used to suppress unnecessary warnings found on https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
 gsap.config({
@@ -213,6 +125,25 @@ function animateSlides() {
 
 animateSlides();
 
+//DARK MODE
+//code taken from Stack Overflow:https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2
+var checkBox = document.getElementById("switch");
+
+var theme = window.localStorage.getItem("data-theme");
+if (theme) document.documentElement.setAttribute("data-theme", theme);
+checkBox.checked = theme == "dark" ? true : false;
+
+checkBox.addEventListener("change", function () {
+  if (this.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    window.localStorage.setItem("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    window.localStorage.setItem("data-theme", "light");
+  }
+});
+
+//COLOR TOGGLE
 //Inspired by slack call in #interactive-front-end channel led by Eamon_lead on 23-09-20
 //Grab radio Buttons
 function getUserStyleSetting() {
@@ -276,6 +207,53 @@ function applyStyle(style = sessionStorage.getItem("chosenStyle")) {
   }
 }
 
+//HOME IMAGE GALLERY
+//on hover display appropriate image and highlight appropriate text
+$("svg#svg-render").hover(function () {
+  $("svg#svg-render").addClass("active-svg");
+  $("img.img-render").addClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
+
+$("svg#svg-model").hover(function () {
+  $("svg#svg-model").addClass("active-svg");
+  $("img.img-model").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
+
+$("svg#svg-furniture").hover(function () {
+  $("svg#svg-furniture").addClass("active-svg");
+  $("img.img-furniture").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-portrait").removeClass("active-svg");
+  $("img.img-portrait").removeClass("active-img-link");
+});
+
+$("svg#svg-portrait").hover(function () {
+  $("svg#svg-portrait").addClass("active-svg");
+  $("img.img-portrait").addClass("active-img-link");
+  $("svg#svg-render").removeClass("active-svg");
+  $("img.img-render").removeClass("active-img-link");
+  $("svg#svg-model").removeClass("active-svg");
+  $("img.img-model").removeClass("active-img-link");
+  $("svg#svg-furniture").removeClass("active-svg");
+  $("img.img-furniture").removeClass("active-img-link");
+});
+
+//FORM
 //Modified from Code Institute Module @ https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c
 function sendMail(contactForm) {
   emailjs
@@ -310,19 +288,17 @@ function sendMail(contactForm) {
   return false; // To block from loading a new page
 }
 
-//DARK MODE
-//code taken from Stack Overflow:https://stackoverflow.com/questions/56871118/change-theme-and-store-it-in-local-storage/56871343#56871343?newreg=df14292f4c21452fb9111541505d1cd2
-var checkBox = document.getElementById("switch");
-
-var theme = window.localStorage.getItem("data-theme");
-if (theme) document.documentElement.setAttribute("data-theme", theme);
-checkBox.checked = theme == "dark" ? true : false;
-
-checkBox.addEventListener("change", function () {
-  if (this.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    window.localStorage.setItem("data-theme", "dark");
-    let mapStyles = [
+//GOOGLE MAPS
+// Initialize and add the map
+function initMap() {
+  // My location
+  var homePin = { lat: 53.338706, lng: -6.279315 };
+  // The map, centered at home
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: homePin,
+    //styles for nightmode sourced from https://developers.google.com/maps/documentation/javascript/examples/style-array
+    styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       {
         elementType: "labels.text.stroke",
@@ -407,13 +383,37 @@ checkBox.addEventListener("change", function () {
         elementType: "labels.text.stroke",
         stylers: [{ color: "#17263c" }],
       },
-    ];
-    console.log('hippo');
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    window.localStorage.setItem("data-theme", "light");
-    let mapStyles = [];
-  }
+    ],
+  });
+
+  //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
+  const address =
+    "<h6>Sean Mc-Digital Designs <br> St. Lukes Ave. D8, Ireland</h6>";
+  const infoWindow = new google.maps.InfoWindow({
+    content: address,
+  });
+  //zoom reset code and marker animation taken from google documentation:https://developers.google.com/maps/documentation/javascript/events#MarkerEvents
+  map.addListener("center_changed", () => {
+    window.setTimeout(() => {
+      map.panTo(marker.getPosition());
+    }, 2000);
+  });
+  var marker = new google.maps.Marker({
+    position: homePin,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: "./assets/icons/map-cog.png",
+  });
+  marker.addListener("click", () => {
+    map.setZoom(16);
+    map.setCenter(marker.getPosition());
+    infoWindow.open(map, marker);
+  });
+}
+
+//PRELOADER
+//function to get rid of preloader
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
 });
-
-

@@ -268,17 +268,26 @@ nav {
   }
 }
 
-/*cogs to flicker infinitely and change color when hovered over*/
+/*cogs to flicker infinitely*/
 .logo svg {
   text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
     0 0 5px #aaaf, 0 0 5px #aaaf;
   animation: flicker 3s linear infinite;
 }
-
+/*cogs to change color when hovered over*/
 .logo svg:hover {
   text-shadow: 0 0 25px #aaaf, 0 0 25px #aaaf, 0 0 15px #aaaf, 0 0 15px #aaaf,
     0 0 5px #aaaf, 0 0 5px #aaaf;
   animation: Multicolor 3s linear infinite;
+}
+/*cogs to rotate when hovered over*/
+svg:hover .cog1 {
+  animation: cog1 4s linear infinite;
+  animation-play-state: running;
+}
+svg:hover .cog2 {
+  animation: cog2 4s linear infinite;
+  animation-play-state: running;
 }
 
 @keyframes flicker {

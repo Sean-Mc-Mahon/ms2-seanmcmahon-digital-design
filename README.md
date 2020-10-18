@@ -196,7 +196,7 @@ I used Balsamiq and figma to create the wireframes.
 
 ### User Stories
 
-_- User Story A: Joe is an architect and would like to use renders to assist with a planning application._  
+_- User Story A: Joe is an architect and would like to use renders to assist with a planning application._   
 Joe can find examples of renders on the render page with a brief desription of their usefulness and a link in the description takes him to the contact page where he may contact the designer and see their location.
 
 _- User Story B: Liz would also like to commission a 3D model of a project to demonstrate her ideas to a client._  
