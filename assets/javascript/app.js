@@ -408,6 +408,7 @@ checkBox.addEventListener("change", function () {
         stylers: [{ color: "#17263c" }],
       },
     ];
+    console.log('hippo');
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     window.localStorage.setItem("data-theme", "light");
