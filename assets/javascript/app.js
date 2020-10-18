@@ -322,7 +322,7 @@ checkBox.addEventListener("change", function () {
   if (this.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     window.localStorage.setItem("data-theme", "dark");
-    mapStyles = [
+    let mapStyles = [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       {
         elementType: "labels.text.stroke",
@@ -412,6 +412,7 @@ checkBox.addEventListener("change", function () {
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     window.localStorage.setItem("data-theme", "light");
+    let mapStyles = [];
   }
 });
 
