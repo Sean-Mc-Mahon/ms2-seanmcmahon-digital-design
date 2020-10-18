@@ -196,7 +196,7 @@ function initMap() {
     zoom: 10,
     center: homePin,
     //styles for nightmode sourced from https://developers.google.com/maps/documentation/javascript/examples/style-array
-    styles: mapStyles;
+    styles: mapStyles
   });
 
   //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
@@ -406,6 +406,7 @@ checkBox.addEventListener("change", function () {
   if (this.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     window.localStorage.setItem("data-theme", "dark");
+    mapStyles = [];
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     window.localStorage.setItem("data-theme", "light");
