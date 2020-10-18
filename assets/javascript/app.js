@@ -277,7 +277,7 @@ function sendMail(contactForm) {
           title: "Sorry, that message didn't send",
           text: "Please try again",
           icon: "error",
-          button: "All Done",
+          button: "OK",
         });
       }
     );

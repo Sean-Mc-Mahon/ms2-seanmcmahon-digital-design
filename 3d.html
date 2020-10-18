@@ -67,10 +67,12 @@
       </svg>
       <h2>Loading</h2>
     </div>
+
     <!--To be displayed if the user does not have Javascript enabled.-->
     <noscript style="left: 0px">
       <p>JavaScript must be enabled for this website to function</p>
     </noscript>
+
     <header>
       <!--Navigation-->
       <nav>
@@ -185,6 +187,7 @@
         </div>
       </nav>
     </header>
+
     <div class="toggle-container">
       <!--Used to switch color schemes, these preferences are saved to session storage-->
       <div class="color-buttons">
@@ -240,6 +243,7 @@
         for="switch"
       ></label>
     </div>
+
     <main>
       <h1 class="page-title color">3D Models</h1>
       <!--Bootstrap grid is used throughout project-->
@@ -250,7 +254,6 @@
             <div class="reveal-img"></div>
             <model-viewer
               class="color"
-              loading="eager"
               id="library-model"
               src="./assets/3d/library-sm.gltf"
               alt="library"
@@ -301,6 +304,7 @@
         </ul>
       </div>
     </footer>
+
     <!--Colors for Toggle nav are the inverse of regular dark/light colors-->
     <section class="toggle-nav">
       <div class="toggle-nav-links">
@@ -323,6 +327,7 @@
         </ul>
       </div>
     </section>
+    
     <!--google model viewer used to dispaly 3d model https://modelviewer.dev/-->
     <script
       type="module"
