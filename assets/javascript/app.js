@@ -68,6 +68,7 @@ function complete2() {
 }
 
 //BURGER ANIMATION
+//code modified from tutorial as part of Creative Javascript Course @ https://developedbyed.com/
 const burger = document.querySelector(".burger");
 
 //functions

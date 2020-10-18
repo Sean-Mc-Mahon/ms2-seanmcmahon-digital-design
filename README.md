@@ -293,6 +293,8 @@ For more information about the above process; https://help.github.com/en/github/
 
 8.  Youtube; Bootstrap Carousel inspired by youtube tutorial by [Clever Techie](https://youtu.be/AvMl3StAju4)
 
+9.  developedbyed.com; burger animation and page transitions modified from tutorial @ [developedbyed](https://developedbyed.com/) 
+
 ### Acknowledgements
 
 1.  My mentor Adegbenga Adeye for his support and input.
