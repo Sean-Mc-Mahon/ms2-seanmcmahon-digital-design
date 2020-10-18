@@ -124,7 +124,7 @@ All images, models and featured products are the authors own. Logos are also pro
 
 #### Wireframes
 
-I used Balsamiq and figma to create the wireframes.
+I used Balsamiq and figma to create the wireframes. The layout has altered since I created the wireframes as I decided against displaying all pages along side each other on the home page.
 
 - [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design/blob/master/wireframes/wire-balsamiq.pdf)
 
