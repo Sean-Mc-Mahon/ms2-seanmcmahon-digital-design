@@ -140,23 +140,23 @@ I used Balsamiq and figma to create the wireframes. The layout has altered since
 
 ### Existing Features
 
-> - All Pages - All pages will have atoggle switch allowing users to switch between dark and light modes which stores preferences to local storage. Color themes can be selected and are saved to session storage. The footer provides links to social pages.
+- All Pages - All pages will have atoggle switch allowing users to switch between dark and light modes which stores preferences to local storage. Color themes can be selected and are saved to session storage. The footer provides links to social pages.
 
-> - Index - The index uses a gallery to showcase projects in each section of the site. On large devices users may hover over a header to display the relevant image in the gallery, on small devices both headers and gallery images cycle through in sync using keyframes.
+- Index - The index uses a gallery to showcase projects in each section of the site. On large devices users may hover over a header to display the relevant image in the gallery, on small devices both headers and gallery images cycle through in sync using keyframes.
 
-> - Renders - A bootstrap carousel allows users to cycle through images.
+- Renders - A bootstrap carousel allows users to cycle through images.
 
-> - 3D Models - This page uses Google Model Viewer to orbit around a model, this page uses Google Model Viewer which allows users to orbit around the model and even view the model in Augmented Reality on a mobile device.
+- 3D Models - This page uses Google Model Viewer to orbit around a model, this page uses Google Model Viewer which allows users to orbit around the model and even view the model in Augmented Reality on a mobile device.
 
-> - Furniture - A bootstrap carousel allows users to cycle through images.
+- Furniture - A bootstrap carousel allows users to cycle through images.
 
-> - Portraits - This page uses images as well as a video on autoplay to display digital portraits.
+- Portraits - This page uses images as well as a video on autoplay to display digital portraits.
 
-> - Contact - This section has a form where users can enquire about updates as well as a google map.
+- Contact - This section has a form where users can enquire about updates as well as a google map.
 
 ### Features Left to Implement
 
--
+- Option to purchase designs online.
 
 ##### back to [top](#table-of-contents)
 
