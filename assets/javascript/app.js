@@ -3,12 +3,6 @@ window.onload = function () {
   getUserStyleSetting();
 };
 
-//PRELOADER
-//function to get rid of preloader
-window.addEventListener("load", () => {
-  const preload = document.querySelector(".preload");
-  preload.classList.add("preload-finish");
-});
 
 let mapStyles = [];
 
@@ -118,7 +112,7 @@ function initMap() {
     zoom: 10,
     center: homePin,
     //styles for nightmode sourced from https://developers.google.com/maps/documentation/javascript/examples/style-array
-    styles: mapStyles
+    styles: mapStyles,
   });
 
   //info window code taken from google documentation:https://developers.google.com/maps/documentation/javascript/infowindows
